@@ -1,0 +1,43 @@
+# =====================================================================================
+#  .gitattributes di CaldanaVR
+#  Dice a Git quali file sono "pesanti" e vanno affidati a Git LFS.
+#
+#  Perche' da subito: Git conserva OGNI versione di ogni file per sempre. Per il codice
+#  va benissimo, per una mesh da 80 MB modificata cinque volte no. Con LFS nel repository
+#  resta solo un piccolo segnaposto e il file vero sta a parte. Spostare file in LFS
+#  DOPO averli salvati normalmente richiede di riscrivere la storia del progetto: per
+#  questo le regole vanno messe prima del primo salvataggio.
+# =====================================================================================
+
+# ---- Mesh del rilievo e modelli 3D ------------------------------------------------
+*.obj   filter=lfs diff=lfs merge=lfs -text
+*.fbx   filter=lfs diff=lfs merge=lfs -text
+*.ply   filter=lfs diff=lfs merge=lfs -text
+*.glb   filter=lfs diff=lfs merge=lfs -text
+*.gltf  filter=lfs diff=lfs merge=lfs -text
+
+# ---- Immagini (la fotosfera della piazza e' la piu' grande) -----------------------
+*.png   filter=lfs diff=lfs merge=lfs -text
+*.jpg   filter=lfs diff=lfs merge=lfs -text
+*.jpeg  filter=lfs diff=lfs merge=lfs -text
+*.tga   filter=lfs diff=lfs merge=lfs -text
+*.tif   filter=lfs diff=lfs merge=lfs -text
+*.tiff  filter=lfs diff=lfs merge=lfs -text
+*.psd   filter=lfs diff=lfs merge=lfs -text
+*.exr   filter=lfs diff=lfs merge=lfs -text
+*.hdr   filter=lfs diff=lfs merge=lfs -text
+
+# ---- Audio e video ---------------------------------------------------------------
+*.wav   filter=lfs diff=lfs merge=lfs -text
+*.mp3   filter=lfs diff=lfs merge=lfs -text
+*.ogg   filter=lfs diff=lfs merge=lfs -text
+*.mp4   filter=lfs diff=lfs merge=lfs -text
+
+# ---- Librerie native (l'SDK LCC ne porta alcune) ----------------------------------
+*.so    filter=lfs diff=lfs merge=lfs -text
+*.aar   filter=lfs diff=lfs merge=lfs -text
+*.dll   filter=lfs diff=lfs merge=lfs -text
+
+# ---- Font ------------------------------------------------------------------------
+*.ttf   filter=lfs diff=lfs merge=lfs -text
+*.otf   filter=lfs diff=lfs merge=lfs -text

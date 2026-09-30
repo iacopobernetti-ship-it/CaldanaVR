@@ -1,0 +1,71 @@
+# =====================================================================================
+#  .gitignore di CaldanaVR
+#  Elenca cio' che Git NON deve salvare. Base: il modello ufficiale GitHub per Unity,
+#  piu' due aggiunte del progetto in fondo.
+# =====================================================================================
+
+# ---- Cartelle che Unity rigenera da solo ------------------------------------------
+# Library e' la piu' importante: pesa gigabyte, e' una cache ricostruita da Assets e
+# Packages, e salvata su Git produrrebbe conflitti continui fra un computer e l'altro.
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# ---- File degli editor di codice (Visual Studio, Rider): si rigenerano ------------
+.vs/
+.vscode/
+.idea/
+.gradle/
+.consulo/
+ExportedObj/
+/[Aa]ssets/Plugins/Editor/JetBrains*
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# ---- Prodotti di compilazione e scarti di sistema ---------------------------------
+# L'apk si ricostruisce dal progetto: salvarlo gonfierebbe il repository a ogni build.
+*.apk
+*.aab
+*.unitypackage
+*.unitypackage.meta
+sysinfo.txt
+mono_crash.*
+crashlytics-build.properties
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- AGGIUNTE DEL PROGETTO ---------------------------------------------------------
+# Dati degli splat (una cartella per via, centinaia di MB in tutto). Restano FUORI da
+# Git di proposito: GitHub rifiuta i file oltre i 100 MB, e anche con LFS ogni nuovo
+# rilievo consumerebbe la quota del repository. Sono dati di rilievo, non codice: si
+# conservano a parte (disco del progetto, cloud) e si copiano qui a mano quando servono.
+# Conseguenza da sapere: dopo un clone su un altro computer, la cartella LCC va
+# ricopiata prima di fare una build con i dati sul visore.
+/[Aa]ssets/[Ss]treamingAssets/LCC/
+/[Aa]ssets/[Ss]treamingAssets/LCC.meta
