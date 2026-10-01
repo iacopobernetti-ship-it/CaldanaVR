@@ -448,8 +448,8 @@ MonoBehaviour:
   splatDepthWrite: 1
   maxBufferSplat10k: 0
   maxRenderSplats10k: 0
-  startLod: 3
-  detailLevel: 0
+  startLod: 0
+  detailLevel: 100
   disposeOnDestroy: 1
 --- !u!4 &1853589950
 Transform:

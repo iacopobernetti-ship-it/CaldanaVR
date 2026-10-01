@@ -64,11 +64,12 @@ namespace Artemis.EditorTools
                 ResetWindow();
             }
 
-            if (!show)
-            {
-                if (label.text.Length > 0) label.text = "";
-                return;
-            }
+            // Visibile solo se lo vogliono sia questa sonda sia la HUD: l'interruttore generale
+            // della diagnostica sta su VrHud, cosi' non va spento sonda per sonda.
+            var hud = Artemis.Vr.VrHud.Instance;
+            bool visible = show && hud != null && hud.ShowDiagnostics;
+            if (label.gameObject.activeSelf != visible) label.gameObject.SetActive(visible);
+            if (!visible) { ResetWindow(); return; }
 
             // Tempo NON scalato: Time.deltaTime seguirebbe un eventuale timeScale e mentirebbe
             // proprio quando si misura.

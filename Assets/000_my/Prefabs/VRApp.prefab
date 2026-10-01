@@ -134,6 +134,10 @@ GameObject:
   - component: {fileID: 1372615755572869583}
   - component: {fileID: 4409828608492837423}
   - component: {fileID: 2810105802744417607}
+  - component: {fileID: 5818807427473057987}
+  - component: {fileID: 3029491284115879788}
+  - component: {fileID: 3522571547040765267}
+  - component: {fileID: 3877173930019228484}
   m_Layer: 0
   m_Name: App
   m_TagString: Untagged
@@ -185,6 +189,8 @@ MonoBehaviour:
   rightControllerName: Right Controller
   defaultTab: Street
   panelSize: {x: 500, y: 500}
+  showDiagnostics: 1
+  diagnosticsHeight: 116
   alwaysOnTop: 0
   uiRenderQueue: 4000
   panelColor: {r: 0.09, g: 0.1, b: 0.12, a: 0.94}
@@ -240,6 +246,137 @@ MonoBehaviour:
   budgetMs: 13.9
   windowSeconds: 0.5
   show: 1
+--- !u!114 &5818807427473057987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516641996135779020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e843d64222f5ab248b30e0a11fc47d1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.EditorTools.RenderTuningProbe
+  tabTitle: Tuning
+  showTab: 1
+  scaleStep: 0.1
+  scaleMin: 0.5
+  scaleMax: 1
+  nearSteps:
+  - 0.01
+--- !u!114 &3029491284115879788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516641996135779020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dca5a723c094e23468a04262015aa85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Vr.AdaptiveFar
+  targetMs: 35
+  minFar: 30
+  maxFar: 150
+  startFar: 40
+  windowSeconds: 0.25
+  downFactor: 0.8
+  upMetersPerSecond: 4
+  settleSeconds: 1.5
+  showInHud: 0
+--- !u!114 &3522571547040765267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516641996135779020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e006947344f45ee41a3a830083b5a114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FutureClimateClient
+  baseUrl: http://80.211.133.205:8004
+  timeoutSeconds: 15
+  fallbackLatitude: 43.3
+  fallbackLongitude: 11.75
+--- !u!114 &3877173930019228484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516641996135779020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 585f56394bae01847809cb0d5f2b074c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Climate.ClimateIndicesPanel
+  tabTitle: Climate
+  client: {fileID: 0}
+  windowDaysStep: 5
+  yearStep: 5
+  tourismProfileIds:
+  - urban_cultural
+  - walking_outdoor
+  tourismProfileLabels:
+  - Urban
+  - Walking
+  neutralColor: {r: 0.85, g: 0.88, b: 0.92, a: 1}
+  greenColor: {r: 0.35, g: 0.8, b: 0.45, a: 1}
+  orangeColor: {r: 0.96, g: 0.62, b: 0.2, a: 1}
+  redColor: {r: 0.92, g: 0.32, b: 0.28, a: 1}
+  riskRules:
+  - keyContains: discomfort days
+    higherIsWorse: 1
+    warn: 5
+    risk: 15
+  - keyContains: heat stress days
+    higherIsWorse: 1
+    warn: 5
+    risk: 15
+  - keyContains: danger days
+    higherIsWorse: 1
+    warn: 1
+    risk: 5
+  - keyContains: warning days
+    higherIsWorse: 1
+    warn: 3
+    risk: 10
+  - keyContains: tropical nights
+    higherIsWorse: 1
+    warn: 20
+    risk: 40
+  - keyContains: very warm nights
+    higherIsWorse: 1
+    warn: 15
+    risk: 30
+  - keyContains: hot days
+    higherIsWorse: 1
+    warn: 10
+    risk: 25
+  - keyContains: heavy rain days
+    higherIsWorse: 1
+    warn: 5
+    risk: 15
+  - keyContains: high dtr days
+    higherIsWorse: 1
+    warn: 10
+    risk: 20
+  - keyContains: salt cycle proxy days
+    higherIsWorse: 1
+    warn: 5
+    risk: 15
+  - keyContains: freeze thaw days
+    higherIsWorse: 1
+    warn: 5
+    risk: 15
+  - keyContains: comfort days
+    higherIsWorse: 0
+    warn: 20
+    risk: 10
 --- !u!1 &8608689713742692481
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,6 +567,10 @@ PrefabInstance:
     - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_ClearFlags
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: near clip plane
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_BackGroundColor.b

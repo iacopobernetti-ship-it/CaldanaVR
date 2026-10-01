@@ -92,6 +92,15 @@ namespace Artemis.Vr
         [Header("Dimensioni pannello (px a scala 0.001 = mm)")]
         [SerializeField] private Vector2 panelSize = new Vector2(440, 520);
 
+        [Header("Diagnostica")]
+        [Tooltip("Mostra la fascia diagnostica in fondo al pannello: la striscia di VrHud e le " +
+                 "righe che vi aggiungono le sonde (frametime, distanza di vista). Spenta, le pagine " +
+                 "si prendono anche quello spazio. Si cambia anche in Play, dall'Inspector.")]
+        [SerializeField] private bool showDiagnostics = true;
+        [Tooltip("Altezza riservata in fondo alla fascia diagnostica (px). 116 = striscia di VrHud " +
+                 "(4-42) + frametime (44-78) + distanza di vista (82-112).")]
+        [SerializeField] private float diagnosticsHeight = 116f;
+
         [Header("Sempre in primo piano")]
         [Tooltip("Forza i materiali della UI a ZTest Always e coda di rendering in fondo: la HUD " +
                  "si disegna sopra la geometria invece di essere occlusa. NON tocca camere, " +
@@ -115,6 +124,10 @@ namespace Artemis.Vr
         public Color ButtonColor => buttonColor;
         public Color ActiveColor => activeColor;
 
+        /// <summary>Le sonde che scrivono nella fascia in basso lo leggono per sapere se mostrarsi:
+        /// un interruttore solo per tutta la diagnostica, invece di uno per sonda.</summary>
+        public bool ShowDiagnostics => showDiagnostics;
+
         public static VrHud Instance { get; private set; }
 
         private Canvas canvas;
@@ -124,6 +137,7 @@ namespace Artemis.Vr
         private EventSystem mine;
         private TMP_Text diagnostics;
         private float nextDiag;
+        private bool? appliedDiagnostics;   // null = layout mai applicato
         private Transform head;
         private Transform body;          // XR Origin: il "corpo" del giocatore
         private float nextBodySearch;
@@ -166,6 +180,10 @@ namespace Artemis.Vr
         private void Update()
         {
             Follow();
+
+            // Controllato a ogni frame (costa un confronto) perche' l'interruttore si usa anche in
+            // Play dall'Inspector: la pagina deve allargarsi o restringersi subito.
+            if (appliedDiagnostics != showDiagnostics) ApplyDiagnosticsLayout();
 
             // L'EventSystem va sorvegliato di continuo, non solo a sceneLoaded: gli intrusi
             // possono nascere qualche frame DOPO il caricamento della scena.
@@ -378,6 +396,30 @@ namespace Artemis.Vr
             else if (!string.IsNullOrWhiteSpace(defaultTab) && title == defaultTab) SelectTab(title);
 
             return pageRt;
+        }
+
+        /// <summary>
+        /// Mostra o nasconde una scheda: pulsante e pagina. Serve alle schede di servizio (per
+        /// esempio Tuning) che devono poter sparire senza togliere il componente che le crea.
+        /// Se si nasconde la scheda aperta, si apre quella di partenza, o la prima visibile.
+        /// </summary>
+        public void SetTabVisible(string title, bool visible)
+        {
+            if (!tabs.TryGetValue(title, out var tab)) return;
+            if (tab.button.gameObject.activeSelf == visible) return;
+
+            tab.button.gameObject.SetActive(visible);
+            if (visible || !tab.page.gameObject.activeSelf) return;
+
+            tab.page.gameObject.SetActive(false);
+            string next = null;
+            if (!string.IsNullOrWhiteSpace(defaultTab) && defaultTab != title &&
+                tabs.TryGetValue(defaultTab, out var def) && def.button.gameObject.activeSelf)
+                next = defaultTab;
+            else
+                foreach (var kv in tabs)
+                    if (kv.Key != title && kv.Value.button.gameObject.activeSelf) { next = kv.Key; break; }
+            if (next != null) SelectTab(next);
         }
 
         public void SelectTab(string title)
@@ -731,6 +773,29 @@ namespace Artemis.Vr
             diagnostics.alignment = TextAlignmentOptions.Center;
             diagnostics.raycastTarget = false;
             diagnostics.text = "";
+
+            ApplyDiagnosticsLayout();
+        }
+
+        /// <summary>
+        /// Riserva in fondo alle pagine lo spazio della fascia diagnostica, oppure lo restituisce.
+        ///
+        /// Perche' una riserva fissa e non calcolata dalle righe presenti: le righe delle sonde
+        /// (FrameTimeProbe, AdaptiveFar) nascono come figlie della canvas senza che VrHud le
+        /// conosca, ed e' giusto cosi' — si tolgono cancellando un componente. Con l'altezza
+        /// riservata le pagine non ci finiscono sotto: prima la scheda Climate si sovrapponeva
+        /// al frametime, perche' le pagine contavano solo la striscia di VrHud.
+        /// </summary>
+        private void ApplyDiagnosticsLayout()
+        {
+            if (pageArea == null || diagnostics == null) return;
+            appliedDiagnostics = showDiagnostics;
+
+            diagnostics.gameObject.SetActive(showDiagnostics);
+
+            float bottom = showDiagnostics ? diagnosticsHeight : 8f;
+            if (commandBar != null) bottom = Mathf.Max(bottom, 114f);   // la barra comandi di SilvoVR
+            pageArea.offsetMin = new Vector2(0, bottom);
         }
 
         /// Bordo via Outline: 2 px bastano a staccare un rettangolo dall'altro — senza,
