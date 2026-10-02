@@ -146,8 +146,12 @@ namespace Artemis.Vr
         private bool snapNext;
         private bool following;      // isteresi: sto rientrando davanti alla testa?
 
-        private class Tab { public Button button; public Image image; public RectTransform page; }
+        // wanted = la scheda vuole esistere (lo decide chi l'ha creata, es. Tuning con Show Tab).
+        // La visibilita' EFFETTIVA dipende anche dal blocco sulla scheda Session: due motivi
+        // indipendenti per nascondere, tenuti separati perche' uno non cancelli l'altro.
+        private class Tab { public Button button; public Image image; public RectTransform page; public bool wanted = true; }
         private readonly Dictionary<string, Tab> tabs = new Dictionary<string, Tab>();
+        private string lockedTab;   // null = nessun blocco
 
         // ------------------------------------------------------------------ lifecycle
 
@@ -389,6 +393,10 @@ namespace Artemis.Vr
             tab.button.onClick.AddListener(() => SelectTab(key));
             tabs[title] = tab;
 
+            // Una scheda che nasce durante un blocco deve nascere gia' nascosta: i pannelli si
+            // costruiscono in ordine sparso, e spesso DOPO che la scheda Session ha bloccato.
+            ApplyTabVisibility();
+
             // La scheda di partenza e' quella dichiarata, non la prima arrivata. Se non e'
             // ancora stata registrata si tiene aperta la prima, e si passa a quella dichiarata
             // appena compare: cosi' l'ordine dei componenti non conta piu'.
@@ -405,26 +413,62 @@ namespace Artemis.Vr
         /// </summary>
         public void SetTabVisible(string title, bool visible)
         {
-            if (!tabs.TryGetValue(title, out var tab)) return;
-            if (tab.button.gameObject.activeSelf == visible) return;
+            if (!tabs.TryGetValue(title, out var tab) || tab.wanted == visible) return;
+            tab.wanted = visible;
+            ApplyTabVisibility();
+        }
 
-            tab.button.gameObject.SetActive(visible);
-            if (visible || !tab.page.gameObject.activeSelf) return;
+        /// <summary>
+        /// Lascia visibile UNA sola scheda (tipicamente Session, finche' non si e' in visita).
+        /// Gli altri pannelli non devono saperne niente: continuano a costruirsi come sempre, ed
+        /// e' la HUD a non mostrarli. E' il motivo per cui il blocco sta qui e non in ogni
+        /// pannello — un pannello aggiunto domani sarebbe il primo a dimenticarsene.
+        /// </summary>
+        public void LockToTab(string title)
+        {
+            if (lockedTab == title) return;
+            lockedTab = title;
+            ApplyTabVisibility();
+            if (tabs.ContainsKey(title)) SelectTab(title);
+        }
 
-            tab.page.gameObject.SetActive(false);
+        /// <summary>Toglie il blocco: ricompaiono tutte le schede che vogliono esistere.</summary>
+        public void Unlock()
+        {
+            if (lockedTab == null) return;
+            lockedTab = null;
+            ApplyTabVisibility();
+        }
+
+        /// Ricalcola chi si vede. Se la pagina aperta e' finita nascosta se ne apre un'altra: la
+        /// scheda bloccata, poi quella di partenza, poi la prima visibile.
+        private void ApplyTabVisibility()
+        {
+            string open = null;
+            foreach (var kv in tabs)
+            {
+                bool show = kv.Value.wanted && (lockedTab == null || kv.Key == lockedTab);
+                if (kv.Value.button.gameObject.activeSelf != show) kv.Value.button.gameObject.SetActive(show);
+                if (!show && kv.Value.page.gameObject.activeSelf) kv.Value.page.gameObject.SetActive(false);
+                if (show && kv.Value.page.gameObject.activeSelf) open = kv.Key;
+            }
+            if (open != null) return;
+
             string next = null;
-            if (!string.IsNullOrWhiteSpace(defaultTab) && defaultTab != title &&
-                tabs.TryGetValue(defaultTab, out var def) && def.button.gameObject.activeSelf)
-                next = defaultTab;
-            else
-                foreach (var kv in tabs)
-                    if (kv.Key != title && kv.Value.button.gameObject.activeSelf) { next = kv.Key; break; }
+            if (lockedTab != null && IsShown(lockedTab)) next = lockedTab;
+            else if (!string.IsNullOrWhiteSpace(defaultTab) && IsShown(defaultTab)) next = defaultTab;
+            else foreach (var kv in tabs) if (IsShown(kv.Key)) { next = kv.Key; break; }
             if (next != null) SelectTab(next);
         }
 
+        private bool IsShown(string title) =>
+            tabs.TryGetValue(title, out var tab) && tab.button.gameObject.activeSelf;
+
         public void SelectTab(string title)
         {
-            if (!tabs.ContainsKey(title)) return;
+            // Una scheda nascosta non si apre: altrimenti la pagina comparirebbe senza il suo
+            // pulsante, e non ci sarebbe modo di capire dove si e'.
+            if (!IsShown(title)) return;
             foreach (var kv in tabs)
             {
                 bool on = kv.Key == title;

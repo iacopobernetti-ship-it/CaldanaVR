@@ -12,6 +12,12 @@ namespace Artemis.Vr
     /// qualunque area sia caricata, non avrebbe nessun componente da interrogare: l'informazione
     /// deve esistere PRIMA delle scene che la usano.
     ///
+    /// DUE SORGENTI, una per il visore e una per l'Editor. In Editor persistentDataPath e' una
+    /// cartella del PC (AppData/LocalLow/...) che nessuno riempie: con la sola sorgente
+    /// "PersistentData" lo splat sparirebbe dall'Editor, e con lui il collaudo in Editor che ha
+    /// reso veloce tutto il lavoro fin qui. In Editor invece StreamingAssets e' una cartella vera,
+    /// e contiene gia' gli stessi file che finiranno nell'apk: si legge direttamente da li'.
+    ///
     /// Come si crea, una volta sola:
     ///   Project → tasto destro → Create → Artemis → Splat Source Config
     /// Il file DEVE stare in una cartella chiamata "Resources" (per esempio
@@ -31,6 +37,10 @@ namespace Artemis.Vr
                  "StreamingAssets = solo Editor/PC.")]
         public LCCRendererVR.SplatSource source = LCCRendererVR.SplatSource.HttpUrl;
 
+        [Tooltip("Sorgente usata in EDITOR (Play Mode). StreamingAssets = legge direttamente dalla " +
+                 "cartella del progetto, senza installazione. HttpUrl = come prima, dalla rete.")]
+        public LCCRendererVR.SplatSource editorSource = LCCRendererVR.SplatSource.StreamingAssets;
+
         private static SplatSourceConfig cached;
         private static bool searched;
 
@@ -48,7 +58,8 @@ namespace Artemis.Vr
                 Debug.Log("[SplatSourceConfig] nessun asset in Resources: ogni scena usa il " +
                           "proprio campo Source.");
             else
-                Debug.Log($"[SplatSourceConfig] sorgente di progetto: {cached.source}.");
+                Debug.Log($"[SplatSourceConfig] sorgente di progetto: {Effective(cached)} " +
+                          $"({(Application.isEditor ? "Editor" : "build")}).");
             return cached;
         }
 
@@ -56,7 +67,13 @@ namespace Artemis.Vr
         public static LCCRendererVR.SplatSource Resolve(LCCRendererVR.SplatSource fallback)
         {
             var c = Get();
-            return c != null ? c.source : fallback;
+            return c != null ? Effective(c) : fallback;
         }
+
+        /// In Editor vale editorSource, in build source. Application.isEditor e non #if
+        /// UNITY_EDITOR, di proposito: e' la stessa cosa a runtime, ma il codice resta uno solo e
+        /// non si rischia che una delle due strade smetta di compilare senza che ce ne si accorga.
+        private static LCCRendererVR.SplatSource Effective(SplatSourceConfig c) =>
+            Application.isEditor ? c.editorSource : c.source;
     }
 }

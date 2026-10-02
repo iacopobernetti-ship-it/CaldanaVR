@@ -138,6 +138,8 @@ GameObject:
   - component: {fileID: 3029491284115879788}
   - component: {fileID: 3522571547040765267}
   - component: {fileID: 3877173930019228484}
+  - component: {fileID: 6943779725977637009}
+  - component: {fileID: 7225050667113533248}
   m_Layer: 0
   m_Name: App
   m_TagString: Untagged
@@ -377,6 +379,35 @@ MonoBehaviour:
     higherIsWorse: 0
     warn: 20
     risk: 10
+--- !u!114 &6943779725977637009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516641996135779020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4be087497bd53064991e32452bebcbc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Session.SessionPanel
+  tabTitle: Session
+  onlyInScene: Base
+--- !u!114 &7225050667113533248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516641996135779020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c61d9c0323e9f4d4eb52e61636338b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Session.VrSession
+  sessionName: Caldana-Visita1
+  maxPlayers: 10
+  requireSession: 1
 --- !u!1 &8608689713742692481
 GameObject:
   m_ObjectHideFlags: 0

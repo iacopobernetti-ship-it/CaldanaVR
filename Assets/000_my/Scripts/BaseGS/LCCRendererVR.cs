@@ -148,7 +148,7 @@ public class LCCRendererVR : MonoBehaviour
 
             case SplatSource.PersistentData:
             {
-                string p = Path.Combine(Application.persistentDataPath, localRelativePath);
+                string p = LocalPath(Application.persistentDataPath);
                 if (!File.Exists(p))
                 {
                     Debug.LogError($"[LCCRendererVR] '{gameObject.scene.name}': file NON trovato in\n  {p}\n" +
@@ -163,13 +163,14 @@ public class LCCRendererVR : MonoBehaviour
 
             case SplatSource.StreamingAssets:
             {
-                string p = Path.Combine(Application.streamingAssetsPath, localRelativePath);
-
                 // Su Android StreamingAssets non e' una cartella: sta DENTRO l'apk compresso e il
                 // percorso e' un URL 'jar:file://…' che solo UnityWebRequest sa aprire. L'SDK LCC
                 // apre i file con IO nativo, quindi qui non c'e' niente da leggere. Si dice, non
                 // si prova: fallire dopo trenta secondi di caricamento a vuoto sarebbe peggio.
-                if (Application.platform == RuntimePlatform.Android || p.Contains("jar:"))
+                // Il controllo viene PRIMA di costruire il percorso: un URL 'jar:' non e' un
+                // percorso di file, e normalizzarlo come tale non avrebbe senso.
+                if (Application.platform == RuntimePlatform.Android ||
+                    Application.streamingAssetsPath.Contains("jar:"))
                 {
                     Debug.LogError("[LCCRendererVR] StreamingAssets non e' leggibile su Android: sta " +
                                    "dentro l'apk e non e' un percorso di file. Usa PersistentData " +
@@ -177,6 +178,7 @@ public class LCCRendererVR : MonoBehaviour
                                    "all'avvio guidata da un manifesto (per il pilot).");
                     return null;
                 }
+                string p = LocalPath(Application.streamingAssetsPath);
                 if (!File.Exists(p))
                 {
                     Debug.LogError($"[LCCRendererVR] file NON trovato in\n  {p}");
@@ -188,6 +190,25 @@ public class LCCRendererVR : MonoBehaviour
         }
         return null;
     }
+
+    /// <summary>
+    /// Percorso locale con i separatori NATIVI della piattaforma: '\' su Windows, '/' su Android.
+    ///
+    /// MISURATO, non supposto. L'SDK, con piattaforma PC, ricava da solo la cartella dei blocchi
+    /// di splat cercando nel percorso il separatore di Windows:
+    ///  - percorso misto ("…/StreamingAssets\LCC/Caldana05/…", cio' che produce Path.Combine fra
+    ///    le cartelle di Unity, che usano '/', e il separatore di Windows): l'indice si apriva e
+    ///    compariva "Data loaded", ma la cartella ricavata finiva all'unico '\' presente, cioe'
+    ///    StreamingAssets invece di LCC/Caldana05 — blocchi mai trovati, splat invisibile, nessun
+    ///    errore;
+    ///  - percorso tutto '/': ArgumentOutOfRangeException in DataLoader (Substring con lunghezza
+    ///    negativa, cioe' separatore '\' non trovato).
+    /// GetFullPath riporta tutto al separatore della piattaforma, e su Windows sono '\' ovunque.
+    /// Sul visore il percorso e' gia' tutto '/', e li' l'SDK usa la piattaforma Quest.
+    /// Gli URL HTTP non passano di qui: l'SDK li tratta a parte, e li' '/' va benissimo.
+    /// </summary>
+    private string LocalPath(string root) =>
+        Path.GetFullPath(Path.Combine(root, localRelativePath));
 
     /// <summary>
     /// Applica i budget PRIMA di GetRender, nell'ordine prescritto dalla guida

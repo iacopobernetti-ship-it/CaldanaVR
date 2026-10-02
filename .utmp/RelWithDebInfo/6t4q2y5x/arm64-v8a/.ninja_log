@@ -1,10 +1,19 @@
 # ninja log v5
 79	3282	8125460187528961	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	654bc2d89a7a4f6a
 47	3312	8125460187625072	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	670de976b1d77933
-16	3379	8125460188638594	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	8653fe45f6778c1b
-112	3412	8125460188955588	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	a2c2fd99be84b5af
-31	3540	8125460190222826	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	73530218ec94fec
 95	3921	8125460194129490	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	b0030d42541585af
+16	3379	8125460188638594	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	8653fe45f6778c1b
+31	3540	8125460190222826	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	73530218ec94fec
+112	3412	8125460188955588	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	a2c2fd99be84b5af
 64	4050	8125460195385787	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	90bc33c2c8f4bf53
 1	4332	8125460198156003	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	16d2f1262be7ef32
 4332	4637	8125460201389266	C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6t4q2y5x/obj/arm64-v8a/libgame.so	910b4d46843bda60
+35	2902	8126367766820754	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	670de976b1d77933
+88	2912	8126367766927191	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	654bc2d89a7a4f6a
+45	2956	8126367767379081	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	8653fe45f6778c1b
+59	2962	8126367767435799	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	a2c2fd99be84b5af
+24	3062	8126367768457617	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	73530218ec94fec
+73	3371	8126367771461763	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	90bc33c2c8f4bf53
+101	3969	8126367777406693	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	b0030d42541585af
+12	4071	8126367777983069	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	16d2f1262be7ef32
+4072	4588	8126367783711083	C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6t4q2y5x/obj/arm64-v8a/libgame.so	910b4d46843bda60

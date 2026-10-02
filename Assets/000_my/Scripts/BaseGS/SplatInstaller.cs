@@ -42,8 +42,9 @@ namespace Artemis.Vr
         [Tooltip("Nome del manifesto generato dal menu Artemis → Genera manifesto splat.")]
         [SerializeField] private string manifestName = "_files.txt";
 
-        [Tooltip("Salta l'installazione in Editor: li' gli splat non si caricano comunque " +
-                 "(skipInEditor su LCCRendererVR) e copiare 270 MB a ogni Play sarebbe un supplizio.")]
+        [Tooltip("Salta l'installazione in Editor: li' gli splat si leggono direttamente da " +
+                 "StreamingAssets (editorSource di SplatSourceConfig), e copiarli a ogni Play " +
+                 "sarebbe solo tempo perso.")]
         [SerializeField] private bool skipInEditor = true;
 
         /// <summary>Vero mentre la copia e' in corso: chi vuole impedire il cambio scena puo'
@@ -150,7 +151,7 @@ namespace Artemis.Vr
             foreach (var e in todo)
             {
                 n++;
-                Status = $"installing plot data… ({n}/{todo.Count})";
+                Status = $"installing place data… ({n}/{todo.Count})";
 
                 string dst = Path.Combine(Application.persistentDataPath, e.rel);
                 string dir = Path.GetDirectoryName(dst);
@@ -221,7 +222,7 @@ namespace Artemis.Vr
             Installing = false;
             Status = "";
             Debug.LogError("[SplatInstaller] " + msg);
-            if (label != null) label.text = "plot data not installed — see the log";
+            if (label != null) label.text = "place data not installed — see the log";
         }
 
         // ---- etichetta nella HUD ------------------------------------------------------------------
