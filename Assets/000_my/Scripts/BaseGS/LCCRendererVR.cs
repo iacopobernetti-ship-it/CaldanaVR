@@ -113,6 +113,15 @@ public class LCCRendererVR : MonoBehaviour
 
     private LCCCore.Renderer m_renderer;
 
+    /// <summary>Vero dopo onLoaded. Serve a chi regola l'SDK a caldo (RenderTuningProbe): il
+    /// manuale prescrive che StartLod e il budget di splat si impostino DOPO il Load, e
+    /// chiamarli prima — quando non esiste ancora nessun renderer — e' il sospetto principale
+    /// del "con Max Render Splats = 30 lo splat sparisce".</summary>
+    public bool Loaded { get; private set; }
+
+    /// <summary>Il manager di questa scena, per le regolazioni a caldo.</summary>
+    public LCCManager Manager => m_manager;
+
     void Start()
     {
 #if UNITY_EDITOR
@@ -300,6 +309,7 @@ public class LCCRendererVR : MonoBehaviour
                       "e la coda di rendering viene riaggiustata — la HUD dovrebbe restare davanti.");
         }
 
+        Loaded = true;
         Debug.Log("[LCCRendererVR] Data loaded");
     }
 }
