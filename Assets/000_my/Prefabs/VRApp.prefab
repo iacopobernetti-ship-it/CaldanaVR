@@ -177,7 +177,7 @@ MonoBehaviour:
   distance: 0.6
   heightOffset: -0.6
   azimuthDegrees: 0
-  trackHeadYaw: 0
+  trackHeadYaw: 1
   trackHeadPitch: 0
   trackHeadRoll: 0
   deadZoneDegrees: 0
@@ -185,7 +185,7 @@ MonoBehaviour:
   turnSpeed: 6
   followSpeed: 8
   snapBeyond: 1.5
-  positionDeadZone: 0.25
+  positionDeadZone: 0.1
   freezeWhenHandWithin: 0.45
   leftControllerName: Left Controller
   rightControllerName: Right Controller
@@ -199,7 +199,7 @@ MonoBehaviour:
   panelBorder: {r: 0.55, g: 0.58, b: 0.62, a: 1}
   buttonColor: {r: 0.3, g: 0.33, b: 0.38, a: 1}
   buttonBorder: {r: 0.05, g: 0.05, b: 0.06, a: 1}
-  activeColor: {r: 0.16, g: 0.62, b: 0.3, a: 1}
+  activeColor: {r: 0.08600208, g: 0.39214495, b: 0.96981126, a: 1}
   tabIdleColor: {r: 0.16, g: 0.17, b: 0.2, a: 1}
   tabActiveColor: {r: 0.36, g: 0.4, b: 0.46, a: 1}
 --- !u!114 &1372615755572869583
@@ -216,10 +216,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Artemis.Places.PlaceFlow
   hub:
     sceneName: Piazza
-    label: Place
+    label: Piazza M. Signori
   places:
   - sceneName: Street01
-    label: Street 1
+    label: Via Solferino
+  - sceneName: Street02
+    label: Vilage Gate
+  - sceneName: Street03
+    label: Via Montanara
+  - sceneName: Street04
+    label: Via Curtatone
+  - sceneName: Street06
+    label: Church side
 --- !u!114 &4409828608492837423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,6 +275,9 @@ MonoBehaviour:
   scaleMax: 1
   nearSteps:
   - 0.01
+  lodMin: 0
+  lodMax: 5
+  budgetSteps: 0a000000140000001e000000280000003c0000005000000064000000
 --- !u!114 &3029491284115879788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,15 +290,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca5a723c094e23468a04262015aa85a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Artemis.Vr.AdaptiveFar
-  targetMs: 35
+  targetMs: 30
   minFar: 30
-  maxFar: 150
+  maxFar: 1500
   startFar: 40
   windowSeconds: 0.25
   downFactor: 0.8
+  spikeFactor: 0.5
   upMetersPerSecond: 4
+  upRelativePerSecond: 0.6
   settleSeconds: 1.5
-  showInHud: 0
+  pauseMs: 1000
+  showInHud: 1
 --- !u!114 &3522571547040765267
 MonoBehaviour:
   m_ObjectHideFlags: 0

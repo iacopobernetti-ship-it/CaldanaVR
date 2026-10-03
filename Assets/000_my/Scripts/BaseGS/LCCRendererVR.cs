@@ -252,6 +252,20 @@ public class LCCRendererVR : MonoBehaviour
         }
     }
 
+    [Header("Distanza di vista massima di questo luogo")]
+    [Tooltip("Tetto per AdaptiveFar in QUESTA scena (m). 0 = il tetto generale di AdaptiveFar. " +
+             "Nelle vie strette conviene basso (es. 150): lo sfondo e' coperto dalle case, e un " +
+             "Far altissimo, quando ci si gira verso un corridoio, costerebbe secondi di scatti " +
+             "prima che la regolazione lo riporti giu'. In piazza alto, per vedere l'ambiente.")]
+    [Min(0)] public float maxViewDistance = 0f;
+
+    [Header("Ambiente")]
+    [Tooltip("Disegna l'AMBIENTE del rilievo: la nuvola a bassa precisione che riempie lo sfondo " +
+             "lontano (colline, cielo catturato). Era spento in modo fisso, eredita' dell'esempio " +
+             "XGRIDS. ATTENZIONE: e' comunque tagliato dal Far della camera, quindi con " +
+             "AdaptiveFar si vede solo fin dove la distanza di vista arriva.")]
+    public bool renderEnvironment = true;
+
     [Header("Rilascio")]
     [Tooltip("Chiama Dispose sul renderer quando la scena si scarica. Il buffer degli splat e' " +
              "un'allocazione GLOBALE dell'SDK e — documentazione alla mano — viene rilasciato " +
@@ -300,7 +314,12 @@ public class LCCRendererVR : MonoBehaviour
             Debug.Log($"[LCCRendererVR] '{gameObject.scene.name}': SetDetailLevel({detailLevel}).");
         }
 
-        m_renderer.SetEnvironment(false);
+        // Prima era SetEnvironment(false) fisso, copiato dall'esempio XGRIDS: l'ambiente non
+        // compariva mai, qualunque fosse il dato. Ora decide la scena. Il manuale avverte che
+        // serve un dato che contenga i nodi di ambiente: se il rilievo non li ha, non cambia
+        // nulla e non e' un errore.
+        m_renderer.SetEnvironment(renderEnvironment);
+        Debug.Log($"[LCCRendererVR] '{gameObject.scene.name}': ambiente {(renderEnvironment ? "ACCESO" : "spento")}.");
 
         if (splatDepthWrite)
         {

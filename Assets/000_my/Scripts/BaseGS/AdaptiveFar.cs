@@ -28,6 +28,20 @@ namespace Artemis.Vr
     /// della camera, e che una modifica fatta da fuori vale solo dopo il refresh. Senza, il Far
     /// cambierebbe per Unity ma non per la scelta degli splat, cioe' proprio dove conta.
     ///
+    /// DISTANZE MOLTO DIVERSE FRA I LUOGHI. L'AMBIENTE del rilievo (lo sfondo a bassa
+    /// precisione: colline, valle) sta oltre i 1000 m: misurato, in piazza compare solo con il
+    /// Far a 15000, il valore raccomandato da XGRIDS. Da qui tre scelte:
+    ///  - la salita e' PROPORZIONALE alla distanza (con un minimo in m/s): a pochi metri il bordo
+    ///    si vede e deve muoversi piano, a centinaia di metri non si vede e puo' correre — con
+    ///    una salita fissa di 4 m/s ci vorrebbe un'ora per arrivare all'ambiente;
+    ///  - a un PICCO (un fotogramma lunghissimo) si dimezza invece di togliere il 20%: partendo
+    ///    da migliaia di metri, scendere a scalini del 20% vorrebbe dire secondi di scatti;
+    ///  - ogni luogo puo' avere il SUO tetto (LCCRendererVR.maxViewDistance): alto in piazza,
+    ///    basso nelle vie, dove lo sfondo e' coperto dalle case e un Far enorme servirebbe solo
+    ///    a pagare care le svolte verso i corridoi.
+    /// A ogni cambio scena si riparte da Start Far, non dall'ultima distanza: entrare in una via
+    /// con la distanza della piazza aperta sarebbe partire dal caso peggiore.
+    ///
     /// ATTENZIONE: governa solo il costo che dipende dalla DISTANZA. Se il costo di fondo sta
     /// sopra l'obiettivo, la distanza si ferma al minimo e ci resta, e l'etichetta diventa
     /// arancione: il segnale che il resto del costo va cercato altrove.
@@ -45,8 +59,10 @@ namespace Artemis.Vr
 
         [Header("Limiti della distanza (m)")]
         [SerializeField] private float minFar = 20f;
-        [SerializeField] private float maxFar = 150f;
-        [Tooltip("Distanza alla prima scena. Nelle successive si riparte dall'ultima raggiunta.")]
+        [Tooltip("Tetto generale. Ogni luogo puo' abbassarlo con LCCRendererVR.maxViewDistance. " +
+                 "15000 = il valore XGRIDS, necessario per vedere l'ambiente del rilievo.")]
+        [SerializeField] private float maxFar = 15000f;
+        [Tooltip("Distanza a ogni ingresso in un luogo.")]
         [SerializeField] private float startFar = 30f;
 
         [Header("Risposta")]
@@ -54,21 +70,33 @@ namespace Artemis.Vr
         [SerializeField] private float windowSeconds = 0.25f;
         [Tooltip("Fattore di accorciamento quando si e' sopra l'obiettivo: 0.8 = -20% per finestra.")]
         [SerializeField] private float downFactor = 0.8f;
-        [Tooltip("Velocita' di allungamento quando c'e' margine (m/s). Bassa = bordo che non si nota.")]
+        [Tooltip("Fattore di accorciamento per un PICCO (fotogramma oltre 2.5 volte l'obiettivo).")]
+        [SerializeField] private float spikeFactor = 0.5f;
+        [Tooltip("Velocita' MINIMA di allungamento (m/s): vale a distanze brevi, dove il bordo si vede.")]
         [SerializeField] private float upMetersPerSecond = 4f;
+        [Tooltip("Allungamento PROPORZIONALE (frazione della distanza al secondo): 0.2 = +20%/s. " +
+                 "Da 30 m all'ambiente a 15000 m in circa mezzo minuto.")]
+        [SerializeField] private float upRelativePerSecond = 0.2f;
         [Tooltip("Secondi di attesa dopo un cambio scena: durante il caricamento i fotogrammi " +
                  "sono irregolari per motivi che con la distanza non c'entrano.")]
         [SerializeField] private float settleSeconds = 1.5f;
 
+        [Tooltip("Un fotogramma piu' lungo di cosi' (ms) e' considerato una PAUSA (visore tolto, " +
+                 "menu di sistema) e non un costo di disegno. Deve stare ben sopra i peggiori " +
+                 "fotogrammi veri: a 250 ms una scena molto pesante sembrava sempre in pausa, e la " +
+                 "regolazione non partiva mai.")]
+        [SerializeField] private float pauseMs = 1000f;
+
         [Header("Diagnostica")]
         [SerializeField] private bool showInHud = true;
 
-        /// <summary>Distanza in vigore. Statica: sopravvive al cambio scena, come il resto del
-        /// rig non fa, cosi' entrando in una via si parte dall'ultima distanza sostenibile.</summary>
+        /// <summary>Distanza in vigore, leggibile da altri componenti.</summary>
         public static float CurrentFar { get; private set; } = -1f;
 
         private Camera cam;
         private LCCManager lcc;
+        private LCCRendererVR place;
+        private float sceneMax;
         private float windowStart, sumMs, worstMs;
         private int frames;
         private float settleUntil;
@@ -86,8 +114,9 @@ namespace Artemis.Vr
             {
                 cam = c;
                 lcc = null;
-                if (CurrentFar < 0f) CurrentFar = startFar;
-                CurrentFar = Mathf.Clamp(CurrentFar, minFar, maxFar);
+                place = null;
+                sceneMax = maxFar;
+                CurrentFar = Mathf.Clamp(startFar, minFar, maxFar);
                 Apply();
                 settleUntil = Time.unscaledTime + settleSeconds;
                 ResetWindow();
@@ -104,7 +133,10 @@ namespace Artemis.Vr
 
             // Un fotogramma lunghissimo e' una pausa (visore tolto, menu di sistema), non un
             // costo di disegno: se entrasse nella media farebbe crollare la distanza per niente.
-            if (ms > 250f) { ResetWindow(); return; }
+            // La soglia era 250 ms: troppo bassa. Con una vista pesantissima OGNI fotogramma la
+            // superava, e il regolatore ignorava proprio il caso per cui esiste — senza
+            // accorciare la distanza e senza nemmeno scrivere la sua riga in HUD.
+            if (ms > pauseMs) { ResetWindow(); return; }
             if (Time.unscaledTime < settleUntil) { ResetWindow(); return; }
 
             frames++;
@@ -118,10 +150,18 @@ namespace Artemis.Vr
 
             // Giu' anche per un solo fotogramma molto lungo: e' la svolta verso il tunnel, e
             // aspettare che alzi la media vorrebbe dire sentirne due o tre.
-            if (avg > targetMs * 1.05f || worstMs > targetMs * 2.5f)
+            if (worstMs > targetMs * 2.5f)
+                CurrentFar = Mathf.Max(minFar, CurrentFar * spikeFactor);
+            else if (avg > targetMs * 1.05f)
                 CurrentFar = Mathf.Max(minFar, CurrentFar * downFactor);
             else if (avg < targetMs * 0.85f)
-                CurrentFar = Mathf.Min(maxFar, CurrentFar + upMetersPerSecond * elapsed);
+            {
+                float rate = Mathf.Max(upMetersPerSecond, CurrentFar * upRelativePerSecond);
+                CurrentFar = Mathf.Min(sceneMax, CurrentFar + rate * elapsed);
+            }
+            // Il tetto del luogo puo' arrivare dopo (renderer trovato tardi): lo si rispetta
+            // anche quando non si sta salendo.
+            CurrentFar = Mathf.Min(CurrentFar, sceneMax);
 
             if (!Mathf.Approximately(before, CurrentFar)) Apply();
             UpdateLabel();
@@ -137,8 +177,17 @@ namespace Artemis.Vr
         private void Apply()
         {
             if (cam != null) cam.farClipPlane = CurrentFar;
+            UpdateLabel();   // la riga c'e' subito, non solo alla fine della prima finestra
 
-            // Il manager e' un oggetto della scena-luogo: lo si ritrova a ogni scena.
+            // Manager e renderer sono oggetti della scena-luogo: li si ritrova a ogni scena.
+            // Dal renderer arriva il tetto di questo luogo; in Base (niente splat) vale quello
+            // generale.
+            if (place == null)
+            {
+                place = FindFirstObjectByType<LCCRendererVR>();
+                if (place != null && place.maxViewDistance > 0f)
+                    sceneMax = Mathf.Clamp(place.maxViewDistance, minFar, maxFar);
+            }
             if (lcc == null) lcc = FindFirstObjectByType<LCCManager>();
             if (lcc != null) lcc.SetForceRefresh();
         }
@@ -154,7 +203,7 @@ namespace Artemis.Vr
             if (label.gameObject.activeSelf != visible) label.gameObject.SetActive(visible);
             if (!visible) return;
             bool atMin = CurrentFar <= minFar + 0.01f;
-            label.text = $"view {CurrentFar:F0} m  (auto · target {targetMs:F1} ms)" +
+            label.text = $"view {CurrentFar:F0} / {sceneMax:F0} m  (auto · target {targetMs:F1} ms)" +
                          (atMin ? "  · AT MINIMUM" : "");
             // Arancione al minimo: la distanza non ha piu' niente da dare, e il costo che resta
             // non dipende da lei.
@@ -174,7 +223,7 @@ namespace Artemis.Vr
             if (canvasT == null) return;
 
             var existing = canvasT.Find("AdaptiveFar");
-            if (existing != null) { label = existing.GetComponent<TMP_Text>(); return; }
+            if (existing != null) { label = existing.GetComponent<TMP_Text>(); UpdateLabel(); return; }
 
             var go = new GameObject("AdaptiveFar", typeof(RectTransform), typeof(TextMeshProUGUI));
             go.transform.SetParent(canvasT, false);
@@ -191,6 +240,7 @@ namespace Artemis.Vr
             label.alignment = TextAlignmentOptions.Center;
             label.raycastTarget = false;
             label.text = "";
+            UpdateLabel();
         }
     }
 }

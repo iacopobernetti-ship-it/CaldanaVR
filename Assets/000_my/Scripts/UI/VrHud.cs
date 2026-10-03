@@ -89,6 +89,11 @@ namespace Artemis.Vr
                  "che cambia ogni volta che se ne aggiunge uno. Vuoto = prima registrata.")]
         [SerializeField] private string defaultTab = "Areas";
 
+        [Tooltip("Ordine delle schede da sinistra a destra, per titolo (es. Session, Places, " +
+                 "Climate, Tuning). Le schede non elencate vanno in fondo, nell'ordine in cui " +
+                 "nascono. Vuoto = ordine di arrivo.")]
+        [SerializeField] private string[] tabOrder = { "Session", "Places", "Climate", "Tuning" };
+
         [Header("Dimensioni pannello (px a scala 0.001 = mm)")]
         [SerializeField] private Vector2 panelSize = new Vector2(440, 520);
 
@@ -393,6 +398,10 @@ namespace Artemis.Vr
             tab.button.onClick.AddListener(() => SelectTab(key));
             tabs[title] = tab;
 
+            // Al suo posto subito, non in coda: l'ordine di arrivo dipende da quale componente
+            // esegue per primo il proprio Update, e Unity non lo garantisce.
+            ApplyTabOrder();
+
             // Una scheda che nasce durante un blocco deve nascere gia' nascosta: i pannelli si
             // costruiscono in ordine sparso, e spesso DOPO che la scheda Session ha bloccato.
             ApplyTabVisibility();
@@ -404,6 +413,30 @@ namespace Artemis.Vr
             else if (!string.IsNullOrWhiteSpace(defaultTab) && title == defaultTab) SelectTab(title);
 
             return pageRt;
+        }
+
+        /// <summary>
+        /// Rimette i pulsanti delle schede nell'ordine di tabOrder.
+        ///
+        /// Perche' esiste: ogni pannello crea la propria scheda appena trova la HUD, e la barra
+        /// le accodava nell'ordine di arrivo — cioe' nell'ordine in cui Unity chiama gli Update
+        /// di componenti diversi, che non e' garantito. Bastava togliere e rimettere un componente
+        /// sull'oggetto App per vedere le schede cambiare posto. Qui l'ordine e' una scelta
+        /// scritta nell'Inspector della HUD, dove la si cerca.
+        ///
+        /// Le schede elencate vanno in testa nell'ordine dell'elenco; le altre scivolano dopo,
+        /// mantenendo fra loro l'ordine di arrivo. Si rifa' a ogni scheda nuova, perche' quelle
+        /// elencate possono nascere in qualunque momento.
+        /// </summary>
+        private void ApplyTabOrder()
+        {
+            if (tabOrder == null || tabOrder.Length == 0 || tabBar == null) return;
+            int slot = 0;
+            foreach (var t in tabOrder)
+            {
+                if (string.IsNullOrWhiteSpace(t) || !tabs.TryGetValue(t.Trim(), out var tab)) continue;
+                tab.button.transform.SetSiblingIndex(slot++);
+            }
         }
 
         /// <summary>
