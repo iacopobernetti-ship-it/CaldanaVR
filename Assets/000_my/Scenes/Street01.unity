@@ -362,6 +362,8 @@ MonoBehaviour:
   maxRenderSplats10k: 0
   startLod: 0
   detailLevel: 100
+  maxViewDistance: 0
+  renderEnvironment: 1
   disposeOnDestroy: 1
 --- !u!4 &1853589950
 Transform:
@@ -621,13 +623,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089615634}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.86602545, z: 0, w: 0.49999994}
-  m_LocalPosition: {x: 1.9, y: 2.5, z: 4.4}
+  m_LocalRotation: {x: -0, y: 0.15968199, z: -0, w: 0.98716855}
+  m_LocalPosition: {x: 0.53, y: -0, z: -2.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 120, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 18.377, z: 0}
 --- !u!1001 &8708364642163388013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -636,9 +638,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3942656768774001737, guid: 7782a7a9f156b4a468db9e31df80d609, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3942656768774001737, guid: 7782a7a9f156b4a468db9e31df80d609, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4871779523971697842, guid: 7782a7a9f156b4a468db9e31df80d609, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.07482
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4871779523971697842, guid: 7782a7a9f156b4a468db9e31df80d609, type: 3}
       propertyPath: m_LocalPosition.y
@@ -646,7 +656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4871779523971697842, guid: 7782a7a9f156b4a468db9e31df80d609, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 52.37622
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4871779523971697842, guid: 7782a7a9f156b4a468db9e31df80d609, type: 3}
       propertyPath: m_LocalRotation.w

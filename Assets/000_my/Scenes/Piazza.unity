@@ -450,6 +450,8 @@ MonoBehaviour:
   maxRenderSplats10k: 0
   startLod: 0
   detailLevel: 100
+  maxViewDistance: 0
+  renderEnvironment: 1
   disposeOnDestroy: 1
 --- !u!4 &1853589950
 Transform:
@@ -605,8 +607,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dc25e7f5356a3f4d86818899ea06004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Caldana.Flow.XrRigPlacer
-  useColliderCentre: 1
-  spawnPoint: {fileID: 0}
+  useColliderCentre: 0
+  spawnPoint: {fileID: 2089615636}
   scatterRadius: 0.8
   snapToGround: 1
   groundLayer:
@@ -629,13 +631,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089615634}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.86602545, z: 0, w: 0.49999994}
-  m_LocalPosition: {x: -13.82, y: 0, z: 11.99}
+  m_LocalRotation: {x: -0, y: 0.868011, z: -0, w: 0.4965451}
+  m_LocalPosition: {x: 0.06, y: 2.5, z: 6.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 120, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 120.457, z: 0}
 --- !u!1001 &8708364642163388013
 PrefabInstance:
   m_ObjectHideFlags: 0

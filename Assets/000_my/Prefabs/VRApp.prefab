@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 5232976247418519895}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.07482, y: -0, z: 52.37622}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -190,6 +190,11 @@ MonoBehaviour:
   leftControllerName: Left Controller
   rightControllerName: Right Controller
   defaultTab: Street
+  tabOrder:
+  - Session
+  - Places
+  - Climate
+  - Tuning
   panelSize: {x: 500, y: 500}
   showDiagnostics: 1
   diagnosticsHeight: 116
@@ -591,7 +596,7 @@ Transform:
   m_GameObject: {fileID: 8995490890789530426}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.367302, y: 2.9, z: -46.826332}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
