@@ -120,6 +120,15 @@ namespace Artemis.EditorTools
         private void Look(Mouse mouse)
         {
             if (!mouse.rightButton.isPressed) return;
+
+            // All'INIZIO di ogni sguardo si riparte dall'orientamento REALE, non da quello che
+            // questo componente ricordava. Il rig non lo gira solo il mouse: XrRigPlacer lo posa
+            // con la rotazione Y dello SpawnPoint, e la rete di sicurezza lo riposa dopo una
+            // caduta. Con yaw e pitch che partivano da 0, il primo trascinamento buttava via
+            // quella rotazione e riportava lo sguardo a nord — cioe' proprio la direzione
+            // iniziale che si voleva collaudare.
+            if (mouse.rightButton.wasPressedThisFrame) SyncFromRig();
+
             // delta e' in pixel per frame: si scala per avere una sensibilita' simile al vecchio
             // GetAxis("Mouse X"), che era gia' normalizzato.
             Vector2 d = mouse.delta.ReadValue() * 0.05f;
@@ -127,6 +136,16 @@ namespace Artemis.EditorTools
             pitch = Mathf.Clamp(pitch - d.y * lookSpeed, -80f, 80f);
             rig.rotation = Quaternion.Euler(0f, yaw, 0f);
             cam.transform.localRotation = Quaternion.Euler(pitch, 0f, 0f);
+        }
+
+        /// Legge imbardata dal rig e beccheggio dalla camera. localEulerAngles restituisce 0..360:
+        /// un beccheggio di -10 gradi arriva come 350, e va riportato a -180..180 prima del clamp,
+        /// altrimenti il clamp a +80 lo farebbe scattare in alto.
+        private void SyncFromRig()
+        {
+            yaw = rig.eulerAngles.y;
+            pitch = Mathf.DeltaAngle(0f, cam.transform.localEulerAngles.x);
+            pitch = Mathf.Clamp(pitch, -80f, 80f);
         }
 
         private void Move()
@@ -138,23 +157,40 @@ namespace Artemis.EditorTools
             Vector3 fwd = Vector3.ProjectOnPlane(cam.transform.forward, Vector3.up).normalized;
             Vector3 right = Vector3.ProjectOnPlane(cam.transform.right, Vector3.up).normalized;
 
-            Vector3 d = Vector3.zero;
-            if (kb.wKey.isPressed) d += fwd;
-            if (kb.sKey.isPressed) d -= fwd;
-            if (kb.dKey.isPressed) d += right;
-            if (kb.aKey.isPressed) d -= right;
-            if (kb.eKey.isPressed) d += Vector3.up;
-            if (kb.qKey.isPressed) d -= Vector3.up;
+            Vector3 h = Vector3.zero;
+            if (kb.wKey.isPressed) h += fwd;
+            if (kb.sKey.isPressed) h -= fwd;
+            if (kb.dKey.isPressed) h += right;
+            if (kb.aKey.isPressed) h -= right;
 
-            if (d.sqrMagnitude < 0.001f) return;
+            float v = 0f;
+            if (kb.eKey.isPressed) v += 1f;
+            if (kb.qKey.isPressed) v -= 1f;
 
-            // Il CharacterController impedisce le scritture dirette sul transform: si spegne
-            // per un istante, come fa XrRigPlacer quando posa il rig.
             var cc = rig.GetComponentInChildren<CharacterController>();
-            bool had = cc != null && cc.enabled;
-            if (had) cc.enabled = false;
-            rig.position += d.normalized * s;
-            if (had) cc.enabled = true;
+            bool hasCc = cc != null && cc.enabled;
+
+            // CAMMINARE (WASD) passa dal CharacterController, come la locomozione vera: i muri
+            // fermano, i gradini si salgono. Prima anche il passo in piano si faceva spegnendo il
+            // corpo fisico e spostando il rig di peso, e cosi' si attraversava tutto: mesh, muri
+            // di collider, barriere. Il collaudo in Editor dava torto a barriere che in visore
+            // funzionano — l'esatto contrario di cio' a cui serve.
+            if (h.sqrMagnitude > 0.001f)
+            {
+                Vector3 step = h.normalized * s;
+                if (hasCc) cc.Move(step);
+                else rig.position += step;
+            }
+
+            // SALIRE E SCENDERE (E/Q) resta un volo libero, senza collisioni: serve a guardare
+            // la scena dall'alto, cioe' proprio a passare dove i piedi non arrivano. Il corpo
+            // fisico si spegne per un istante, come fa XrRigPlacer quando posa il rig.
+            if (Mathf.Abs(v) > 0.001f)
+            {
+                if (hasCc) cc.enabled = false;
+                rig.position += Vector3.up * (v * s);
+                if (hasCc) cc.enabled = true;
+            }
         }
 
         // ---- clic -----------------------------------------------------------------------------------
@@ -246,8 +282,8 @@ namespace Artemis.EditorTools
             GUI.DrawTexture(new Rect(p.x - 5, Screen.height - p.y - 1, 11, 2), dot);
             GUI.DrawTexture(new Rect(p.x - 1, Screen.height - p.y - 5, 2, 11), dot);
 
-            GUI.Label(new Rect(10, 10, 620, 20),
-                "MOUSE: sinistro = pulsante HUD / grilletto · destro tenuto = guarda · WASD = cammina · QE = su-giu' · Shift = veloce");
+            GUI.Label(new Rect(10, 10, 720, 20),
+                "MOUSE: sinistro = pulsante HUD / grilletto · destro tenuto = guarda · WASD = cammina (con collisioni) · QE = vola su-giu' · Shift = veloce");
         }
     }
 }

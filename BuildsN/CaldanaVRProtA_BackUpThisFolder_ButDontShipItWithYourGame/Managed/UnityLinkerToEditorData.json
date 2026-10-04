@@ -1125,7 +1125,14 @@
         "dependencies": [
           {
             "name": "BoxCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/000_my/Scenes/Piazza.unity",
+              "Assets/000_my/Scenes/Street01.unity",
+              "Assets/000_my/Scenes/Street02.unity",
+              "Assets/000_my/Scenes/Street03.unity",
+              "Assets/000_my/Scenes/Street04.unity",
+              "Assets/000_my/Scenes/Street06.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
