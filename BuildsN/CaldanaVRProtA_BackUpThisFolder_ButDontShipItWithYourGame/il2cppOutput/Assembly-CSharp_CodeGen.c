@@ -725,6 +725,13 @@ extern void SplatSourceConfig_Get_m472E897FF68312C05BA8B3C5176725B06D163C6A (voi
 extern void SplatSourceConfig_Resolve_m29BA226767B4ECC810A340C28305FEBB40B17159 (void);
 extern void SplatSourceConfig_Effective_mE7AE651EE19EB61DABA341DC95B003978D4B208A (void);
 extern void SplatSourceConfig__ctor_m45B68C3D919402436AA6DE03D12B27BE7C232D80 (void);
+extern void SplatWarmup_get_Done_m82F596D3056312F7FFD1092E9FF905AC3274C627 (void);
+extern void SplatWarmup_set_Done_mC4D1999E8D7E7DAB89713A8FD909A7D7E327D2B2 (void);
+extern void SplatWarmup_Update_mD7A5FE23AA4D47DE44568C7EBABA265EDD5E6DDF (void);
+extern void SplatWarmup_MakeCover_m03DD7DB6ABFF260BE3A48B4182233FE376762B12 (void);
+extern void SplatWarmup_ShowInHud_mC30A727CF2F98B69E67350240D133DFEC4418854 (void);
+extern void SplatWarmup_Finish_mEBE7CFBBFD8A73E8CB989E78A27B2441ED1E471B (void);
+extern void SplatWarmup__ctor_m8CB7BD75879D52F2B5E3527E6B3DC265A31EBBE6 (void);
 extern void VrHud_get_ButtonColor_mACE3118694D946EC7B7D87AD02E05D93CC7F9990 (void);
 extern void VrHud_get_ActiveColor_m3B1DCE9F0D7F820F0E74130CF1DF19B254ECE22F (void);
 extern void VrHud_get_ShowDiagnostics_mBEC480818F3F0B5E5F8523E454DBD5B759D77347 (void);
@@ -772,7 +779,7 @@ extern void Tab__ctor_m1DFE9916D26680349E30C9EA06AA5DC95FACF6D1 (void);
 extern void U3CU3Ec__DisplayClass72_0__ctor_m602D9637658794C5D26519C7D48212484E5AA06F (void);
 extern void U3CU3Ec__DisplayClass72_0_U3CCreateTabU3Eb__0_m3BBE041AD0E1715BFDA0804170981272DEC4B821 (void);
 extern void NetworkVariableSerializationHelper_InitializeSerialization_mA4F17C9D8F4934C552263003358AF8CC0E55E6E3 (void);
-static Il2CppMethodPointer s_methodPointers[765] = 
+static Il2CppMethodPointer s_methodPointers[772] = 
 {
 	LCCRendererVR_get_EffectiveSource_mEAF0EDACBD32D9644D403C279E17A3CFF0C6DF1B,
 	LCCRendererVR_get_Loaded_m017FB4973B0DA2FE9763BF8214644B54964E6C25,
@@ -1492,6 +1499,13 @@ static Il2CppMethodPointer s_methodPointers[765] =
 	SplatSourceConfig_Resolve_m29BA226767B4ECC810A340C28305FEBB40B17159,
 	SplatSourceConfig_Effective_mE7AE651EE19EB61DABA341DC95B003978D4B208A,
 	SplatSourceConfig__ctor_m45B68C3D919402436AA6DE03D12B27BE7C232D80,
+	SplatWarmup_get_Done_m82F596D3056312F7FFD1092E9FF905AC3274C627,
+	SplatWarmup_set_Done_mC4D1999E8D7E7DAB89713A8FD909A7D7E327D2B2,
+	SplatWarmup_Update_mD7A5FE23AA4D47DE44568C7EBABA265EDD5E6DDF,
+	SplatWarmup_MakeCover_m03DD7DB6ABFF260BE3A48B4182233FE376762B12,
+	SplatWarmup_ShowInHud_mC30A727CF2F98B69E67350240D133DFEC4418854,
+	SplatWarmup_Finish_mEBE7CFBBFD8A73E8CB989E78A27B2441ED1E471B,
+	SplatWarmup__ctor_m8CB7BD75879D52F2B5E3527E6B3DC265A31EBBE6,
 	VrHud_get_ButtonColor_mACE3118694D946EC7B7D87AD02E05D93CC7F9990,
 	VrHud_get_ActiveColor_m3B1DCE9F0D7F820F0E74130CF1DF19B254ECE22F,
 	VrHud_get_ShowDiagnostics_mBEC480818F3F0B5E5F8523E454DBD5B759D77347,
@@ -1567,7 +1581,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[12] =
 	{ 0x0600024C, U3CPrepareU3Ed__49_MoveNext_m00F4BBEA0CB50516815CEFE5CE71966C98C95C65_AdjustorThunk },
 	{ 0x0600024D, U3CPrepareU3Ed__49_SetStateMachine_mC6C970A51E4FA2369FB93748A2D331F12604407B_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[765] = 
+static const int32_t s_InvokerIndices[772] = 
 {
 	23857,
 	23685,
@@ -2287,6 +2301,13 @@ static const int32_t s_InvokerIndices[765] =
 	37074,
 	37081,
 	24231,
+	39296,
+	37915,
+	24231,
+	18439,
+	18439,
+	18439,
+	24231,
 	23693,
 	23693,
 	23685,
@@ -2339,7 +2360,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	765,
+	772,
 	s_methodPointers,
 	12,
 	s_adjustorThunks,

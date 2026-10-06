@@ -119,6 +119,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &181832048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 181832050}
+  - component: {fileID: 181832049}
+  m_Layer: 0
+  m_Name: ' WarmupSplat'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &181832049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181832048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc785df1bc0eed640aeb932c209a8d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LCCRendererVR
+  m_manager: {fileID: 1039486081}
+  m_FilePath: http://www.perclabresearch.it/LCC/Caldana/Caldana05/Caldana05.lcc2
+  useProjectSource: 0
+  source: 0
+  localRelativePath: LCC/Caldana05/Caldana05.lcc2
+  splatDepthWrite: 1
+  maxBufferSplat10k: 0
+  maxRenderSplats10k: 0
+  startLod: 2
+  detailLevel: 0
+  maxViewDistance: 0
+  renderEnvironment: 1
+  disposeOnDestroy: 1
+--- !u!4 &181832050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181832048}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &472456215
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,6 +296,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Artemis.Session.SessionBootstrap
   sessionStatePrefab: {fileID: 3837039556471980904, guid: 799a677bf0d2afe4186100d90c92a560, type: 3}
+--- !u!1 &480767224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 480767226}
+  - component: {fileID: 480767225}
+  m_Layer: 0
+  m_Name: Warmup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &480767225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480767224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34b485acd39dbe344afaa7d8da2d3af0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Vr.SplatWarmup
+  warmupRenderer: {fileID: 181832049}
+  blackMaterial: {fileID: 2100000, guid: 06a3f1d1cbec9c14796d42ab3286a948, type: 2}
+  coverDistance: 0.5
+  coverSize: 4
+  minSecondsAfterLoad: 1
+  calmFrames: 20
+  calmMs: 20
+  maxSeconds: 15
+  resultSeconds: 20
+--- !u!4 &480767226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480767224}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -38.69463, y: -0, z: 22.72831}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &800425271
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,6 +392,51 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.38026, y: 0, z: -0.53788}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1039486080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1039486082}
+  - component: {fileID: 1039486081}
+  m_Layer: 0
+  m_Name: LCCManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1039486081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039486080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1307996880, guid: 5d7b1f22a5a09d845b9067a351704dbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LCCSDK.dll::LCCCore.LCCManager
+  m_AppKey: 
+--- !u!4 &1039486082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039486080}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -38.69463, y: -0, z: 22.72831}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -641,3 +796,6 @@ SceneRoots:
   - {fileID: 1991877782}
   - {fileID: 800425273}
   - {fileID: 1479632598}
+  - {fileID: 1039486082}
+  - {fileID: 181832050}
+  - {fileID: 480767226}
