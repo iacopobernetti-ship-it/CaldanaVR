@@ -303,6 +303,7 @@ GameObject:
   - component: {fileID: 766784286}
   - component: {fileID: 766784285}
   - component: {fileID: 766784284}
+  - component: {fileID: 766784287}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -403,6 +404,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766784282}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &766784287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766784282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6580ec012ace6479c51b3b142e3b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Places.PlaceSign
+  text: 'Via
+
+    Curtatone'
+  offset: {x: 0, y: 0, z: 0}
+  textSize: 2.5
+  color: {r: 1, g: 0.020754695, b: 0.020754695, a: 1}
+  outline: 1
+  bold: 1
+  renderQueue: 4000
 --- !u!1 &1298017200
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +502,7 @@ GameObject:
   - component: {fileID: 1583498962}
   - component: {fileID: 1583498961}
   - component: {fileID: 1583498960}
+  - component: {fileID: 1583498963}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -580,6 +603,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583498958}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1583498963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583498958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6580ec012ace6479c51b3b142e3b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Places.PlaceSign
+  text: 'Gate of
+
+    village'
+  offset: {x: 0, y: 0, z: 0}
+  textSize: 2.5
+  color: {r: 1, g: 0.020754695, b: 0.020754695, a: 1}
+  outline: 1
+  bold: 1
+  renderQueue: 4000
 --- !u!1 &1853589948
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +664,7 @@ MonoBehaviour:
   startLod: 0
   detailLevel: 100
   maxViewDistance: 0
+  forceChunkOnPc: 1
   renderEnvironment: 1
   disposeOnDestroy: 1
 --- !u!4 &1853589950

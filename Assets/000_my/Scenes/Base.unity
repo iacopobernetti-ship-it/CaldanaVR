@@ -135,7 +135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &181832049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,6 +159,7 @@ MonoBehaviour:
   startLod: 2
   detailLevel: 0
   maxViewDistance: 0
+  forceChunkOnPc: 1
   renderEnvironment: 1
   disposeOnDestroy: 1
 --- !u!4 &181832050
@@ -329,6 +330,8 @@ MonoBehaviour:
   blackMaterial: {fileID: 2100000, guid: 06a3f1d1cbec9c14796d42ab3286a948, type: 2}
   coverDistance: 0.5
   coverSize: 4
+  coverText: Preparing...
+  coverTextSize: 0.25
   minSecondsAfterLoad: 1
   calmFrames: 20
   calmMs: 20
@@ -667,6 +670,10 @@ PrefabInstance:
     - target: {fileID: 5232976247418519895, guid: 7782a7a9f156b4a468db9e31df80d609, type: 3}
       propertyPath: m_Name
       value: VRApp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8101674697411539277, guid: 7782a7a9f156b4a468db9e31df80d609, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

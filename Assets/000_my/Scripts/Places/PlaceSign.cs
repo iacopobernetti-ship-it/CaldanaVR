@@ -54,6 +54,9 @@ namespace Artemis.Places
         [Tooltip("Bordo scuro attorno alle lettere: le rende leggibili sopra gli splat chiari.")]
         [SerializeField] private bool outline = true;
 
+        [Tooltip("Testo in grassetto: piu' leggibile a distanza e sopra sfondi movimentati.")]
+        [SerializeField] private bool bold = false;
+
         [Tooltip("Coda di disegno della scritta. 4000 = dopo gli splat. Con il valore di base " +
                  "(trasparenti, 3000) gli splat venivano disegnati DOPO la scritta e la " +
                  "ricoprivano anche quando stavano dietro: la scritta non scrive profondita', " +
@@ -74,6 +77,9 @@ namespace Artemis.Places
             t.text = text;
             t.fontSize = textSize;
             t.color = color;
+            // Grassetto di TextMeshPro: ispessisce le lettere nello shader del font, quindi
+            // funziona con il font di base senza bisogno di una variante "Bold" del font.
+            t.fontStyle = bold ? FontStyles.Bold : FontStyles.Normal;
             t.alignment = TextAlignmentOptions.Center;
             t.textWrappingMode = TextWrappingModes.NoWrap;
             go.GetComponent<RectTransform>().sizeDelta = new Vector2(20f, 5f);

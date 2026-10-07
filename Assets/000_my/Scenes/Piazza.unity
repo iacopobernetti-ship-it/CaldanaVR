@@ -458,8 +458,9 @@ MonoBehaviour:
     Curtatone'
   offset: {x: 0, y: 2, z: 2}
   textSize: 2.5
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 1, g: 0, b: 0, a: 1}
   outline: 1
+  bold: 1
   renderQueue: 4000
 --- !u!1001 &861961093
 PrefabInstance:
@@ -556,6 +557,7 @@ GameObject:
   - component: {fileID: 880660820}
   - component: {fileID: 880660819}
   - component: {fileID: 880660821}
+  - component: {fileID: 880660822}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -656,6 +658,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0000002, y: 1.0000017, z: 1.0000002}
   m_Center: {x: -0.000000044703484, y: -0.0000009536743, z: -1.0658141e-14}
+--- !u!114 &880660822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880660815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6580ec012ace6479c51b3b142e3b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Places.PlaceSign
+  text: 'Gate of
+
+    village'
+  offset: {x: 0, y: 0, z: 0}
+  textSize: 2.5
+  color: {r: 1, g: 0, b: 0, a: 1}
+  outline: 1
+  bold: 1
+  renderQueue: 4000
 --- !u!1 &908822013
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,6 +726,7 @@ GameObject:
   - component: {fileID: 1129165491}
   - component: {fileID: 1129165490}
   - component: {fileID: 1129165492}
+  - component: {fileID: 1129165493}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -803,6 +827,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0000002, y: 1.0000005, z: 1.0000002}
   m_Center: {x: 0.00000047683716, y: -0.0000014305115, z: 0}
+--- !u!114 &1129165493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129165486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6580ec012ace6479c51b3b142e3b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Places.PlaceSign
+  text: 'Chirch
+
+    side'
+  offset: {x: 2, y: 0, z: 0}
+  textSize: 2.5
+  color: {r: 1, g: 0, b: 0, a: 1}
+  outline: 1
+  bold: 1
+  renderQueue: 4000
 --- !u!1 &1378366401
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,6 +860,7 @@ GameObject:
   - component: {fileID: 1378366406}
   - component: {fileID: 1378366405}
   - component: {fileID: 1378366407}
+  - component: {fileID: 1378366408}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -915,6 +961,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0000002, y: 1.0000019, z: 1.0000002}
   m_Center: {x: 0.000000059604645, y: -0.0000009536743, z: 3.5527137e-15}
+--- !u!114 &1378366408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378366401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6580ec012ace6479c51b3b142e3b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Places.PlaceSign
+  text: 'Out of
+
+    village'
+  offset: {x: 0, y: 0, z: 0}
+  textSize: 2.5
+  color: {r: 1, g: 0.020754695, b: 0.020754695, a: 1}
+  outline: 1
+  bold: 1
+  renderQueue: 4000
 --- !u!1 &1853589948
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,6 +1022,7 @@ MonoBehaviour:
   startLod: 0
   detailLevel: 100
   maxViewDistance: 0
+  forceChunkOnPc: 1
   renderEnvironment: 1
   disposeOnDestroy: 1
 --- !u!4 &1853589950

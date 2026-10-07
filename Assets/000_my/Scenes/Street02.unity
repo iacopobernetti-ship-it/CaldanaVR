@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 176312300}
   - component: {fileID: 176312299}
   - component: {fileID: 176312298}
+  - component: {fileID: 176312301}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -231,6 +232,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176312296}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &176312301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176312296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6580ec012ace6479c51b3b142e3b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Places.PlaceSign
+  text: 'Via
+
+    Solferino'
+  offset: {x: 0, y: 0, z: 0}
+  textSize: 2.5
+  color: {r: 1, g: 0.020754695, b: 0.020754695, a: 1}
+  outline: 1
+  bold: 1
+  renderQueue: 4000
 --- !u!1 &243625396
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,6 +265,7 @@ GameObject:
   - component: {fileID: 243625400}
   - component: {fileID: 243625399}
   - component: {fileID: 243625398}
+  - component: {fileID: 243625401}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -343,6 +366,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 243625396}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &243625401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243625396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6580ec012ace6479c51b3b142e3b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Places.PlaceSign
+  text: Out of village
+  offset: {x: 0, y: 0, z: 0}
+  textSize: 2.5
+  color: {r: 1, g: 0.020754695, b: 0.020754695, a: 1}
+  outline: 1
+  bold: 1
+  renderQueue: 4000
 --- !u!1 &369250364
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +604,7 @@ GameObject:
   - component: {fileID: 651776773}
   - component: {fileID: 651776772}
   - component: {fileID: 651776771}
+  - component: {fileID: 651776774}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -662,6 +705,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651776769}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &651776774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651776769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6580ec012ace6479c51b3b142e3b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Places.PlaceSign
+  text: 'Piazza
+
+    Signori'
+  offset: {x: 0, y: 0, z: 0}
+  textSize: 2.5
+  color: {r: 1, g: 0.020754695, b: 0.020754695, a: 1}
+  outline: 1
+  bold: 1
+  renderQueue: 4000
 --- !u!1001 &686841710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -896,6 +960,7 @@ GameObject:
   - component: {fileID: 1642888132}
   - component: {fileID: 1642888131}
   - component: {fileID: 1642888130}
+  - component: {fileID: 1642888133}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -996,6 +1061,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642888128}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1642888133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642888128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b6580ec012ace6479c51b3b142e3b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Places.PlaceSign
+  text: 'Via
+
+    Montanara'
+  offset: {x: 0, y: 1, z: 0}
+  textSize: 2.5
+  color: {r: 1, g: 0.020754695, b: 0.020754695, a: 1}
+  outline: 1
+  bold: 1
+  renderQueue: 4000
 --- !u!1 &1853589948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,6 +1122,7 @@ MonoBehaviour:
   startLod: 0
   detailLevel: 100
   maxViewDistance: 0
+  forceChunkOnPc: 1
   renderEnvironment: 0
   disposeOnDestroy: 1
 --- !u!4 &1853589950

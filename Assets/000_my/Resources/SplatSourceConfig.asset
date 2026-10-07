@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: SplatSourceConfig
   m_EditorClassIdentifier: Assembly-CSharp::Artemis.Vr.SplatSourceConfig
   source: 1
-  editorSource: 2
+  editorSource: 0
