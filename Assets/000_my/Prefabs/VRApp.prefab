@@ -297,7 +297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Artemis.Vr.AdaptiveFar
   targetMs: 30
   minFar: 30
-  maxFar: 1500
+  maxFar: 15000
   startFar: 40
   windowSeconds: 0.25
   downFactor: 0.8

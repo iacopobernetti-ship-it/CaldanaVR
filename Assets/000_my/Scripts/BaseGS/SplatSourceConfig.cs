@@ -37,8 +37,9 @@ namespace Artemis.Vr
                  "StreamingAssets = solo Editor/PC.")]
         public LCCRendererVR.SplatSource source = LCCRendererVR.SplatSource.HttpUrl;
 
-        [Tooltip("Sorgente usata in EDITOR (Play Mode). StreamingAssets = legge direttamente dalla " +
-                 "cartella del progetto, senza installazione. HttpUrl = come prima, dalla rete.")]
+        [Tooltip("Sorgente usata in EDITOR e nella BUILD PER PC. StreamingAssets = legge " +
+                 "direttamente dalla cartella dei dati (in Editor quella del progetto, nella build " +
+                 "per PC quella accanto all'eseguibile), senza installazione. HttpUrl = dalla rete.")]
         public LCCRendererVR.SplatSource editorSource = LCCRendererVR.SplatSource.StreamingAssets;
 
         private static SplatSourceConfig cached;
@@ -59,7 +60,7 @@ namespace Artemis.Vr
                           "proprio campo Source.");
             else
                 Debug.Log($"[SplatSourceConfig] sorgente di progetto: {Effective(cached)} " +
-                          $"({(Application.isEditor ? "Editor" : "build")}).");
+                          $"({(Application.isMobilePlatform ? "visore" : Application.isEditor ? "Editor" : "PC")}).");
             return cached;
         }
 
@@ -70,10 +71,13 @@ namespace Artemis.Vr
             return c != null ? Effective(c) : fallback;
         }
 
-        /// In Editor vale editorSource, in build source. Application.isEditor e non #if
-        /// UNITY_EDITOR, di proposito: e' la stessa cosa a runtime, ma il codice resta uno solo e
-        /// non si rischia che una delle due strade smetta di compilare senza che ce ne si accorga.
+        /// Sul visore (piattaforma mobile) vale source; in Editor e nella build per PC vale
+        /// editorSource. Il criterio e' "mobile o no" e non "Editor o no": nella build per PC,
+        /// come in Editor, StreamingAssets e' una cartella vera accanto all'eseguibile, e copiare
+        /// i dati al primo avvio come sul Quest sarebbe solo un'attesa in piu' per chi la prova.
+        /// Controllo a runtime e non #if: il codice resta uno solo, e nessuna delle strade puo'
+        /// smettere di compilare senza che ce ne si accorga.
         private static LCCRendererVR.SplatSource Effective(SplatSourceConfig c) =>
-            Application.isEditor ? c.editorSource : c.source;
+            Application.isMobilePlatform ? c.source : c.editorSource;
     }
 }

@@ -1,4 +1,4 @@
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_STANDALONE
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -28,14 +28,14 @@ namespace Artemis.EditorTools
     /// il progetto ha "Active Input Handling = Input System Package", quindi ogni chiamata a
     /// UnityEngine.Input lancia un'eccezione a ogni frame.
     ///
-    /// PERCHE' E' INDISPENSABILE IN UN'APP CON GAUSSIAN SPLATTING, e non un comodo accessorio:
-    /// in Play Mode l'SDK LCC forza PlatformType.PC, e in visore via Link si vede in DIPLOPIA.
-    /// Gli splat si collaudano quindi solo in build standalone, ed e' per questo che
-    /// LCCRendererVR ha skipInEditor acceso: in Editor lo splat non si carica affatto. Senza un
-    /// puntatore a mouse, l'unico modo di provare cambio scena, HUD, posa del player e
+    /// Senza un puntatore a mouse, l'unico modo di provare cambio scena, HUD, posa del player e
     /// interazioni sarebbe fare un build e indossare il visore a ogni modifica.
     ///
-    /// Racchiuso in #if UNITY_EDITOR: non finisce mai in una build per il visore.
+    /// Vale in Editor e nella BUILD PER PC (Windows, senza visore): e' la versione per chi
+    /// rivede il progetto da una scrivania. Racchiuso in #if UNITY_EDITOR || UNITY_STANDALONE:
+    /// la build Android per il Quest non lo contiene. Nella build per PC Esc chiude l'app, perche'
+    /// a schermo intero non c'e' altro modo evidente di uscire. Se un visore e' collegato (Link),
+    /// si spegne da solo e l'app si usa in VR.
     /// Da mettere su un oggetto sempre presente (lo stesso del flusso delle scene).
     /// </summary>
     public class EditorMousePointer : MonoBehaviour
@@ -67,7 +67,7 @@ namespace Artemis.EditorTools
         ///     void OnEnable()  { EditorMousePointer.OnWorldTrigger += Act; }
         ///     void OnDisable() { EditorMousePointer.OnWorldTrigger -= Act; }
         ///     void Act(Ray ray) { ... }
-        /// Racchiuderlo in #if UNITY_EDITOR, come questo componente.
+        /// Racchiuderlo in #if UNITY_EDITOR || UNITY_STANDALONE, come questo componente.
         /// </summary>
         public static System.Action<Ray> OnWorldTrigger;
 
@@ -89,6 +89,12 @@ namespace Artemis.EditorTools
 
         private void Update()
         {
+#if !UNITY_EDITOR
+            // Solo nella build per PC: Esc chiude. In Editor Esc serve a Unity, e li' si esce col
+            // pulsante di Play.
+            var keys = Keyboard.current;
+            if (keys != null && keys.escapeKey.wasPressedThisFrame) { Application.Quit(); return; }
+#endif
             if (!active) return;
             if (!EnsureRefs()) return;
 
@@ -282,8 +288,13 @@ namespace Artemis.EditorTools
             GUI.DrawTexture(new Rect(p.x - 5, Screen.height - p.y - 1, 11, 2), dot);
             GUI.DrawTexture(new Rect(p.x - 1, Screen.height - p.y - 5, 2, 11), dot);
 
-            GUI.Label(new Rect(10, 10, 720, 20),
-                "MOUSE: sinistro = pulsante HUD / grilletto · destro tenuto = guarda · WASD = cammina (con collisioni) · QE = vola su-giu' · Shift = veloce");
+            // In inglese: nella build per PC la leggono i revisori del progetto.
+            GUI.Label(new Rect(10, 10, 820, 20),
+                "MOUSE: left = HUD button · hold right = look around · WASD = walk · Q/E = fly down/up · Shift = faster"
+#if !UNITY_EDITOR
+                + " · Esc = quit"
+#endif
+                );
         }
     }
 }

@@ -455,8 +455,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Artemis.Places.PlaceSign
   text: 'Via
 
-    Montanara'
-  offset: {x: 0, y: 2, z: 1}
+    Curtatone'
+  offset: {x: 0, y: 2, z: 2}
   textSize: 2.5
   color: {r: 1, g: 1, b: 1, a: 1}
   outline: 1

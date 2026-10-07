@@ -124,13 +124,30 @@ public class LCCRendererVR : MonoBehaviour
 
     void Start()
     {
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_STANDALONE
+        // In Editor E NELLA BUILD PER PC l'SDK vuole PlatformType.PC: prima era solo
+        // UNITY_EDITOR, e qualunque build diceva "Quest" — giusto per il visore, sbagliato per la
+        // versione da scrivania, dove l'SDK prenderebbe la strada mobile su una scheda video da PC.
         // In Editor l'SDK vuole PlatformType.PC. Il vecchio interruttore 'skipInEditor', che
         // impediva del tutto il caricamento per evitare la diplopia da Play Mode via Link, e'
         // stato RIMOSSO: la diplopia non si presenta piu' con la preview attuale, e quel flag era
         // un valore serializzato in quattro scene — quattro posti in cui poteva restare indietro
         // senza che nulla lo segnalasse, se non uno splat che non compare.
         m_manager.SetPlatformType(PlatformType.PC);
+
+        // Su PC, con dati LOCALI, l'SDK sceglie da solo fra due percorsi: "Full Load" (tutto il
+        // dato in un buffer suo) se il livello piu' fine ha meno splat della soglia, altrimenti
+        // "Chunk" (a blocchi, come in streaming). Con HTTP usa SEMPRE Chunk (manuale,
+        // SwitchRenderPass). E' l'unica differenza fra le due sorgenti: stessi file (env.sog
+        // compreso), stessi log, stessa camera — eppure l'ambiente compariva solo via HTTP.
+        // Abbassando la soglia al minimo ammesso (100 = 1 milione) il dato locale prende la
+        // stessa strada di quello remoto. Solo PC/Mac: altrove l'SDK rifiuta la chiamata.
+        if (forceChunkOnPc)
+        {
+            m_manager.SetFullRenderSplat(100);
+            Debug.Log($"[LCCRendererVR] '{gameObject.scene.name}': soglia Full Load al minimo " +
+                      "(percorso Chunk, come per HTTP).");
+        }
 #else
         m_manager.SetPlatformType(PlatformType.Quest);
 #endif
@@ -258,6 +275,13 @@ public class LCCRendererVR : MonoBehaviour
              "Far altissimo, quando ci si gira verso un corridoio, costerebbe secondi di scatti " +
              "prima che la regolazione lo riporti giu'. In piazza alto, per vedere l'ambiente.")]
     [Min(0)] public float maxViewDistance = 0f;
+
+    [Header("Percorso di rendering su PC")]
+    [Tooltip("Solo Editor e build per PC: forza il percorso a blocchi (Chunk) anche con dati " +
+             "locali, come avviene sempre con HTTP. Con il percorso Full Load, scelto dall'SDK per " +
+             "i dati locali piu' piccoli, l'ambiente (env.sog) non compariva. Sul visore non ha " +
+             "effetto: li' l'SDK usa sempre il suo percorso mobile.")]
+    public bool forceChunkOnPc = true;
 
     [Header("Ambiente")]
     [Tooltip("Disegna l'AMBIENTE del rilievo: la nuvola a bassa precisione che riempie lo sfondo " +
