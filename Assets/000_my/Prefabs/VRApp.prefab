@@ -140,6 +140,8 @@ GameObject:
   - component: {fileID: 3877173930019228484}
   - component: {fileID: 6943779725977637009}
   - component: {fileID: 7225050667113533248}
+  - component: {fileID: 6920043532355324649}
+  - component: {fileID: 7731930922118203476}
   m_Layer: 0
   m_Name: App
   m_TagString: Untagged
@@ -194,12 +196,15 @@ MonoBehaviour:
   - Session
   - Places
   - Climate
+  - Thermal
+  - Colors
   - Tuning
   panelSize: {x: 500, y: 500}
   showDiagnostics: 1
   diagnosticsHeight: 116
   alwaysOnTop: 0
   uiRenderQueue: 4000
+  depthBlockMaterial: {fileID: 2100000, guid: c9b342f0df9ef284cb4566596fbedc16, type: 2}
   panelColor: {r: 0.09, g: 0.1, b: 0.12, a: 0.94}
   panelBorder: {r: 0.55, g: 0.58, b: 0.62, a: 1}
   buttonColor: {r: 0.3, g: 0.33, b: 0.38, a: 1}
@@ -297,7 +302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Artemis.Vr.AdaptiveFar
   targetMs: 30
   minFar: 30
-  maxFar: 15000
+  maxFar: 30000
   startFar: 40
   windowSeconds: 0.25
   downFactor: 0.8
@@ -427,6 +432,37 @@ MonoBehaviour:
   sessionName: Caldana-Visita1
   maxPlayers: 10
   requireSession: 1
+--- !u!114 &6920043532355324649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516641996135779020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92acbc6d104f8440a513fbca76c6cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Thermal.ThermalPanel
+  tabTitle: Thermal
+  hourChoices: 080000000a0000000c0000000e0000001000000012000000
+  opacityStep: 0.1
+--- !u!114 &7731930922118203476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516641996135779020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 185aad07bce2db84a80cc391a913e1e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Thermal.ThermalColorPanel
+  tabTitle: Colors
+  rangeStep: 1
+  minSpan: 2
+  legendSteps: 32
 --- !u!1 &8608689713742692481
 GameObject:
   m_ObjectHideFlags: 0

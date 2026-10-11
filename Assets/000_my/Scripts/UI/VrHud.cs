@@ -117,6 +117,15 @@ namespace Artemis.Vr
         [Tooltip("Coda di rendering per la UI. 4000 = Overlay, l'ultima delle code standard.")]
         [SerializeField] private int uiRenderQueue = 4000;
 
+        [Tooltip("Materiale che scrive SOLO profondita' (M_Occluder). Dietro il pannello si mette " +
+                 "un rettangolo invisibile con questo materiale: tutto cio' che si disegna dopo con " +
+                 "il test di profondita' (la sovrapposizione termica) resta dietro la HUD. La coda " +
+                 "di rendering non bastava: misurato, i colori finivano sopra la HUD sia con la HUD " +
+                 "a 4500 sia con la sovrapposizione a 3900. Vuoto = nessun blocco. ATTENZIONE: vale " +
+                 "finche' la HUD sta piu' vicina della distanza minima della sovrapposizione " +
+                 "(Min Distance di ThermalOverlay, 1 m; la HUD sta a 0.7 m).")]
+        [SerializeField] private Material depthBlockMaterial;
+
         [Header("Stile")]
         [SerializeField] private Color panelColor     = new Color(0.09f, 0.10f, 0.12f, 0.94f);
         [SerializeField] private Color panelBorder    = new Color(0.55f, 0.58f, 0.62f, 1f);
@@ -132,6 +141,14 @@ namespace Artemis.Vr
         /// <summary>Le sonde che scrivono nella fascia in basso lo leggono per sapere se mostrarsi:
         /// un interruttore solo per tutta la diagnostica, invece di uno per sonda.</summary>
         public bool ShowDiagnostics => showDiagnostics;
+
+        /// <summary>
+        /// Una nota breve che qualunque componente puo' far comparire nella striscia diagnostica,
+        /// in coda alla seconda riga. STATICA: sopravvive al cambio scena, cosi' un esito
+        /// misurato in Base (il riscaldamento degli splat) si legge ancora in piazza. In visore
+        /// il log non si legge: e' qui che le misure devono arrivare.
+        /// </summary>
+        public static string Note { get; set; } = "";
 
         public static VrHud Instance { get; private set; }
 
@@ -254,6 +271,7 @@ namespace Artemis.Vr
             uiTopMaterial = new Material(sh) { name = "VrHud_AlwaysOnTop" };
             uiTopMaterial.SetInt(GuiZTestId, (int)UnityEngine.Rendering.CompareFunction.Always);
             uiTopMaterial.renderQueue = uiRenderQueue;
+
         }
 
         /// L'EVENT CAMERA del canvas world-space: e' la camera con cui il raycaster UI
@@ -326,7 +344,7 @@ namespace Artemis.Vr
             diagnostics.text =
                 $"scene {SceneManager.GetActiveScene().name} · ES {esCount} · module {(hasModule ? "ok" : "MISSING")} · " +
                 $"cam {(cam == null ? "NULL" : cam.name)} · eventCam {eventCam} · layer {layer}\n" +
-                $"tabs [{names}]";
+                $"tabs [{names}]" + (string.IsNullOrEmpty(Note) ? "" : $" · {Note}");
             diagnostics.color = (esCount == 1 && hasModule)
                 ? new Color(0.6f, 1f, 0.6f, 0.9f)      // verde: configurazione sana
                 : new Color(1f, 0.55f, 0.45f, 0.95f);  // rosso: ecco perche' non risponde
@@ -819,6 +837,7 @@ namespace Artemis.Vr
             bgImg.color = panelColor;
             bgImg.raycastTarget = true;             // sfondo per i raggi: niente click-through
             AddBorder(bg, panelBorder);
+            BuildDepthBlock(go.transform);
 
 
             var barGo = new GameObject("TabBar", typeof(RectTransform), typeof(HorizontalLayoutGroup));
@@ -873,6 +892,30 @@ namespace Artemis.Vr
             float bottom = showDiagnostics ? diagnosticsHeight : 8f;
             if (commandBar != null) bottom = Mathf.Max(bottom, 114f);   // la barra comandi di SilvoVR
             pageArea.offsetMin = new Vector2(0, bottom);
+        }
+
+        /// <summary>
+        /// Rettangolo invisibile grande quanto il pannello, 2 mm dietro, che scrive solo
+        /// profondita'. E' disegnato con gli opachi (coda Geometry-100 del materiale), cioe' prima
+        /// di tutto il trasparente: non dipende dall'ordine in cui la canvas viene disegnata, che
+        /// e' proprio la cosa che la coda non riusciva a governare. Il collider del Quad si toglie:
+        /// fermerebbe i raggi dei controller e del teletrasporto.
+        /// </summary>
+        private void BuildDepthBlock(Transform canvasT)
+        {
+            if (depthBlockMaterial == null) return;
+            var quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
+            quad.name = "DepthBlock";
+            Destroy(quad.GetComponent<Collider>());
+            quad.layer = canvasT.gameObject.layer;
+            quad.transform.SetParent(canvasT, false);
+            quad.transform.localPosition = new Vector3(0f, 0f, 2f);        // 2 mm dietro il pannello
+            quad.transform.localRotation = Quaternion.identity;
+            quad.transform.localScale = new Vector3(panelSize.x, panelSize.y, 1f);
+            var mr = quad.GetComponent<MeshRenderer>();
+            mr.sharedMaterial = depthBlockMaterial;
+            mr.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+            mr.receiveShadows = false;
         }
 
         /// Bordo via Outline: 2 px bastano a staccare un rettangolo dall'altro — senza,

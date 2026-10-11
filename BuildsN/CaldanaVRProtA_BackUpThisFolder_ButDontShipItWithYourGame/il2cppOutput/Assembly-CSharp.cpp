@@ -479,8 +479,8 @@ IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B35
 IL2CPP_EXTERN_C RuntimeClass* WindowResult_t33C7650393803919211113A36F838A934B3DA1B6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WordSelectionEvent_t340E6006406B5E90F7190C56218E8F7E3712945E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____21DC112F6E9C5631B6E1F6BDA11A9623280F09C9542832A8EA59FC64DF051E3A_FieldInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9BA716025DDFF0736BCBEA0E02F48913198A6A6FC48A48B181011CE5A5C97600_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____7FC268896AC21275C89090CABEB93F455179B3E9A5C9D1199783FEA6ABB809E6_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____E50AB1CC44C69C7A5C0297541F5D6DDE18157FF322607C4D2CB81FC9B1A4C9ED_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral000A577FA6F1044FCB37680E918D59D0DA3E7DDA;
 IL2CPP_EXTERN_C String_t* _stringLiteral00A1569399CD60C7C1430AE936F23D7475E8059C;
 IL2CPP_EXTERN_C String_t* _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD;
@@ -3853,6 +3853,7 @@ struct LCCRendererVR_tF306F2459D4EDB9740D6952C6714948188446C4C  : public MonoBeh
 	Renderer_t30AC19F689466F6DEB32A838786ED48C89D16D62* ___m_renderer;
 	bool ___U3CLoadedU3Ek__BackingField;
 	float ___maxViewDistance;
+	bool ___forceChunkOnPc;
 	bool ___renderEnvironment;
 	bool ___disposeOnDestroy;
 };
@@ -6292,15 +6293,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LCCRendererVR_Start_m5C6089387AB992CCB53
 	}
 	String_t* V_0 = NULL;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:135>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:152>
 		LCCManager_tD549E169929E85EC7BD33E154B284DE15BF91F5F* L_0 = __this->___m_manager;
 		NullCheck(L_0);
 		LCCManager_SetPlatformType_m1216B71721CBAAD3FE241C46821FFE8BE030BEFB(L_0, 5, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:137>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:154>
 		String_t* L_1;
 		L_1 = LCCRendererVR_ResolvePath_m1D29987A93E2A98F052EFCC3CA9E059D93ABB307(__this, NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:138>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:155>
 		String_t* L_2 = V_0;
 		bool L_3;
 		L_3 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_2, NULL);
@@ -6310,15 +6311,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LCCRendererVR_Start_m5C6089387AB992CCB53
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:138>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:155>
 		return;
 	}
 
 IL_001c:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:140>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:157>
 		LCCRendererVR_ApplySplatBudget_m3A11D44DA918EA45966BC3FE9BC57900FDBE0CE5(__this, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:141>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:158>
 		LCCManager_tD549E169929E85EC7BD33E154B284DE15BF91F5F* L_4 = __this->___m_manager;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
 		L_5 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
@@ -6330,7 +6331,7 @@ IL_001c:
 		L_7 = LCCManager_GetRender_m113B64FB40D51CDFA3AB3B3E4F2BBA4549D07731(L_4, L_6, NULL);
 		__this->___m_renderer = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_renderer), (void*)L_7);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:142>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:159>
 		Renderer_t30AC19F689466F6DEB32A838786ED48C89D16D62* L_8 = __this->___m_renderer;
 		String_t* L_9 = V_0;
 		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* L_10 = (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*)il2cpp_codegen_object_new(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A_il2cpp_TypeInfo_var);
@@ -6339,7 +6340,7 @@ IL_001c:
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_11, __this, (intptr_t)((void*)LCCRendererVR_onLoaded_mC540DD7AE50CB5E9E31889B8ED20296B8E287285_RuntimeMethod_var), NULL);
 		NullCheck(L_8);
 		Renderer_Load_m05C9E84A4F53C9CDECFEDDBD5E73BA4061811C35(L_8, L_9, L_10, L_11, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:143>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:160>
 		return;
 	}
 }
@@ -6369,7 +6370,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LCCRendererVR_ResolvePath_m1D29987A
 	String_t* V_2 = NULL;
 	String_t* V_3 = NULL;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:152>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:169>
 		int32_t L_0;
 		L_0 = LCCRendererVR_get_EffectiveSource_mEAF0EDACBD32D9644D403C279E17A3CFF0C6DF1B(__this, NULL);
 		V_0 = L_0;
@@ -6396,7 +6397,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LCCRendererVR_ResolvePath_m1D29987A
 
 IL_001e:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:155>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:172>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_2);
@@ -6410,21 +6411,21 @@ IL_001e:
 		L_6 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteral6E4446A65F5DF6347FC30B5FA907DD87826E9F97, L_4, _stringLiteralC9527829E58E0AEC83957C11B611DE263F8A6802, L_5, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_6, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:156>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:173>
 		String_t* L_7 = __this->___m_FilePath;
 		return L_7;
 	}
 
 IL_0052:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:160>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:177>
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		String_t* L_8;
 		L_8 = Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399(NULL);
 		String_t* L_9;
 		L_9 = LCCRendererVR_LocalPath_mFCECE9832C4512414F1858DF5A3258374D6BF6DA(__this, L_8, NULL);
 		V_2 = L_9;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:161>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:178>
 		String_t* L_10 = V_2;
 		bool L_11;
 		L_11 = File_Exists_m95E329ABBE3EAD6750FE1989BBA6884457136D4A(L_10, NULL);
@@ -6434,10 +6435,10 @@ IL_0052:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:163>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:164>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:165>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:166>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:180>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:181>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:182>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:183>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_12 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_13 = L_12;
 		NullCheck(L_13);
@@ -6467,13 +6468,13 @@ IL_0052:
 		L_22 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_21, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_22, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:167>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:184>
 		return (String_t*)NULL;
 	}
 
 IL_00aa:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:169>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:186>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23;
 		L_23 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_23);
@@ -6487,15 +6488,15 @@ IL_00aa:
 		L_27 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteral6E4446A65F5DF6347FC30B5FA907DD87826E9F97, L_25, _stringLiteralC29FB160F9FAF67B98B2EE4886BDA90A6E90F31F, L_26, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_27, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:170>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:187>
 		String_t* L_28 = V_2;
 		return L_28;
 	}
 
 IL_00d4:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:181>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:182>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:198>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:199>
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		int32_t L_29;
 		L_29 = Application_get_platform_m59EF7D6155D18891B24767F83F388160B1FF2138(NULL);
@@ -6519,26 +6520,26 @@ IL_00d4:
 
 IL_00ee:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:184>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:185>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:186>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:187>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:201>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:202>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:203>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:204>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteral9E8C5A93C1570E59E1C9A701A62C8418CF8B689C, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:188>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:205>
 		return (String_t*)NULL;
 	}
 
 IL_00fa:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:190>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:207>
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		String_t* L_32;
 		L_32 = Application_get_streamingAssetsPath_mB904BCD9A7A4F18A52C175DE4A81F5DC3010CDB5(NULL);
 		String_t* L_33;
 		L_33 = LCCRendererVR_LocalPath_mFCECE9832C4512414F1858DF5A3258374D6BF6DA(__this, L_32, NULL);
 		V_3 = L_33;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:191>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:208>
 		String_t* L_34 = V_3;
 		bool L_35;
 		L_35 = File_Exists_m95E329ABBE3EAD6750FE1989BBA6884457136D4A(L_34, NULL);
@@ -6548,19 +6549,19 @@ IL_00fa:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:193>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:210>
 		String_t* L_36 = V_3;
 		String_t* L_37;
 		L_37 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral615ECD373EDA439D03A80BC685D03DB10BAC14DF, L_36, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_37, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:194>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:211>
 		return (String_t*)NULL;
 	}
 
 IL_0120:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:196>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:213>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_38;
 		L_38 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_38);
@@ -6574,14 +6575,14 @@ IL_0120:
 		L_42 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteral6E4446A65F5DF6347FC30B5FA907DD87826E9F97, L_40, _stringLiteralB122500D8D59E7DDDEDFFEFC117D66386F5C0823, L_41, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_42, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:197>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:214>
 		String_t* L_43 = V_3;
 		return L_43;
 	}
 
 IL_014a:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:200>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:217>
 		return (String_t*)NULL;
 	}
 }
@@ -6595,7 +6596,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LCCRendererVR_LocalPath_mFCECE9832C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:220>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:237>
 		String_t* L_0 = ___0_root;
 		String_t* L_1 = __this->___localRelativePath;
 		il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
@@ -6625,7 +6626,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LCCRendererVR_ApplySplatBudget_m3A11D44D
 	Scene_tA1DC762B79745EB5140F054C884855B922318356 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:230>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:247>
 		int32_t L_0 = __this->___maxBufferSplat10k;
 		if ((((int32_t)L_0) <= ((int32_t)0)))
 		{
@@ -6633,13 +6634,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LCCRendererVR_ApplySplatBudget_m3A11D44D
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:232>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:249>
 		LCCManager_tD549E169929E85EC7BD33E154B284DE15BF91F5F* L_1 = __this->___m_manager;
 		int32_t L_2 = __this->___maxBufferSplat10k;
 		NullCheck(L_1);
 		LCCManager_SetMaxBufferSplat_m5833EB0313401E0712902EBEAA85F183C04E4508(L_1, L_2, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:233>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:234>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:250>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:251>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
 		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_3);
@@ -6667,8 +6668,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LCCRendererVR_ApplySplatBudget_m3A11D44D
 
 IL_0069:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:238>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:239>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:255>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:256>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15;
 		L_15 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_15);
@@ -6685,7 +6686,7 @@ IL_0069:
 
 IL_0090:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:242>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:259>
 		int32_t L_19 = __this->___maxRenderSplats10k;
 		if ((((int32_t)L_19) <= ((int32_t)0)))
 		{
@@ -6693,13 +6694,13 @@ IL_0090:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:244>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:261>
 		LCCManager_tD549E169929E85EC7BD33E154B284DE15BF91F5F* L_20 = __this->___m_manager;
 		int32_t L_21 = __this->___maxRenderSplats10k;
 		NullCheck(L_20);
 		LCCManager_SetMaxRenderSplats_mDCBBD4A9EB9BF4BB463D35A0B592AA62733D2DA6(L_20, L_21, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:245>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:246>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:262>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:263>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22;
 		L_22 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_22);
@@ -6727,8 +6728,8 @@ IL_0090:
 
 IL_00f8:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:250>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:251>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:267>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:268>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34;
 		L_34 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_34);
@@ -6741,7 +6742,7 @@ IL_00f8:
 		L_37 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral6E4446A65F5DF6347FC30B5FA907DD87826E9F97, L_36, _stringLiteralE313FC0DB20FCF111E1F6D0950D40EBFF3861B01, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_37, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:253>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:270>
 		return;
 	}
 }
@@ -6759,7 +6760,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LCCRendererVR_OnDestroy_m1857BF2D413ADA5
 	Scene_tA1DC762B79745EB5140F054C884855B922318356 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:290>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:314>
 		bool L_0 = __this->___disposeOnDestroy;
 		if (!L_0)
 		{
@@ -6776,21 +6777,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LCCRendererVR_OnDestroy_m1857BF2D413ADA5
 
 IL_0010:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:290>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:314>
 		return;
 	}
 
 IL_0011:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:292>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:316>
 		Renderer_t30AC19F689466F6DEB32A838786ED48C89D16D62* L_2 = __this->___m_renderer;
 		NullCheck(L_2);
 		Renderer_Dispose_m2D8DF6D2BC3C520627D314F3D4399C974C516423(L_2, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:293>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:317>
 		__this->___m_renderer = (Renderer_t30AC19F689466F6DEB32A838786ED48C89D16D62*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_renderer), (void*)(Renderer_t30AC19F689466F6DEB32A838786ED48C89D16D62*)NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:294>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:295>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:318>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:319>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
 		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_3);
@@ -6803,7 +6804,7 @@ IL_0011:
 		L_6 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral6E4446A65F5DF6347FC30B5FA907DD87826E9F97, L_5, _stringLiteral44EA42BCA2AFB999698379BD3DEDB11A577A15E8, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_6, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:296>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:320>
 		return;
 	}
 }
@@ -6818,14 +6819,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LCCRendererVR_onProgress_mC92094D0DF5200
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:300>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:324>
 		String_t* L_0;
 		L_0 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972((&___0_v), NULL);
 		String_t* L_1;
 		L_1 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral79EECAF58767943DFA672C8DB413DD92A675140F, L_0, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_1, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:301>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:325>
 		return;
 	}
 }
@@ -6877,13 +6878,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LCCRendererVR_onLoaded_mC540DD7AE50CB5E9
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B10_2 = NULL;
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B10_3 = NULL;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:307>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:331>
 		LCCManager_tD549E169929E85EC7BD33E154B284DE15BF91F5F* L_0 = __this->___m_manager;
 		int32_t L_1 = __this->___startLod;
 		NullCheck(L_0);
 		LCCManager_SetStartLod_m5C5F7A295AB0013085510B5C8B0F4063A256FEB4(L_0, L_1, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:308>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:309>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:332>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:333>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_2);
@@ -6946,7 +6947,7 @@ IL_0062:
 		L_11 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(G_B5_2, G_B5_1, G_B5_0, _stringLiteral23C02924FA8C5A15B58E9DDD13C84007E2431466, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_11, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:311>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:335>
 		int32_t L_12 = __this->___detailLevel;
 		if ((((int32_t)L_12) <= ((int32_t)0)))
 		{
@@ -6954,12 +6955,12 @@ IL_0062:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:313>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:337>
 		LCCManager_tD549E169929E85EC7BD33E154B284DE15BF91F5F* L_13 = __this->___m_manager;
 		int32_t L_14 = __this->___detailLevel;
 		NullCheck(L_13);
 		LCCManager_SetDetailLevel_m82BB545B5953E3408A2DB09E785891640F67590A(L_13, ((float)L_14), NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:314>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:338>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15;
 		L_15 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		NullCheck(L_15);
@@ -6979,12 +6980,12 @@ IL_0062:
 
 IL_00b9:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:321>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:345>
 		Renderer_t30AC19F689466F6DEB32A838786ED48C89D16D62* L_22 = __this->___m_renderer;
 		bool L_23 = __this->___renderEnvironment;
 		NullCheck(L_22);
 		Renderer_SetEnvironment_m511429D55FF6D57C65444E4DC806F93343B6BBDC(L_22, L_23, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:322>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:346>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_24 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_25 = L_24;
 		NullCheck(L_25);
@@ -7043,7 +7044,7 @@ IL_010c:
 		L_34 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_33, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_34, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:324>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:348>
 		bool L_35 = __this->___splatDepthWrite;
 		if (!L_35)
 		{
@@ -7051,24 +7052,24 @@ IL_010c:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:326>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:350>
 		LCCManager_tD549E169929E85EC7BD33E154B284DE15BF91F5F* L_36 = __this->___m_manager;
 		NullCheck(L_36);
 		LCCManager_SetZDepth_m23C77694B14A1FEBC24B5D24AA5A764F6C6367CF(L_36, (bool)1, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:327>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:328>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:351>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:352>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral17E3DDDDE934F0F6CDD92E7CCBD7B80468116AE8, NULL);
 	}
 
 IL_013d:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:331>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:355>
 		LCCRendererVR_set_Loaded_m9841A7CFC8358E2DD450294FFB47B1119FCEDB1A_inline(__this, (bool)1, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:332>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:356>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral80A3300593FA05A3B7881BC503D129D8C4D2F876, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:333>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:357>
 		return;
 	}
 }
@@ -7091,9 +7092,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LCCRendererVR__ctor_mE8128C1CC412214E289
 		__this->___splatDepthWrite = (bool)1;
 		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:106>
 		__this->___startLod = 2;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:267>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:284>
+		__this->___forceChunkOnPc = (bool)1;
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:291>
 		__this->___renderEnvironment = (bool)1;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:276>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/BaseGS/LCCRendererVR.cs:300>
 		__this->___disposeOnDestroy = (bool)1;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -14602,28 +14605,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____21DC112F6E9C5631B6E1F6BDA11A9623280F09C9542832A8EA59FC64DF051E3A_FieldInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9BA716025DDFF0736BCBEA0E02F48913198A6A6FC48A48B181011CE5A5C97600_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____7FC268896AC21275C89090CABEB93F455179B3E9A5C9D1199783FEA6ABB809E6_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____E50AB1CC44C69C7A5C0297541F5D6DDE18157FF322607C4D2CB81FC9B1A4C9ED_FieldInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E));
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)4544));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)4594));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9BA716025DDFF0736BCBEA0E02F48913198A6A6FC48A48B181011CE5A5C97600_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____7FC268896AC21275C89090CABEB93F455179B3E9A5C9D1199783FEA6ABB809E6_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		(&V_0)->___FilePathsData = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)2779));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)2808));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____21DC112F6E9C5631B6E1F6BDA11A9623280F09C9542832A8EA59FC64DF051E3A_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____E50AB1CC44C69C7A5C0297541F5D6DDE18157FF322607C4D2CB81FC9B1A4C9ED_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
 		(&V_0)->___TypesData = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
-		(&V_0)->___TotalFiles = ((int32_t)69);
-		(&V_0)->___TotalTypes = ((int32_t)87);
+		(&V_0)->___TotalFiles = ((int32_t)70);
+		(&V_0)->___TotalTypes = ((int32_t)88);
 		(&V_0)->___IsEditorOnly = (bool)0;
 		MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E L_6 = V_0;
 		return L_6;
