@@ -20,6 +20,9 @@ namespace Artemis.Thermal
     /// Le scelte sono STATICHE: sopravvivono al cambio di luogo, come quelle del clima.
     /// I risultati invece no: ogni luogo ha la sua mesh e il suo modello sul server.
     ///
+    /// L'ultima riga e' la lettura della sonda (ThermalProbe): sta qui perche' e' qui che si
+    /// lancia la simulazione, e il bello della sonda e' rileggere lo stesso punto dopo ogni Apply.
+    ///
     /// Da mettere sull'oggetto App del prefab VrApp.
     /// </summary>
     public class ThermalPanel : MonoBehaviour
@@ -28,7 +31,9 @@ namespace Artemis.Thermal
         [SerializeField] private int[] hourChoices = { 8, 10, 12, 14, 16, 18 };
         [SerializeField] private float opacityStep = 0.1f;
 
-        private const float RowHeight = 52f;
+        // Righe un po' piu' basse e spaziatura ridotta: con la riga della sonda la scheda
+        // resta alta quanto prima (352 px).
+        private const float RowHeight = 48f;
 
         private static bool[] selected;
         private static bool overlayOn = true;
@@ -36,7 +41,7 @@ namespace Artemis.Thermal
 
         private VrHud hud;
         private bool built;
-        private TMP_Text summary, status, overlayText;
+        private TMP_Text summary, status, overlayText, probe;
         private Image[] hourImages;
         private Button applyButton;
         private ThermalSurface surface;
@@ -84,6 +89,8 @@ namespace Artemis.Thermal
             }
 
             var page = hud.CreateTab(tabTitle);
+            var vlg = page.GetComponent<VerticalLayoutGroup>();
+            if (vlg != null) vlg.spacing = 6f;   // solo questa pagina
 
             summary = hud.MakeLabel(page, "", 17);
             SetHeight(summary, 44f);
@@ -114,6 +121,11 @@ namespace Artemis.Thermal
             status = hud.MakeLabel(page, "", 15);
             SetHeight(status, 40f);
             status.textWrappingMode = TextWrappingModes.Normal;
+
+            probe = hud.MakeLabel(page, "", 16);
+            SetHeight(probe, 40f);
+            probe.textWrappingMode = TextWrappingModes.Normal;
+            probe.color = new Color(1f, 0.92f, 0.55f, 1f);   // giallo chiaro: si distingue dallo stato
 
             ClimateContext.OnChanged += Refresh;
             built = true;
@@ -177,6 +189,8 @@ namespace Artemis.Thermal
 
             if (surface == null) status.text = "No surface model in this place.";
             else status.text = surface.Status;
+
+            probe.text = ThermalProbe.Reading;
         }
     }
 }

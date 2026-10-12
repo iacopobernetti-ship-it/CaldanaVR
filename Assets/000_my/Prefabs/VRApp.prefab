@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 7225050667113533248}
   - component: {fileID: 6920043532355324649}
   - component: {fileID: 7731930922118203476}
+  - component: {fileID: 797278470801631805}
   m_Layer: 0
   m_Name: App
   m_TagString: Untagged
@@ -463,6 +464,29 @@ MonoBehaviour:
   rangeStep: 1
   minSpan: 2
   legendSteps: 32
+--- !u!114 &797278470801631805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516641996135779020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a9e0ae8df470ff46818b481ae37711f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Thermal.ThermalProbe
+  aimSource: {fileID: 0}
+  aimSourceName: Right Controller
+  hand: 5
+  maxDistance: 200
+  markerMaterial: {fileID: 2100000, guid: ded1b185c29982b42a2c58c5204e6bd2, type: 2}
+  markerColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  angularSize: 0.015
+  push: 3
+  minDistance: 1
+  renderQueue: 4010
 --- !u!1 &8608689713742692481
 GameObject:
   m_ObjectHideFlags: 0
