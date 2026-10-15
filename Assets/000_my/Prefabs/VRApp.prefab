@@ -142,7 +142,8 @@ GameObject:
   - component: {fileID: 7225050667113533248}
   - component: {fileID: 6920043532355324649}
   - component: {fileID: 7731930922118203476}
-  - component: {fileID: 797278470801631805}
+  - component: {fileID: 6734145416300632409}
+  - component: {fileID: 5636933125544457123}
   m_Layer: 0
   m_Name: App
   m_TagString: Untagged
@@ -464,7 +465,33 @@ MonoBehaviour:
   rangeStep: 1
   minSpan: 2
   legendSteps: 32
---- !u!114 &797278470801631805
+--- !u!114 &6734145416300632409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516641996135779020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e843d64222f5ab248b30e0a11fc47d1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.EditorTools.RenderTuningProbe
+  tabTitle: Tuning
+  showTab: 1
+  scaleStep: 0.1
+  scaleMin: 0.5
+  scaleMax: 1
+  nearSteps:
+  - 0.01
+  - 0.05
+  - 0.1
+  - 0.2
+  - 0.3
+  lodMin: 0
+  lodMax: 5
+  budgetSteps: 0a000000140000001e000000280000003c0000005000000064000000
+--- !u!114 &5636933125544457123
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -480,7 +507,7 @@ MonoBehaviour:
   aimSourceName: Right Controller
   hand: 5
   maxDistance: 200
-  markerMaterial: {fileID: 2100000, guid: ded1b185c29982b42a2c58c5204e6bd2, type: 2}
+  markerMaterial: {fileID: 0}
   markerColor: {r: 1, g: 1, b: 1, a: 1}
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   angularSize: 0.015
@@ -674,6 +701,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3942656768774001737}
     m_Modifications:
+    - target: {fileID: 1319746311, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_ClearFlags
       value: 2
@@ -741,6 +772,10 @@ PrefabInstance:
     - target: {fileID: 2449787133337329425, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_RaycastMask.m_Bits
       value: 2147483745
+      objectReference: {fileID: 0}
+    - target: {fileID: 2449787133337329438, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
