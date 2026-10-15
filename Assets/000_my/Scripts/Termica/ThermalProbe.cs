@@ -103,6 +103,15 @@ namespace Artemis.Thermal
                 Clear();
             }
 
+            // La sonda vive solo con la scheda Thermal aperta: con un'altra scheda il grilletto o
+            // il clic servono ad altro (scegliere un luogo, sfogliare gli indici) e non devono
+            // spostare il segnaposto. Il segnaposto si nasconde e torna, nello stesso punto,
+            // riaprendo la scheda. Lo stato del grilletto si aggiorna comunque: chi apre la scheda
+            // tenendolo premuto non deve sparare un colpo.
+            bool open = ThermalPanel.IsOpen;
+            if (marker != null && marker.activeSelf != open) marker.SetActive(open);
+            if (!open) { triggerWasDown = TriggerDown(); return; }
+
 #if UNITY_EDITOR || UNITY_STANDALONE
             // MOUSE, letto QUI e non tramite EditorMousePointer. Prima il clic arrivava dal suo
             // evento OnWorldTrigger, ma quel componente si spegne da solo quando vede un visore
@@ -262,7 +271,13 @@ namespace Artemis.Thermal
         private string BuildReading()
         {
             if (surface == null) return "";
+            // Niente pulsanti "probe": il comando e' il grilletto, o il clic sinistro su PC. La
+            // riga lo dice, perche' e' l'unico posto in cui chi prova l'app puo' scoprirlo.
+#if UNITY_EDITOR || UNITY_STANDALONE
+            if (!hasMarker) return "Probe: left-click on a surface (or pull the trigger).";
+#else
             if (!hasMarker) return "Probe: aim at a surface and pull the trigger.";
+#endif
 
             if (cam == null) cam = Camera.main;
             float dist = cam != null ? Vector3.Distance(cam.transform.position, markerPoint) : 0f;

@@ -1,13 +1,12 @@
 using System;
-using Unity.Collections;
 using Unity.Netcode;
 using UnityEngine;
+using Artemis.Climate;
 
 namespace Artemis.Session
 {
     /// <summary>
-    /// L'unica verita' condivisa: chi ospita, e sotto quale scenario climatico si sta guardando il
-    /// borgo.
+    /// L'unica verita' condivisa: chi ospita, e le scelte climatiche della guida.
     ///
     /// Versione ridotta rispetto a quella di SilvoVR, che portava anche inventario forestale,
     /// proposte, martellata e turni di abbattimento: qui non c'e' nulla di tutto questo. Resta lo
@@ -20,9 +19,25 @@ namespace Artemis.Session
     /// per chiedere qualcosa. La regola "comanda uno solo" e' imposta dal trasporto, non dalla
     /// buona volonta' del codice.
     ///
+    /// CLIMA CONDIVISO. Viaggiano le SCELTE della guida, non i risultati: data, scenario e ore
+    /// (scheda Scenario) e i due "Apply" (indici e temperature) con un numero progressivo. I
+    /// parametri degli indici (tipo, profilo, finestra) restano di ciascun visore. Ogni visore
+    /// interroga i servizi da se' con gli stessi parametri e ottiene gli stessi numeri — come in
+    /// CaldanaMR. I risultati non potrebbero viaggiare comunque: le temperature sono decine di
+    /// migliaia di valori per faccia, e ogni luogo ha la sua mesh e il suo modello sul server.
+    /// Da qui viene anche il "riparte da sola nel nuovo luogo": arrivando in un luogo, ogni
+    /// visore esegue l'ultima simulazione termica della guida sulla mesh di QUEL luogo.
+    ///
+    /// La copia e' continua (Update), non a eventi: chi entra in ritardo riceve lo stato com'e'
+    /// e lo applica al primo fotogramma, senza un percorso di codice a parte. NGO trasmette una
+    /// NetworkVariable solo quando cambia, quindi la copia continua non costa banda.
+    ///
     /// COSA NON STA QUI, di proposito: il LUOGO corrente. Lo si potrebbe replicare, ma sarebbe una
     /// seconda verita' da tenere allineata alla prima — la scena caricata, che NGO sincronizza
     /// gia' da se' anche a chi si collega tardi. Il luogo si legge da `PlaceFlow.CurrentScene`.
+    /// E nemmeno cio' che e' di ciascuno: parametri degli indici, pagine dei risultati,
+    /// colorazione accesa/spenta, opacita', palette, scala, sonda termica, scheda Tuning restano
+    /// su ogni visore.
     ///
     /// Va su un prefab con NetworkObject, dichiarato nella Network Prefabs list e spawnato da
     /// SessionBootstrap.
@@ -40,25 +55,14 @@ namespace Artemis.Session
         public bool IAmHost => IsSpawned && NetworkManager != null &&
                                HostClientId.Value == NetworkManager.LocalClientId;
 
-        // ---- clima condiviso -------------------------------------------------------------------
+        // ---- clima condiviso (scrive solo la guida) ---------------------------------------------
 
-        /// <summary>
-        /// Scenario e periodo scelti da chi ospita. Viaggiano in rete per una ragione pratica: chi
-        /// partecipa NON deve interrogare il servizio climatico — dieci visori sullo stesso
-        /// endpoint sono dieci richieste identiche — ma deve vedere gli stessi numeri, altrimenti
-        /// due persone guardano la stessa parete e leggono temperature diverse.
-        /// </summary>
-        public readonly NetworkVariable<FixedString32Bytes> Scenario =
-            new NetworkVariable<FixedString32Bytes>("ssp245");
-        public readonly NetworkVariable<int> StartYear = new NetworkVariable<int>(2041);
-        public readonly NetworkVariable<int> EndYear = new NetworkVariable<int>(2060);
-
-        /// <summary>Giorno dell'anno e ora simulati, se l'app li espone come comando.</summary>
-        public readonly NetworkVariable<int> DayOfYear = new NetworkVariable<int>(196);
-        public readonly NetworkVariable<float> HourOfDay = new NetworkVariable<float>(14f);
-
-        /// <summary>Vero quando chi ospita ha gia' pubblicato una scelta vera.</summary>
-        public readonly NetworkVariable<bool> HasClimate = new NetworkVariable<bool>(false);
+        /// <summary>Scelte correnti della guida: i visitatori le vedono mentre le fa.</summary>
+        public readonly NetworkVariable<ClimateChoice> Choice = new NetworkVariable<ClimateChoice>();
+        /// <summary>Ultimo Apply della scheda Climate.</summary>
+        public readonly NetworkVariable<ClimateRequest> Indices = new NetworkVariable<ClimateRequest>();
+        /// <summary>Ultimo Apply della scheda Thermal.</summary>
+        public readonly NetworkVariable<ClimateRequest> Thermal = new NetworkVariable<ClimateRequest>();
 
         // ---- ciclo di vita -----------------------------------------------------------------------
 
@@ -72,22 +76,27 @@ namespace Artemis.Session
 
         public override void OnNetworkDespawn() { if (Instance == this) Instance = null; }
 
-        // ---- scritture di chi ospita --------------------------------------------------------------
-
-        public void SetClimate(string scenario, int startYear, int endYear)
+        private void Update()
         {
-            if (!IsServer) return;
-            Scenario.Value = scenario ?? "ssp245";
-            StartYear.Value = startYear;
-            EndYear.Value = endYear;
-            HasClimate.Value = true;
-        }
+            if (!IsSpawned) return;
 
-        public void SetMoment(int dayOfYear, float hourOfDay)
-        {
-            if (!IsServer) return;
-            DayOfYear.Value = Mathf.Clamp(dayOfYear, 1, 366);
-            HourOfDay.Value = Mathf.Repeat(hourOfDay, 24f);
+            if (IsServer)
+            {
+                // Guida: pubblica. Si scrive solo cio' che e' cambiato.
+                var choice = ClimateContext.Snapshot();
+                if (!Choice.Value.Equals(choice)) Choice.Value = choice;
+
+                var ind = ClimateContext.IndicesRequest;
+                if (!Indices.Value.Equals(ind)) Indices.Value = ind;
+
+                var th = ClimateContext.ThermalRequest;
+                if (!Thermal.Value.Equals(th)) Thermal.Value = th;
+            }
+            else
+            {
+                // Visitatore: adotta lo stato della guida.
+                ClimateContext.ApplyRemote(Choice.Value, Indices.Value, Thermal.Value);
+            }
         }
     }
 }

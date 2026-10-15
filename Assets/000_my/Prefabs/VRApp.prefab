@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 7731930922118203476}
   - component: {fileID: 6734145416300632409}
   - component: {fileID: 5636933125544457123}
+  - component: {fileID: 3349374514019923824}
   m_Layer: 0
   m_Name: App
   m_TagString: Untagged
@@ -197,6 +198,7 @@ MonoBehaviour:
   tabOrder:
   - Session
   - Places
+  - Scenario
   - Climate
   - Thermal
   - Colors
@@ -345,7 +347,6 @@ MonoBehaviour:
   tabTitle: Climate
   client: {fileID: 0}
   windowDaysStep: 5
-  yearStep: 5
   tourismProfileIds:
   - urban_cultural
   - walking_outdoor
@@ -447,7 +448,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Artemis.Thermal.ThermalPanel
   tabTitle: Thermal
-  hourChoices: 080000000a0000000c0000000e0000001000000012000000
   opacityStep: 0.1
 --- !u!114 &7731930922118203476
 MonoBehaviour:
@@ -514,6 +514,21 @@ MonoBehaviour:
   push: 3
   minDistance: 1
   renderQueue: 4010
+--- !u!114 &3349374514019923824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516641996135779020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd60893a7078381408728448a0743f9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Artemis.Climate.ScenarioPanel
+  tabTitle: Scenario
+  yearStep: 5
+  hourChoices: 080000000a0000000c0000000e0000001000000012000000
 --- !u!1 &8608689713742692481
 GameObject:
   m_ObjectHideFlags: 0

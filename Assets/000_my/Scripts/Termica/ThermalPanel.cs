@@ -9,16 +9,21 @@ namespace Artemis.Thermal
     /// <summary>
     /// Scheda "Thermal" della HUD: temperature superficiali del luogo corrente (fase 2).
     ///
-    /// Data e scenario NON si scelgono qui: sono quelli della scheda Climate (ClimateContext).
-    /// Due posti per la stessa scelta finirebbero per disallinearsi, e "gli indici dicono 2080,
-    /// i colori 2050" e' l'errore che non si vede.
+    /// Scenario, data e ORE NON si scelgono qui: si scelgono nella scheda Scenario
+    /// (ScenarioPanel, valori in ClimateContext), la stessa da cui la scheda Climate prende data
+    /// e scenario per gli indici. Un posto solo per una scelta sola.
     ///
-    /// Qui si scelgono le ORE (piu' d'una: il servizio prende per ogni faccia il picco fra le
-    /// ore scelte), si lancia la simulazione, si accende/spegne la sovrapposizione e se ne regola
-    /// la trasparenza.
+    /// Qui si lancia la simulazione, si accende/spegne la sovrapposizione e se ne regola la
+    /// trasparenza.
     ///
-    /// Le scelte sono STATICHE: sopravvivono al cambio di luogo, come quelle del clima.
-    /// I risultati invece no: ogni luogo ha la sua mesh e il suo modello sul server.
+    /// MULTIPLAYER. Apply e' della GUIDA: per i visitatori e' spento. Apply non simula direttamente: registra una richiesta in ClimateContext, che
+    /// SessionState porta a tutti. Ogni visore la esegue da se' (Update), guida compresa: un solo
+    /// percorso, uguale da soli e in sessione.
+    /// Lo stesso percorso fa ripartire la simulazione ARRIVANDO IN UN LUOGO NUOVO: la superficie
+    /// e' nuova, non ha ancora eseguito l'ultima richiesta, quindi la esegue — con la mesh e il
+    /// modello sul server di quel luogo, che sono scritti sul suo ThermalSurface. E cosi' anche
+    /// chi entra in ritardo vede subito l'ultima simulazione della guida.
+    /// Colorazione accesa/spenta e opacita' restano di ciascuno.
     ///
     /// L'ultima riga e' la lettura della sonda (ThermalProbe): sta qui perche' e' qui che si
     /// lancia la simulazione, e il bello della sonda e' rileggere lo stesso punto dopo ogni Apply.
@@ -28,23 +33,33 @@ namespace Artemis.Thermal
     public class ThermalPanel : MonoBehaviour
     {
         [SerializeField] private string tabTitle = "Thermal";
-        [SerializeField] private int[] hourChoices = { 8, 10, 12, 14, 16, 18 };
         [SerializeField] private float opacityStep = 0.1f;
 
-        // Righe un po' piu' basse e spaziatura ridotta: con la riga della sonda la scheda
-        // resta alta quanto prima (352 px).
         private const float RowHeight = 48f;
 
-        private static bool[] selected;
+        // Di ciascun visore, mai in rete.
         private static bool overlayOn = true;
         private static float opacity = 0.6f;
 
         private VrHud hud;
         private bool built;
+        private RectTransform page;
+
+        private static ThermalPanel instance;
+
+        /// <summary>
+        /// Vero quando la scheda Thermal e' quella aperta (e la HUD e' visibile). La sonda lavora
+        /// solo allora: e' qui che se ne legge il risultato, e con un'altra scheda aperta il
+        /// grilletto o il clic servono ad altro.
+        /// </summary>
+        public static bool IsOpen =>
+            instance != null && instance.page != null && instance.page.gameObject.activeInHierarchy;
+
+        private void Awake() { instance = this; }
         private TMP_Text summary, status, overlayText, probe;
-        private Image[] hourImages;
         private Button applyButton;
         private ThermalSurface surface;
+        private ClimateRequest ran;     // ultima richiesta eseguita su QUESTA superficie
         private float nextRefresh;
 
         private void Update()
@@ -56,6 +71,7 @@ namespace Artemis.Thermal
             {
                 if (surface != null) surface.OnChanged -= Refresh;
                 surface = ThermalSurface.Current;
+                ran = default;          // superficie nuova: l'ultima richiesta va rieseguita qui
                 if (surface != null)
                 {
                     surface.OnChanged += Refresh;
@@ -68,10 +84,30 @@ namespace Artemis.Thermal
                 nextRefresh = Time.unscaledTime + 0.5f;
                 Refresh();
             }
+
+            RunPendingRequest();
+        }
+
+        /// <summary>
+        /// Esegue l'ultima richiesta della guida (o propria) se questa superficie non l'ha ancora
+        /// fatta. Durante un calcolo si aspetta: finito quello, si esegue la richiesta PIU'
+        /// RECENTE, non quelle intermedie. Si confronta la richiesta intera, non solo il numero:
+        /// chi ha lavorato da solo prima di unirsi puo' avere lo stesso numero della guida.
+        /// </summary>
+        private void RunPendingRequest()
+        {
+            var req = ClimateContext.ThermalRequest;
+            if (surface == null || req.Serial == 0 || req.Equals(ran) || surface.Busy) return;
+
+            ran = req;
+            var ch = req.Choice;
+            surface.Simulate(ch.Year, ch.Month, ch.Day,
+                             ClimateContext.ScenarioId(ch.Scenario), ClimateContext.Hours(ch.HoursMask));
         }
 
         private void OnDestroy()
         {
+            if (instance == this) instance = null;
             if (surface != null) surface.OnChanged -= Refresh;
             ClimateContext.OnChanged -= Refresh;
         }
@@ -81,32 +117,17 @@ namespace Artemis.Thermal
             hud = VrHud.Instance;
             if (hud == null) return;
 
-            if (selected == null || selected.Length != hourChoices.Length)
-            {
-                selected = new bool[hourChoices.Length];
-                int i14 = System.Array.IndexOf(hourChoices, 14);
-                selected[i14 >= 0 ? i14 : 0] = true;   // di partenza: le 14
-            }
-
-            var page = hud.CreateTab(tabTitle);
+            page = hud.CreateTab(tabTitle);
             var vlg = page.GetComponent<VerticalLayoutGroup>();
             if (vlg != null) vlg.spacing = 6f;   // solo questa pagina
 
-            summary = hud.MakeLabel(page, "", 17);
+            // Corpo 15: le due righe del riepilogo (prossima simulazione, colori in vista) sono
+            // lunghe, e a 17 andrebbero a capo uscendo dallo spazio.
+            summary = hud.MakeLabel(page, "", 15);
             SetHeight(summary, 44f);
 
-            // Ore su due righe da tre: pulsanti abbastanza larghi da colpire col raggio.
-            hourImages = new Image[hourChoices.Length];
-            RectTransform row = null;
-            for (int i = 0; i < hourChoices.Length; i++)
-            {
-                if (i % 3 == 0) row = hud.MakeRow(page, RowHeight);
-                int k = i;
-                hourImages[i] = hud.MakeButton(row, $"{hourChoices[i]}:00", () => ToggleHour(k)).image;
-            }
-
             var rowAct = hud.MakeRow(page, RowHeight);
-            applyButton = hud.MakeButton(rowAct, "Apply", Apply).button;
+            applyButton = hud.MakeButton(rowAct, "Apply", ClimateContext.RequestThermal).button;
             overlayText = hud.MakeButton(rowAct, "", () =>
             {
                 overlayOn = !overlayOn;
@@ -132,20 +153,12 @@ namespace Artemis.Thermal
             Refresh();
         }
 
+        private static string Hours(int mask) => string.Join(", ", ClimateContext.Hours(mask)) + " h";
+
         private static void SetHeight(TMP_Text t, float h)
         {
             var le = t.GetComponent<LayoutElement>();
             if (le != null) le.preferredHeight = h;
-        }
-
-        private void ToggleHour(int i)
-        {
-            selected[i] = !selected[i];
-            // Almeno un'ora sempre scelta: una simulazione senza ore non ha senso.
-            bool any = false;
-            foreach (bool b in selected) any |= b;
-            if (!any) selected[i] = true;
-            Refresh();
         }
 
         private void ChangeOpacity(float d)
@@ -155,37 +168,26 @@ namespace Artemis.Thermal
             Refresh();
         }
 
-        private void Apply()
-        {
-            if (surface == null || surface.Busy) return;
-            surface.Simulate(ClimateContext.Year, ClimateContext.Month, ClimateContext.Day,
-                             ClimateContext.ScenarioApiId, SelectedHours());
-        }
-
-        private int[] SelectedHours()
-        {
-            int n = 0;
-            foreach (bool b in selected) if (b) n++;
-            var hours = new int[n];
-            int j = 0;
-            for (int i = 0; i < selected.Length; i++) if (selected[i]) hours[j++] = hourChoices[i];
-            return hours;
-        }
-
         private void Refresh()
         {
             if (!built) return;
+            bool canEdit = ClimateContext.CanEdit;
 
-            summary.text = $"{ClimateContext.ScenarioApiId}  ·  {ClimateContext.Day:00}/{ClimateContext.Month:00}/{ClimateContext.Year}" +
-                           "\n(date and scenario: Climate tab)";
-
-            for (int i = 0; i < hourImages.Length; i++)
-                hourImages[i].color = selected[i] ? hud.ActiveColor : hud.ButtonColor;
+            // Prima riga: le scelte correnti della scheda Scenario, che Apply usera'. Seconda:
+            // quelle dei colori che si vedono, che possono differire se si e' cambiato qualcosa
+            // senza premere Apply.
+            var now = ClimateContext.Snapshot();
+            var req = ClimateContext.ThermalRequest;
+            string applied = req.Serial == 0
+                ? "Colours: no simulation yet"
+                : $"Colours: {ClimateContext.Describe(req.Choice)}  at {Hours(req.Choice.HoursMask)}";
+            summary.text = $"Next: {ClimateContext.Describe(now)}  at {Hours(now.HoursMask)}" +
+                           (canEdit ? "" : "  ·  by guide") + "\n" + applied;
 
             overlayText.text = overlayOn ? $"Overlay ON {opacity:P0}" : "Overlay OFF";
 
             bool ready = surface != null && !surface.Busy;
-            applyButton.interactable = ready;
+            applyButton.interactable = ready && canEdit;
 
             if (surface == null) status.text = "No surface model in this place.";
             else status.text = surface.Status;

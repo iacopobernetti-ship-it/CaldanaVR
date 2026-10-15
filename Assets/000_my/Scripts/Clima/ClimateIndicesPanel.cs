@@ -37,15 +37,26 @@ namespace Artemis.Climate
     /// ogni luogo: cinque copie dello stesso cablaggio, cinque posti dove un riferimento resta
     /// vuoto senza che nulla lo dica.
     ///
-    /// Due viste nella stessa pagina, come in CaldanaMR: PARAMETRI (scenario, data, tipo e
-    /// profilo, finestra e Apply) e RISULTATI (testo colorato, Back).
+    /// Due viste nella stessa pagina, come in CaldanaMR: PARAMETRI (tipo e profilo, finestra e
+    /// Apply) e RISULTATI (testo colorato, Back).
+    ///
+    /// SCENARIO E DATA NON SI SCELGONO QUI: si scelgono nella scheda Scenario (ScenarioPanel),
+    /// insieme alle ore della simulazione termica. Qui si leggono e si mostrano nel riepilogo.
     ///
     /// I risultati si sfogliano A PAGINE e non con uno scroll: VrHud non ha una vista
     /// scorrevole, e trascinare una barra col raggio del controller e' scomodo. TextMeshPro sa
     /// gia' impaginare da se' (overflow Page): due pulsanti e nessun componente in piu'.
     ///
-    /// Le scelte (finestra, modo, tipo, profilo) sono STATICHE, come ClimateContext: devono
-    /// sopravvivere al cambio di luogo.
+    /// Le scelte (finestra, modo, tipo, profilo, e data e scenario della scheda Scenario) stanno
+    /// in ClimateContext:
+    /// sopravvivono al cambio di luogo e, in sessione, sono quelle della GUIDA.
+    ///
+    /// MULTIPLAYER. Solo la guida preme Apply (per i visitatori il pulsante e' spento). Tipo,
+    /// profilo e finestra sono di CIASCUNO: ognuno li imposta sul proprio visore. All'Apply della
+    /// guida ogni visore interroga gli indici con la data e lo scenario della guida (scheda
+    /// Scenario) e con i PROPRI tipo, profilo e finestra, e passa ai risultati. Sfogliare le
+    /// pagine e Back restano di ciascuno. Un visitatore che entra in ritardo esegue subito
+    /// l'ultima richiesta della guida, con i suoi parametri.
     ///
     /// Tutta la messaggistica e' in inglese, come in CaldanaMR e come i messaggi dell'API.
     ///
@@ -60,7 +71,6 @@ namespace Artemis.Climate
 
         [Header("Parametri")]
         [SerializeField] private int windowDaysStep = 5;
-        [SerializeField] private int yearStep = 5;
         [Tooltip("ID API dei profili turistici, nell'ordine del pulsante che li fa scorrere. " +
                  "historic_garden escluso per Caldana: e' un borgo, non una villa con giardino " +
                  "(documento CaldanaMR, §4.2).")]
@@ -94,24 +104,22 @@ namespace Artemis.Climate
             new IndexRiskRule { keyContains = "comfort days",          higherIsWorse = false, warn = 20, risk = 10 },
         };
 
-        private static readonly string[] WindowModes = { "centered", "backward", "forward" };
         private static readonly string[] WindowModeLabels = { "Centered", "Backward", "Forward" };
-        private static readonly string[] ScenarioLabels = { "SSP1-2.6", "SSP2-4.5", "SSP5-8.5" };
 
-        // Righe da 52 px invece dei 96 di default, e Apply sulla stessa riga della finestra:
-        // con la fascia diagnostica accesa la pagina ha circa 300 px utili, e cinque righe da
-        // 56 ci finivano sotto. Quattro righe da 52 piu' il riepilogo ci stanno.
+        // Righe da 52 px invece dei 96 di default, e Apply sulla stessa riga della finestra.
         private const float RowHeight = 52f;
 
-        private static int windowDays = 30;   // limiti API: 1..366
-        private static int windowMode;        // 0..2
-        private static int indexType;         // 0 = heritage, 1 = tourism
-        private static int profile;
+        // Ultima richiesta eseguita. Statica: tornando in un luogo non si rifa' la stessa
+        // richiesta, ma chi entra in ritardo esegue subito quella della guida. Si confronta la
+        // richiesta INTERA e non solo il numero: chi ha lavorato da solo prima di unirsi puo'
+        // avere lo stesso numero della guida con scelte diverse.
+        private static ClimateRequest lastFetched;
 
         private bool built, busy;
+        private float nextRefresh;
+        private Button applyButton;   // l'unico pulsante della guida in questa scheda
         private RectTransform paramsView, resultsView;
         private TMP_Text summary, title, status, body;
-        private readonly Image[] scenarioImages = new Image[3];
         private Image heritageImage, tourismImage;
         private Button profileButton;
         private TMP_Text profileText, modeText;
@@ -119,7 +127,22 @@ namespace Artemis.Climate
 
         private void Update()
         {
-            if (!built) TryBuild();
+            if (!built) { TryBuild(); return; }
+
+            // Un Apply nuovo (della guida, o proprio se si e' la guida o da soli): lo si esegue.
+            var req = ClimateContext.IndicesRequest;
+            if (req.Serial != 0 && !req.Equals(lastFetched) && !busy)
+            {
+                lastFetched = req;
+                Fetch(req.Choice);
+            }
+
+            // Il ruolo cambia quando ci si collega: i pulsanti della guida vanno riaccesi/spenti.
+            if (Time.unscaledTime >= nextRefresh)
+            {
+                nextRefresh = Time.unscaledTime + 0.5f;
+                Refresh();
+            }
         }
 
         private void OnDestroy() { ClimateContext.OnChanged -= Refresh; }
@@ -144,38 +167,24 @@ namespace Artemis.Climate
             summary = hud.MakeLabel(paramsView, "", 18);
             SetHeight(summary, 44f);
 
-            var rowScenario = hud.MakeRow(paramsView, RowHeight);
-            for (int i = 0; i < ScenarioLabels.Length; i++)
-            {
-                int k = i;   // copia per la closure
-                scenarioImages[i] = hud.MakeButton(rowScenario, ScenarioLabels[i],
-                                                   () => ClimateContext.SetScenario(k)).image;
-            }
-
-            var rowDate = hud.MakeRow(paramsView, RowHeight);
-            hud.MakeButton(rowDate, "- year", () => ClimateContext.ShiftYear(-yearStep));
-            hud.MakeButton(rowDate, "+ year", () => ClimateContext.ShiftYear(+yearStep));
-            hud.MakeButton(rowDate, "- month", () => ClimateContext.ShiftMonth(-1));
-            hud.MakeButton(rowDate, "+ month", () => ClimateContext.ShiftMonth(+1));
-
             var rowType = hud.MakeRow(paramsView, RowHeight);
-            heritageImage = hud.MakeButton(rowType, "Heritage", () => { indexType = 0; Refresh(); }).image;
-            tourismImage = hud.MakeButton(rowType, "Tourism", () => { indexType = 1; Refresh(); }).image;
+            var bh = hud.MakeButton(rowType, "Heritage", () => ClimateContext.SetIndexType(0));
+            var bt = hud.MakeButton(rowType, "Tourism", () => ClimateContext.SetIndexType(1));
+            heritageImage = bh.image; tourismImage = bt.image;
             // Il profilo e' UN pulsante che fa scorrere le scelte, non uno per profilo: serve
             // solo a Tourism, e cosi' sta sulla stessa riga del tipo invece di occuparne una.
-            profileButton = hud.MakeButton(rowType, "", () =>
-            {
-                profile = (profile + 1) % Mathf.Max(1, tourismProfileIds.Length);
-                Refresh();
-            }).button;
+            profileButton = hud.MakeButton(rowType, "",
+                () => ClimateContext.CycleProfile(tourismProfileIds.Length)).button;
             profileText = profileButton.GetComponentInChildren<TMP_Text>();
 
             var rowWindow = hud.MakeRow(paramsView, RowHeight);
-            hud.MakeButton(rowWindow, "- 5 d", () => { windowDays = Mathf.Clamp(windowDays - windowDaysStep, 1, 366); Refresh(); });
-            hud.MakeButton(rowWindow, "+ 5 d", () => { windowDays = Mathf.Clamp(windowDays + windowDaysStep, 1, 366); Refresh(); });
-            modeText = hud.MakeButton(rowWindow, "", () => { windowMode = (windowMode + 1) % WindowModes.Length; Refresh(); })
-                          .button.GetComponentInChildren<TMP_Text>();
-            hud.MakeButton(rowWindow, "Apply", Fetch);
+            hud.MakeButton(rowWindow, "- 5 d", () => ClimateContext.ShiftWindow(-windowDaysStep));
+            hud.MakeButton(rowWindow, "+ 5 d", () => ClimateContext.ShiftWindow(+windowDaysStep));
+            var bm = hud.MakeButton(rowWindow, "", ClimateContext.CycleWindowMode);
+            modeText = bm.button.GetComponentInChildren<TMP_Text>();
+            // Apply non esegue: registra la richiesta. La esegue Update, su questo visore come
+            // su quelli dei visitatori: un solo percorso per tutti.
+            applyButton = hud.MakeButton(rowWindow, "Apply", ClimateContext.RequestIndices).button;
 
             // ---- risultati ----
             title = hud.MakeLabel(resultsView, "", 19);
@@ -236,12 +245,17 @@ namespace Artemis.Climate
         {
             if (!built) return;
 
-            int s = ClimateContext.ScenarioIndex;
-            summary.text = $"{ScenarioLabels[s]}  ·  {ClimateContext.Day:00}/{ClimateContext.Month:00}/{ClimateContext.Year}\n" +
-                           $"window {windowDays} days, {WindowModes[windowMode]}";
+            bool canEdit = ClimateContext.CanEdit;
+            // Data e scenario vengono dalla scheda Scenario: lo si dice, perche' qui non c'e'
+            // modo di cambiarli. "by guide" sulla prima riga, che e' corta.
+            summary.text = ClimateContext.Describe(ClimateContext.Snapshot()) +
+                           (canEdit ? "  (Scenario tab)" : "  ·  by guide") + "\n" +
+                           $"window {ClimateContext.WindowDays} days, {ClimateContext.WindowModes[ClimateContext.WindowMode]}";
 
-            for (int i = 0; i < scenarioImages.Length; i++)
-                scenarioImages[i].color = i == s ? hud.ActiveColor : hud.ButtonColor;
+            // Visitatori: solo Apply e' spento. Tipo, profilo e finestra sono di ciascuno.
+            applyButton.interactable = canEdit;
+            int indexType = ClimateContext.IndexType;
+
             heritageImage.color = indexType == 0 ? hud.ActiveColor : hud.ButtonColor;
             tourismImage.color = indexType == 1 ? hud.ActiveColor : hud.ButtonColor;
 
@@ -249,19 +263,19 @@ namespace Artemis.Climate
             // altri pulsanti della riga, e un pulsante che cambia posto si preme per sbaglio.
             bool tourism = indexType == 1;
             profileButton.interactable = tourism;
-            profileText.text = tourism ? ProfileLabel() : "—";
-            modeText.text = WindowModeLabels[windowMode];
+            profileText.text = tourism ? ProfileLabel(ClimateContext.Profile) : "—";
+            modeText.text = WindowModeLabels[ClimateContext.WindowMode];
         }
 
-        private string ProfileLabel()
+        private string ProfileLabel(int profile)
         {
             if (tourismProfileLabels != null && profile < tourismProfileLabels.Length &&
                 !string.IsNullOrEmpty(tourismProfileLabels[profile]))
                 return tourismProfileLabels[profile];
-            return ProfileId();
+            return ProfileId(profile);
         }
 
-        private string ProfileId()
+        private string ProfileId(int profile)
         {
             if (tourismProfileIds == null || tourismProfileIds.Length == 0) return "urban_cultural";
             string id = tourismProfileIds[Mathf.Clamp(profile, 0, tourismProfileIds.Length - 1)];
@@ -270,10 +284,10 @@ namespace Artemis.Climate
 
         // ---------------------------------------------------------------- richiesta
 
-        private void Fetch()
+        private void Fetch(ClimateChoice ch)
         {
             if (busy) return;
-            bool tourism = indexType == 1;
+            bool tourism = ClimateContext.IndexType == 1;   // tipo: quello di questo visore
 
             ShowResults();
             title.text = tourism ? "Tourism" : "Heritage";
@@ -288,24 +302,28 @@ namespace Artemis.Climate
             }
 
             status.text = "Loading...";
-            StartCoroutine(FetchRoutine(tourism));
+            StartCoroutine(FetchRoutine(ch, tourism));
         }
 
-        private IEnumerator FetchRoutine(bool tourism)
+        /// Data e scenario vengono dalla RICHIESTA della guida, non dalle scelte correnti: se la
+        /// guida ha gia' spostato l'anno dopo Apply, si interroga comunque quello che ha applicato.
+        /// Finestra e profilo sono invece quelli di QUESTO visore.
+        private IEnumerator FetchRoutine(ClimateChoice ch, bool tourism)
         {
             busy = true;
             FutureClimateClient.WindowResult res = null;
 
-            string scenario = ClimateContext.ScenarioApiId;
-            string mode = WindowModes[windowMode];
+            string scenario = ClimateContext.ScenarioId(ch.Scenario);
+            string mode = ClimateContext.WindowModes[Mathf.Clamp(ClimateContext.WindowMode, 0, ClimateContext.WindowModes.Length - 1)];
+            int windowDays = ClimateContext.WindowDays;
 
             if (tourism)
-                yield return client.FetchTourismWindow(scenario, ClimateContext.Year, ClimateContext.Month,
-                                                       ClimateContext.Day, windowDays, mode, ProfileId(),
+                yield return client.FetchTourismWindow(scenario, ch.Year, ch.Month,
+                                                       ch.Day, windowDays, mode, ProfileId(ClimateContext.Profile),
                                                        r => res = r);
             else
-                yield return client.FetchHeritageWindow(scenario, ClimateContext.Year, ClimateContext.Month,
-                                                        ClimateContext.Day, windowDays, mode,
+                yield return client.FetchHeritageWindow(scenario, ch.Year, ch.Month,
+                                                        ch.Day, windowDays, mode,
                                                         r => res = r);
 
             busy = false;
