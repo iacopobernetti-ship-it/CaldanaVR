@@ -23,6 +23,8 @@ namespace Artemis.Thermal
     /// Si vede con e senza colorazione: e' un oggetto suo, non fa parte della mesh termica.
     ///
     /// Due scelte di progetto:
+    ///  - IN EDITOR E NELLA BUILD PER PC il clic sinistro del mouse vale come grilletto, letto
+    ///    direttamente da qui (vedi Update).
     ///  - NESSUN COLLIDER. Il raggio si interseca a calcolo con i triangoli della mesh termica
     ///    (25-27 mila: meno di un millesimo di secondo, e solo alla pressione del grilletto).
     ///    Un collider in piu' sulle facciate fermerebbe il raggio del teletrasporto e
@@ -91,12 +93,6 @@ namespace Artemis.Thermal
             DestroyMarker();
         }
 
-#if UNITY_EDITOR || UNITY_STANDALONE
-        // Collaudo col mouse: il clic nel mondo vale come grilletto.
-        private void OnEnable()  { Artemis.EditorTools.EditorMousePointer.OnWorldTrigger += Probe; }
-        private void OnDisable() { Artemis.EditorTools.EditorMousePointer.OnWorldTrigger -= Probe; }
-#endif
-
         private void Update()
         {
             // La superficie appartiene alla scena: cambiando luogo il segnaposto non ha piu' senso.
@@ -106,6 +102,21 @@ namespace Artemis.Thermal
                 cachedMesh = null;
                 Clear();
             }
+
+#if UNITY_EDITOR || UNITY_STANDALONE
+            // MOUSE, letto QUI e non tramite EditorMousePointer. Prima il clic arrivava dal suo
+            // evento OnWorldTrigger, ma quel componente si spegne da solo quando vede un visore
+            // (anche il Meta XR Simulator) e, spento, non passava piu' nulla: la sonda restava
+            // muta senza una riga di log. Letto qui, il clic sinistro funziona sempre in Editor e
+            // nella build per PC. I clic sulla HUD li scarta Probe (RayHitsPanel), quindi premere
+            // un pulsante non sposta la sonda.
+            var mouse = UnityEngine.InputSystem.Mouse.current;
+            if (mouse != null && mouse.leftButton.wasPressedThisFrame)
+            {
+                if (cam == null) cam = Camera.main;
+                if (cam != null) Probe(cam.ScreenPointToRay(mouse.position.ReadValue()), "mouse");
+            }
+#endif
             if (surface == null) return;
 
             // Grilletto letto direttamente dal controller: nessuna azione da collegare
@@ -114,7 +125,7 @@ namespace Artemis.Thermal
             if (down && !triggerWasDown)
             {
                 Transform src = ResolveAim();
-                if (src != null) Probe(new Ray(src.position, src.forward));
+                if (src != null) Probe(new Ray(src.position, src.forward), "grilletto");
             }
             triggerWasDown = down;
         }
@@ -152,9 +163,16 @@ namespace Artemis.Thermal
 
         // ---------------------------------------------------------------- sonda
 
-        private void Probe(Ray ray)
+        /// Ogni esito finisce nel log, anche quelli in cui non succede niente: "la sonda non
+        /// risponde" deve potersi distinguere fra "il clic non arriva", "e' finito sulla HUD" e
+        /// "non ha colpito la mesh".
+        private void Probe(Ray ray, string source)
         {
-            if (surface == null) return;
+            if (surface == null)
+            {
+                Debug.Log($"[ThermalProbe] {source}: nessuna superficie termica in questo luogo.");
+                return;
+            }
 
             // Il grilletto sulla HUD preme un pulsante: non deve anche spostare la sonda.
             var hud = VrHud.Instance;
@@ -166,11 +184,12 @@ namespace Artemis.Thermal
                 markerTri = tri;
                 markerPoint = point;
                 EnsureMarker();
-                Debug.Log($"[ThermalProbe] triangolo {tri}, a {Vector3.Distance(ray.origin, point):F1} m.");
+                Debug.Log($"[ThermalProbe] {source}: triangolo {tri}, a {Vector3.Distance(ray.origin, point):F1} m.");
             }
             else
             {
                 Clear();   // colpo verso il cielo: si toglie il segnaposto
+                Debug.Log($"[ThermalProbe] {source}: nessun triangolo colpito, segnaposto tolto.");
             }
         }
 
