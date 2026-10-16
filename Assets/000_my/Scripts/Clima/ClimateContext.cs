@@ -50,13 +50,13 @@ namespace Artemis.Climate
     /// scenario, le temperature anche le ore — e aggiungono solo i propri parametri.
     ///
     /// MULTIPLAYER. Qui sta la regola "comanda la guida":
-    ///  - data, scenario, ore e i due Apply (indici, temperature) si modificano solo se
+    ///  - data, scenario, ore e l'Apply delle TEMPERATURE si modificano solo se
     ///    VrSession.CanCommand (guida, o da soli); per i visitatori i metodi non fanno nulla, e
     ///    i pannelli ne spengono i pulsanti;
     ///  - SessionState copia di continuo questo stato dalla guida a tutti (ApplyRemote);
-    ///  - i parametri degli indici (WindowDays, WindowMode, IndexType, Profile) sono LOCALI:
-    ///    ognuno li sceglie sul proprio visore, e all'Apply della guida ciascuno interroga gli
-    ///    indici con la data e lo scenario della guida e con i PROPRI parametri.
+    ///  - gli INDICI sono di ciascuno: parametri (WindowDays, WindowMode, IndexType, Profile) e
+    ///    Apply restano sul visore. Ognuno interroga quando vuole, con la data e lo scenario
+    ///    della guida e con i propri parametri. La richiesta degli indici non viaggia in rete.
     /// I pannelli non sanno nulla della rete: leggono di qui e chiedono di qui.
     ///
     /// IL GIORNO resta sempre una data vera: cambiando mese o anno si riporta all'ultimo giorno
@@ -204,14 +204,14 @@ namespace Artemis.Climate
             return hours;
         }
 
-        /// <summary>Apply della scheda Climate: tutti i visori interrogheranno gli indici.</summary>
+        /// <summary>Apply della scheda Climate: LOCALE, lo preme chiunque. Usa data e scenario
+        /// correnti (quelli della guida, in sessione).</summary>
         public static void RequestIndices()
         {
-            if (!CanEdit) return;
             IndicesRequest = new ClimateRequest { Serial = IndicesRequest.Serial + 1, Choice = c };
         }
 
-        /// <summary>Apply della scheda Thermal: tutti i visori simuleranno le temperature.</summary>
+        /// <summary>Apply della scheda Thermal: solo la guida; tutti i visori simuleranno.</summary>
         public static void RequestThermal()
         {
             if (!CanEdit) return;
@@ -225,11 +225,10 @@ namespace Artemis.Climate
         /// Scavalca CanEdit di proposito: e' il solo modo in cui un visitatore cambia queste
         /// scelte. Un anno a 0 vuol dire che la guida non ha ancora pubblicato nulla: si ignora.
         /// </summary>
-        public static void ApplyRemote(ClimateChoice choice, ClimateRequest indices, ClimateRequest thermal)
+        public static void ApplyRemote(ClimateChoice choice, ClimateRequest thermal)
         {
             if (choice.Year == 0) return;
 
-            IndicesRequest = indices;
             ThermalRequest = thermal;
 
             if (choice.Equals(c)) return;

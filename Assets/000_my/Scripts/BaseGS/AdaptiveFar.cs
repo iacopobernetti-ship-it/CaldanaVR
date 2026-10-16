@@ -93,6 +93,18 @@ namespace Artemis.Vr
         /// <summary>Distanza in vigore, leggibile da altri componenti.</summary>
         public static float CurrentFar { get; private set; } = -1f;
 
+        /// <summary>
+        /// Distanza imposta A MANO (scheda Tuning). 0 o meno = automatica.
+        ///
+        /// Passa da qui e non dalla camera perche' questo resta l'UNICO componente che scrive il
+        /// Far: la scheda Tuning chiede, AdaptiveFar esegue. Due scrittori sulla stessa camera si
+        /// annullerebbero a vicenda, e il numero letto in HUD non sarebbe quello in vigore.
+        /// A mano non vale il tetto del luogo (maxViewDistance): serve proprio a provare distanze
+        /// che la regolazione automatica non raggiungerebbe. Vale solo il tetto generale.
+        /// Statica: sopravvive al cambio di luogo, come le altre scelte della scheda Tuning.
+        /// </summary>
+        public static float ManualFar { get; set; } = 0f;
+
         private Camera cam;
         private LCCManager lcc;
         private LCCRendererVR place;
@@ -126,6 +138,16 @@ namespace Artemis.Vr
             {
                 nextAttach = Time.unscaledTime + 0.5f;
                 Attach();
+            }
+
+            // Distanza a mano: nessuna regolazione, si tiene quella scelta. Tornando in
+            // automatico si riparte da qui.
+            if (ManualFar > 0f)
+            {
+                float want = Mathf.Clamp(ManualFar, minFar, maxFar);
+                if (!Mathf.Approximately(CurrentFar, want)) { CurrentFar = want; Apply(); }
+                ResetWindow();
+                return;
             }
 
             // Tempo NON scalato, come FrameTimeProbe: misura lo stesso numero che si legge in HUD.
@@ -202,6 +224,12 @@ namespace Artemis.Vr
             bool visible = hud != null && hud.ShowDiagnostics;
             if (label.gameObject.activeSelf != visible) label.gameObject.SetActive(visible);
             if (!visible) return;
+            if (ManualFar > 0f)
+            {
+                label.text = $"view {CurrentFar:F0} m  (MANUAL · Tuning tab)";
+                label.color = new Color(1f, 0.75f, 0.35f, 0.95f);   // arancione: non e' la regolazione
+                return;
+            }
             bool atMin = CurrentFar <= minFar + 0.01f;
             label.text = $"view {CurrentFar:F0} / {sceneMax:F0} m  (auto · target {targetMs:F1} ms)" +
                          (atMin ? "  · AT MINIMUM" : "");

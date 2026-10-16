@@ -1224,7 +1224,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_ENDPHHEBHPC_mD0446A4ECA
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 31411
+// Method Definition Index: 31412
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_HGPFGNCOGKD_m9F7A8DCFC210048D2508B15F074DEA6942BD1113 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1287,7 +1287,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31412
+// Method Definition Index: 31413
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_JPAIAAAFGKH_m89628624776359F7DAD37BE9551F139A7E0B5514 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1350,7 +1350,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31413
+// Method Definition Index: 31414
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_FLENJCJCGEO_m669EFDD8200161ED96EAADD91663776C6B45E45B (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1879,7 +1879,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31414
+// Method Definition Index: 31415
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_JAKPICFFPIG_m91D043CB6C1994A64CA7D5F436040B47300269FC (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1898,7 +1898,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31415
+// Method Definition Index: 31416
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_IEMAOPCNFIL_mB3080D1B3FFBE5B3CAF77E0647DA0011CC7CB5D1 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1961,7 +1961,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31416
+// Method Definition Index: 31417
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_CPJBPHIBPHC_m9935070C58821926A764C1FA73A5CBD05768163A (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2489,7 +2489,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31417
+// Method Definition Index: 31418
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_NKCEIPGAKKB_m0E33A924632B33757F58D67BDDB7DB59AA4F2995 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3018,7 +3018,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31418
+// Method Definition Index: 31419
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_JELPEGHMAAD_m1DE41603C5853AB47293C03A44469C1530D4002A (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3081,7 +3081,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31419
+// Method Definition Index: 31420
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_BFGFHDJNGIN_mE545B7E5ECE8DDAE873B917D0100D6236DB2AD67 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3299,7 +3299,7 @@ IL_0117:
 		return L_46;
 	}
 }
-// Method Definition Index: 31420
+// Method Definition Index: 31421
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_JMOCMHMJNIN_m92A79A6665BCA96BD7A9A0ACB91FB6F93E4E8FE3 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3517,7 +3517,7 @@ IL_0117:
 		return L_46;
 	}
 }
-// Method Definition Index: 31421
+// Method Definition Index: 31422
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_OABGHKGFBAP_m807C5BAF942FE62B1435C7D4865ED89CE1E65301 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3548,7 +3548,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_OABGHKGFBAP_m807C5BAF94
 		return;
 	}
 }
-// Method Definition Index: 31422
+// Method Definition Index: 31423
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_PPGCLMCIBCC_m06F54119F6B1481EF3A09F981BE78378033B05BD (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3567,7 +3567,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31423
+// Method Definition Index: 31424
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_HILCDJBPBJM_m4FA5BDB9E3199988197C7046B20F233214F1B86E (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3586,7 +3586,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31424
+// Method Definition Index: 31425
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_MJKGOBGBNHE_mB5B26F6036BA69D3C4C15A39E2898EAF257C2899 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3638,7 +3638,7 @@ IL_003c:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 31425
+// Method Definition Index: 31426
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_KAGBDBKNLEP_mDC3A5FAC8855B531BB25A69FB15BAD6EE05EE65B (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4165,7 +4165,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31426
+// Method Definition Index: 31427
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_HGDCMGJJADE_mF18D46542A910059C629E2E319ABE9DF538C1569 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4196,7 +4196,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_HGDCMGJJADE_mF18D46542A
 		return;
 	}
 }
-// Method Definition Index: 31427
+// Method Definition Index: 31428
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_AGIDLPHCCDO_mC812A68045DA2BDEA5B1CD97A40FA9ECED2F0122 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4215,7 +4215,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31428
+// Method Definition Index: 31429
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_AAGELIPBDMA_mA9549692A2F4FBA7BF6738A94085D6757D5CDE02 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4278,7 +4278,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31429
+// Method Definition Index: 31430
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_OEIOCOHHADH_m626CFE28A60EF9115270B1080E435EBE8524A82D (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4309,7 +4309,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_OEIOCOHHADH_m626CFE28A6
 		return;
 	}
 }
-// Method Definition Index: 31430
+// Method Definition Index: 31431
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_FLADBAMGLNE_mD40A6B17934582728C4761EDE574A45F8AE52083 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4837,7 +4837,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31431
+// Method Definition Index: 31432
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_PMEKEKBFMAG_m027FCCBE425CAC39BE39CB49ABF4567040A99AFD (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4856,7 +4856,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31432
+// Method Definition Index: 31433
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_BCFCKHCJNBO_m4202872DB36A79AE1C9EC421660F6315013359CC (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4908,7 +4908,7 @@ IL_003c:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 31433
+// Method Definition Index: 31434
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_FFPCBNBPHKF_m96F1783427F13C9D8DEF065F9943AE59B6AF3DF7 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5126,7 +5126,7 @@ IL_0117:
 		return L_46;
 	}
 }
-// Method Definition Index: 31434
+// Method Definition Index: 31435
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_LFIIIGGOFAE_m08658B83B3E5958C30C724D0ACB87E77083A5647 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5654,7 +5654,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31435
+// Method Definition Index: 31436
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_ABIPICMMHNK_mA282CFE4ED9FFB88155D100133FFFAC77CF6A33B (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5717,7 +5717,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31436
+// Method Definition Index: 31437
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_DHJMCNGCHND_mA78A7EE6DC21B79897B94622581E2F5D7CF1E821 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6246,7 +6246,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31437
+// Method Definition Index: 31438
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_OPPJCKEDOJO_m0FF19FDCCB2D6E1535244CE7ED887D5215647018 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6309,7 +6309,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31438
+// Method Definition Index: 31439
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_HMMEFCCEAMA_m587A51D88563A14BA5260B8A49F9F5E37D9D6A37 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6372,7 +6372,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31439
+// Method Definition Index: 31440
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_PKEBIPDDCJA_m4908BC9006865DD2789579DA88AF2837615B6C63 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6901,7 +6901,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31440
+// Method Definition Index: 31441
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_OAEHJMKJCMP_m0B67FF6E554D04E072C454AEC47CE55D78B75077 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7119,7 +7119,7 @@ IL_0117:
 		return L_46;
 	}
 }
-// Method Definition Index: 31441
+// Method Definition Index: 31442
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_BPNDNPCEDBC_m997A9436830724E63919DD91B36D35F4909CA251 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7182,7 +7182,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31442
+// Method Definition Index: 31443
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_BHGACMKMLMO_m1DABA2948268BF0420BBE3BB45C26937E39E5522 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7400,7 +7400,7 @@ IL_0117:
 		return L_46;
 	}
 }
-// Method Definition Index: 31443
+// Method Definition Index: 31444
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_IIAGBKGDLDL_mF7AC27C83DD646A1D762588CC3E3653C30DAF220 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -7419,7 +7419,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31444
+// Method Definition Index: 31445
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_PDIGMEOFMDL_m484B468DC4530A61713B3A3C69DA4A0A4FB41495 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7450,7 +7450,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_PDIGMEOFMDL_m484B468DC4
 		return;
 	}
 }
-// Method Definition Index: 31445
+// Method Definition Index: 31446
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_IFGCAHEACOD_m24426D07F24F6D9B786DBB7D7B91352108D48074 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7979,7 +7979,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31446
+// Method Definition Index: 31447
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_KGLMHIAFPGH_mE0D1D7CF0CFD97149125E8892B24DD406B47B343 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8042,7 +8042,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31447
+// Method Definition Index: 31448
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_OIJKJEPMICH_m398A4C3A55839B5437DB55CAC1BA2F6E912E82B4 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8073,7 +8073,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_OIJKJEPMICH_m398A4C3A55
 		return;
 	}
 }
-// Method Definition Index: 31448
+// Method Definition Index: 31449
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_KDDEBJKJAAH_mC09DE772274A70BED428E012BDAA25CE10BECDE1 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8092,7 +8092,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31449
+// Method Definition Index: 31450
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_EMOPKCCHPPF_mDFEEA2154D9D4F29CE3E2B8CDBCEE0C1518C6865 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8155,7 +8155,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31450
+// Method Definition Index: 31451
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_BGJDNMCHBFD_mDDEB5A89D13F0E6B844D19751E0CEC2C14CD3576 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8218,7 +8218,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31451
+// Method Definition Index: 31452
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_JOLHMCNEGLK_mCAB09553081760EC9C01668D21FC727FF9CEF6B4 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8436,7 +8436,7 @@ IL_0117:
 		return L_46;
 	}
 }
-// Method Definition Index: 31452
+// Method Definition Index: 31453
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_GONNGKNILFP_m127BA0627910F8C0D1DF14940FEACE3F500D8795 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8965,7 +8965,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31453
+// Method Definition Index: 31454
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_JDNGEIEKBOJ_m67085A1055A6FFB2B8918F300F908C5C102C5495 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9494,7 +9494,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31454
+// Method Definition Index: 31455
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_MIOCHENLADF_mC6708A21BC385EF58CC20C27974F2C0AC0FEC807 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9557,7 +9557,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31455
+// Method Definition Index: 31456
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_KFOPOIHANIP_mBA7D19BDC07B84CCCEA0DC2D33C7BB8300E19A77 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9775,7 +9775,7 @@ IL_0117:
 		return L_46;
 	}
 }
-// Method Definition Index: 31456
+// Method Definition Index: 31457
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_LAOCIELAKPM_m14F8801553CB6B1C575AD7FE3A6D0D5FB13CF052 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9827,7 +9827,7 @@ IL_003c:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 31457
+// Method Definition Index: 31458
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_MEMDLAJGNIE_mF7779C4BF2B4BBA1DACC3C22C79633CB373B35E3 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9890,7 +9890,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31458
+// Method Definition Index: 31459
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_GHIHAJJIAHL_m4FE48F025B2C07886359A7C3B2FA00D64CDD7EFC (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9921,7 +9921,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_GHIHAJJIAHL_m4FE48F025B
 		return;
 	}
 }
-// Method Definition Index: 31459
+// Method Definition Index: 31460
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_GFKHJLFIKIL_m9E88E5F9325A7895E72FEDA48AD5228ADC598CFC (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9940,7 +9940,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31460
+// Method Definition Index: 31461
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_EBANFBMJLLE_m9A72FEAF53333B8BB07592DF58547926C0E352B1 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9971,7 +9971,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_EBANFBMJLLE_m9A72FEAF53
 		return;
 	}
 }
-// Method Definition Index: 31461
+// Method Definition Index: 31462
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_CMADOHPKNMO_m436299720E98ABCE47876827C77824B9861FBB86 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10023,7 +10023,7 @@ IL_003c:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 31462
+// Method Definition Index: 31463
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_NKNAILJHCMG_m22DF03135679BC370F0A21790A5C2772A213EA48 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10054,7 +10054,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_NKNAILJHCMG_m22DF031356
 		return;
 	}
 }
-// Method Definition Index: 31463
+// Method Definition Index: 31464
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_EGOIFKJPGML_m818C1673B65DD4BD3605E0294B9DD24FC0346CB2 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10106,7 +10106,7 @@ IL_003c:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 31464
+// Method Definition Index: 31465
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_CMECCPMMEHA_mA36EBA83D7E0C594141190D482B805805E414F47 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10169,7 +10169,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31465
+// Method Definition Index: 31466
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_EELEINBNJGO_m3E911085D00434458D0A29894AD5BF51F77DAFC3 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10221,7 +10221,7 @@ IL_003c:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 31466
+// Method Definition Index: 31467
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_AINMHAJAJOJ_mCB485BBA444EFA6229E96EF3DD24C8DE65C3C5D6 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10252,7 +10252,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_AINMHAJAJOJ_mCB485BBA44
 		return;
 	}
 }
-// Method Definition Index: 31467
+// Method Definition Index: 31468
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_GMOLFKFNCKE_m367A474308955694C7C377C251419DCFB33EBA9C (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10781,7 +10781,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31468
+// Method Definition Index: 31469
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_NMDKDKIBDCL_m4EB091708E7046456D82AF58B51D51332DBF1F50 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10844,7 +10844,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31469
+// Method Definition Index: 31470
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_GFCJHODLNOO_m9689D49676B6F77285EBC237BF4BFB0215B28196 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10896,7 +10896,7 @@ IL_003c:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 31470
+// Method Definition Index: 31471
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_IMHKLGAFEDE_m8A4B18E1E4CEFD9A753ACBA8AC47D8023E47236B (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -10915,7 +10915,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31471
+// Method Definition Index: 31472
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_OPJNAGHKJDK_m1E3D66C5F28174D0BA89E364C82707E8C2EDA34A (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11443,7 +11443,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31472
+// Method Definition Index: 31473
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_IJLBLMCBICB_m647B604800A53884A78FE0010584DE90EE1040CD (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11474,7 +11474,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_IJLBLMCBICB_m647B604800
 		return;
 	}
 }
-// Method Definition Index: 31473
+// Method Definition Index: 31474
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_JNCOKAPHMMP_m405D0386AB9A7F8219A5E6B935DAC53E9527DFD6 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12003,7 +12003,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31474
+// Method Definition Index: 31475
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_ILAHJEDDOKM_m70F8A5AD2B4BCE56F29ECA1F18B981B707B0E8AE (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12034,7 +12034,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_ILAHJEDDOKM_m70F8A5AD2B
 		return;
 	}
 }
-// Method Definition Index: 31475
+// Method Definition Index: 31476
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_JMOHGBOJFMO_m17608020A9CD128D0367A2E9ABAEFE7C9134C4E9 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12097,7 +12097,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31476
+// Method Definition Index: 31477
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_POKMMAIDACD_m948B5DD7E177811E7763C790AB831766D8DCE5C2 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12149,7 +12149,7 @@ IL_003c:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 31477
+// Method Definition Index: 31478
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_OEAMDFNAMIH_m0950237C8413C677ADAC546A5B6E5958A9B0199C (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12677,7 +12677,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31478
+// Method Definition Index: 31479
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_JBAKKEBBKDA_m756F936D7110E873E91783E914B7E194B69982C6 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12729,7 +12729,7 @@ IL_003c:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 31479
+// Method Definition Index: 31480
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_NMHLMILHBJD_mDF42C68EAE2DC465454E80C1C9100CDAD430BD67 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13258,7 +13258,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31480
+// Method Definition Index: 31481
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_BONINMOHLGI_m6B51C8A14039B3201FE137ED80B903160A60AB06 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13310,7 +13310,7 @@ IL_003c:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 31481
+// Method Definition Index: 31482
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_FIBKEOBEDFE_m95A796AFFFB68DC6454463537107318CB9BA95AE (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13528,7 +13528,7 @@ IL_0117:
 		return L_46;
 	}
 }
-// Method Definition Index: 31482
+// Method Definition Index: 31483
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_CEIDNLIMJGK_mEA4D5A788C3EE9C042EE40CD49F63E3CCC38F569 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13591,7 +13591,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31483
+// Method Definition Index: 31484
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_LCJFIAHHJLE_m13DFED532D0DEFEB0AC7E289394C7EF3F89154C8 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13654,7 +13654,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31484
+// Method Definition Index: 31485
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_PKEOACCNGMJ_m177F2D55213642DFC451BB9783F21D56F1903EF1 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13717,7 +13717,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31485
+// Method Definition Index: 31486
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_OAANDGBOMHJ_m87BEBC86085B3C2E72FEBEE49C322BAD1EED0904 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13748,7 +13748,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_OAANDGBOMHJ_m87BEBC8608
 		return;
 	}
 }
-// Method Definition Index: 31486
+// Method Definition Index: 31487
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_HBGLMNLJGHF_mB82F9E30858A22DA6D4ED959FDE06DC842275EE8 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13767,7 +13767,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31487
+// Method Definition Index: 31488
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_EBEDFKDOLEH_mAE5A5263C4362C336DB242508E8457A6E89E4464 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13830,7 +13830,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31488
+// Method Definition Index: 31489
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_JKIKLKILBNA_m3110E0800D68F5A87EB96D1153B212A074A9475C (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -13849,7 +13849,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31489
+// Method Definition Index: 31490
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_ABJGLMFLNGA_m54F99B371F5938E00E51B4D590C1D1EF393D38ED (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14067,7 +14067,7 @@ IL_0117:
 		return L_46;
 	}
 }
-// Method Definition Index: 31490
+// Method Definition Index: 31491
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_EIDMLBNGDAI_mEB4FC16CD14D5521450C3B9E64C2D5A1C82EDD6F (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14086,7 +14086,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31491
+// Method Definition Index: 31492
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_MPOMHGFHEHM_m33ECD7B1287AD2405E2874EE28D8F6009824252E (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14149,7 +14149,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31492
+// Method Definition Index: 31493
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_MNLAEHNBFIF_mED7162B9F800429F0DE3018C09A563244F368599 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14201,7 +14201,7 @@ IL_003c:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 31493
+// Method Definition Index: 31494
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_HIDKDPHOHPG_mC4327D75E8FD31EB1AC38B2389B7DB9BBC8EC3AC (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14729,7 +14729,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31494
+// Method Definition Index: 31495
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_HINPGOFLMOH_m79F7C25B15F13C24222A882E054F35D71E82D186 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14748,7 +14748,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31495
+// Method Definition Index: 31496
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_ELOONOJKKHD_m53E53BD5766EA56D8BD797730057EB5F87E84548 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14767,7 +14767,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31496
+// Method Definition Index: 31497
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_KPNPLIBHGPD_mF232AA9C601F1E82445142B4B5127E8575754A64 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -14786,7 +14786,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31497
+// Method Definition Index: 31498
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_LJOFAJAKFBI_m78855719D9CDC89FD65EA7F910F2DD82E7C136EE (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15314,7 +15314,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31498
+// Method Definition Index: 31499
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_ANFEFNBDCBC_mD6EB5576A346D4CDF0198471D830B2F72B4DF390 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15377,7 +15377,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31499
+// Method Definition Index: 31500
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_IIGLPHIKGLK_m0AC3D06FC1D4DD5F64A91E98CD33874B4AA7193E (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -15396,7 +15396,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31500
+// Method Definition Index: 31501
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_CDJDMKNEACJ_m2B88A8C79DBF9855F2895586C69D01CB423D33D4 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15427,7 +15427,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_CDJDMKNEACJ_m2B88A8C79D
 		return;
 	}
 }
-// Method Definition Index: 31501
+// Method Definition Index: 31502
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_FDHHGEALNME_m73C82D8057C81EB4B14E7D636CBEB8BAE5BA22D7 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15458,7 +15458,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_FDHHGEALNME_m73C82D8057
 		return;
 	}
 }
-// Method Definition Index: 31502
+// Method Definition Index: 31503
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_EJOMGIFGAML_mA77684579F6BDC708F1965B12C2A1CA9E930527D (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15985,7 +15985,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31503
+// Method Definition Index: 31504
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_MLHGDLEPGFE_m925D0DB63E24873F37A1E49E8D801FFD858CAB8D (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16037,7 +16037,7 @@ IL_003c:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 31504
+// Method Definition Index: 31505
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_KOJPIILPNCN_mB803A7784FFE6140F5C2092D3D54419EF3418A91 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16068,7 +16068,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_KOJPIILPNCN_mB803A7784F
 		return;
 	}
 }
-// Method Definition Index: 31505
+// Method Definition Index: 31506
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_EIHDOEIAFCK_m8C6DA0F858CB8F1AF1D9DF1BF51DDE8F29210D90 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16087,7 +16087,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31506
+// Method Definition Index: 31507
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_BLBKOOJFCLM_m591AA1D71F58DD553B3C16E233822E9C93B5F05A (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16305,7 +16305,7 @@ IL_0117:
 		return L_46;
 	}
 }
-// Method Definition Index: 31507
+// Method Definition Index: 31508
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_AICODBPBPDJ_m500EF5B57F5FC64B0EC97E0C60F75A23605392F2 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16336,7 +16336,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_AICODBPBPDJ_m500EF5B57F
 		return;
 	}
 }
-// Method Definition Index: 31508
+// Method Definition Index: 31509
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_FBGCIBDMEII_mF81FC9A5E322EB12BBF6FA54C7551E3BD7EB7663 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16554,7 +16554,7 @@ IL_0117:
 		return L_46;
 	}
 }
-// Method Definition Index: 31509
+// Method Definition Index: 31510
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_LKHEPIKHDJB_m3F5156F78A9F7BB07A7D6232742394F879A91187 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16617,7 +16617,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31510
+// Method Definition Index: 31511
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_FBCMOEHBMKL_m770AE0197B700E24BD60E486B1D0D3D265CDEA06 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17146,7 +17146,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31511
+// Method Definition Index: 31512
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_BHPBCAAGACP_m39847D4ED47CDF98FA15F87DA916D8E1653D8067 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17198,7 +17198,7 @@ IL_003c:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 31512
+// Method Definition Index: 31513
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_LDNPGDLFBPI_m2AED4D6B8F1B15C047626458E88F21F782F1DBDF (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17261,7 +17261,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31513
+// Method Definition Index: 31514
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_LAOMKNBNAKP_m2BCEDE73562EE21FF9A19F708B34890A63076D1A (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17790,7 +17790,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31514
+// Method Definition Index: 31515
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_EKBPIALKKAF_m4386ED96315BBAC2A35AE0FEC03509CB5581FF6F (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18008,7 +18008,7 @@ IL_0117:
 		return L_46;
 	}
 }
-// Method Definition Index: 31515
+// Method Definition Index: 31516
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_FFBFFAEOFHL_m635FC5AB5005A0AC5DB91E44953D9FDF366C4957 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18027,7 +18027,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31516
+// Method Definition Index: 31517
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_NDEHEKGEEKB_m1E80A891DD1985445E26CB833425166B039847C6 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18058,7 +18058,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_NDEHEKGEEKB_m1E80A891DD
 		return;
 	}
 }
-// Method Definition Index: 31517
+// Method Definition Index: 31518
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_LNICAFFEOKN_mE796F9D5EEA153144C4D423673D5BACEF641387B (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18077,7 +18077,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31518
+// Method Definition Index: 31519
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_MGKHCEIBDIB_m08EE3755A4CF7E67CD1B9C1A883CBA67CEB96F74 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18108,7 +18108,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_MGKHCEIBDIB_m08EE3755A4
 		return;
 	}
 }
-// Method Definition Index: 31519
+// Method Definition Index: 31520
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_MJPEEHCIBIF_m77DD2C689F256A75D86EF9667815674A89C139E5 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18171,7 +18171,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31520
+// Method Definition Index: 31521
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_KLFCKONDNPN_m7A1E8D870FC55B844E16AB7693100A7B75927309 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18190,7 +18190,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31521
+// Method Definition Index: 31522
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_JKMDDLALCKO_m90A669073A0A42418FB8711F8FFEBBA10772D134 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18719,7 +18719,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31522
+// Method Definition Index: 31523
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_ENDPHHEBHPC_mD0446A4ECAA42F780584259AB7D887EE58DE0DE9 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18750,7 +18750,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_ENDPHHEBHPC_mD0446A4ECA
 		return;
 	}
 }
-// Method Definition Index: 31523
+// Method Definition Index: 31524
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_JNIEJKMBDBG_m5045BC2B0AA221FBFF3335C61EFAAE19F737C144 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19278,7 +19278,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31524
+// Method Definition Index: 31525
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_JPIGNMCCMIG_mEA0A7D184D038F8B62C8DFD57EA6D7E82B74C1DC (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19806,7 +19806,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31525
+// Method Definition Index: 31526
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_KMDIJKBCHCE_m3E52B1E7B6BF2698E4F291EB6CC0DC4B3749368D (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20334,7 +20334,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31526
+// Method Definition Index: 31527
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_IGCEAFCGGEP_mCC6B639A3B44B7A9DF2D32DE5B5E67B1DFCA73C8 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20863,7 +20863,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31527
+// Method Definition Index: 31528
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_LKBJGIKICED_m0FE60B67777096910506EE5EB09DB43FC6CF2F2A (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20915,7 +20915,7 @@ IL_003c:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 31528
+// Method Definition Index: 31529
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_MJIABFGKNNN_m8BFBD02024C9CF916FF80715BC97FA52F8736E5D (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20934,7 +20934,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31529
+// Method Definition Index: 31530
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_BMPENNFPDBL_m5CAC6F70D648EA27C33772BE4D186610888672A4 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20997,7 +20997,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31530
+// Method Definition Index: 31531
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_KLJCOBFODMG_m9E11BB2A2B1952451B6B6E0576497AE7ADAE912B (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21523,7 +21523,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31531
+// Method Definition Index: 31532
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_HPCJDMNABJB_m350BBA2F17D730D7EE2C1D4A924927C51DC4BE6D (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21575,7 +21575,7 @@ IL_003c:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 31532
+// Method Definition Index: 31533
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_GHHJGFHHFGO_m55048351024E7D58AA6D1926E6C096B522D30100 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21594,7 +21594,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31533
+// Method Definition Index: 31534
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_OBIENMDLONE_mD92E7193C3FF7F30CA5D6140E73D2CBF4A7CB4CB (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21646,7 +21646,7 @@ IL_003c:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 31534
+// Method Definition Index: 31535
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_KGMFGNINKFA_m8D6DE5835908AC7027AFD99F788B9823BC6044A5 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21698,7 +21698,7 @@ IL_003c:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 31535
+// Method Definition Index: 31536
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_HCJMFIKIGEG_mACD9B2B79DD3E7783BCC5B6B8F6837BBDB35C2F4 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21750,7 +21750,7 @@ IL_003c:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 31536
+// Method Definition Index: 31537
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_GPAKMEKEEAA_m4739B922F5F55A36D79F3183DEC7D95C8BDFEA2A (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21802,7 +21802,7 @@ IL_003c:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 31537
+// Method Definition Index: 31538
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager__ctor_m8C67E93D9250C848BCCA5AA7FF3FE007B7F819EA (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, String_t* ___1_KJGCGKDMJMK, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21952,7 +21952,7 @@ IL_00b2:
 		return;
 	}
 }
-// Method Definition Index: 31538
+// Method Definition Index: 31539
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_CDAMJNFGACK_m65B697884054D6465702FB6FB258FB338706B83B (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22004,7 +22004,7 @@ IL_003c:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 31539
+// Method Definition Index: 31540
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_MJONIPAJNPL_mA65F81C7200BDD68215E2C7A63057BFB3120D21B (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22035,7 +22035,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_MJONIPAJNPL_mA65F81C720
 		return;
 	}
 }
-// Method Definition Index: 31540
+// Method Definition Index: 31541
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_MDEGMBBHMAK_m118FA4C7F34C549F2540434B37B09A0DAF4A2D5A (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22564,7 +22564,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31541
+// Method Definition Index: 31542
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_LLDKPBGCFML_mEBDD0989B236D4DC23C9F676D8C202D7617A56E4 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22627,7 +22627,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31542
+// Method Definition Index: 31543
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_EDNILMPDCOD_m986C34E303B130D9CC1B7C74DCF7CB71D30C17F0 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22679,7 +22679,7 @@ IL_003c:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 31543
+// Method Definition Index: 31544
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_MOLLGCHHEPC_m8F2D0F2B3D864EFD046C4E893544A747AEC954D9 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22742,7 +22742,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31544
+// Method Definition Index: 31545
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_MCBLCHHJNNP_mD520E75B26958865B1FC600280C3DC8E131AC47B (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22773,7 +22773,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_MCBLCHHJNNP_mD520E75B26
 		return;
 	}
 }
-// Method Definition Index: 31545
+// Method Definition Index: 31546
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_LPCAGHGDEAG_mCE942CED35F91C88988FAF0CCA9D19FB57CDC0B4 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23302,7 +23302,7 @@ IL_02b6:
 		return L_92;
 	}
 }
-// Method Definition Index: 31546
+// Method Definition Index: 31547
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WatermarkManager_DMCLBOIFODO_m501AA34E6F71EF3DE8DD513C73E2C963B458AF17 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23365,7 +23365,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 31547
+// Method Definition Index: 31548
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager_FNHKGMACPNK_m2B8248DF98DFA8083F2849AEF7282BC6BAFED134 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23384,7 +23384,7 @@ IL_000e:
 		return;
 	}
 }
-// Method Definition Index: 31548
+// Method Definition Index: 31549
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager__ctor_mB40851A53FD8F7119D40347C120D61BC53D48F56 (WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_HPIDOJHLODB, const RuntimeMethod* method) 
 {
 	{
@@ -23399,7 +23399,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WatermarkManager__ctor_mB40851A53FD8F711
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 65697
+// Method Definition Index: 65698
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, float ___0_x, float ___1_y, float ___2_width, float ___3_height, const RuntimeMethod* method) 
 {
 	{

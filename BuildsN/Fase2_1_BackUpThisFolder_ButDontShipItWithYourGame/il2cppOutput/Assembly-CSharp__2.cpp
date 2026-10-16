@@ -398,8 +398,8 @@ struct WatermarkManager_t5590D4CFE37EDA1D4A703FFB32721A320E541A82;
 struct XROrigin_t5E534A6D886991AF3C1C64127E19A3A510009CFE;
 struct ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C;
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
-struct U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B;
-struct U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04;
+struct U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC;
+struct U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083;
 struct ClimateResult_t03A0AC505B79DDFF5990F144F1916136CD8C7FF1;
 struct IndexEntry_tF06BAA833FC828D021D33A851B547AB0C47EA92E;
 struct WindowResult_t33C7650393803919211113A36F838A934B3DA1B6;
@@ -512,7 +512,7 @@ IL2CPP_EXTERN_C RuntimeClass* ThermalPanel_t274B80096A829BF2C22868B7855460FE129C
 IL2CPP_EXTERN_C RuntimeClass* ThermalProbe_tC90408885E78B4AFAA9797674D861DE7928DFA5D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ThermalSurface_t92068BC798686B67F2C2F5156DC178069C62DBEC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CLoadRoutineU3Ed__46_t74B7CFBB60598E83DD8E840810E2F8FBD8AF4AC1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CRunU3Ed__59_tBD369F57FF25458640CBAC18E82CA7EF1B672619_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass10_0_t1BE2041DAE371CD6CA79486093110734D944C5CD_il2cpp_TypeInfo_var;
@@ -637,7 +637,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral67B7A57C7F1B54B5F91DAF2B4E104BFEE08923BC
 IL2CPP_EXTERN_C String_t* _stringLiteral6856AA95C0DC001F7B55F89DDC8EBA8269D873C7;
 IL2CPP_EXTERN_C String_t* _stringLiteral6863CAD535BA256436DF16C3A52F453D14B6C897;
 IL2CPP_EXTERN_C String_t* _stringLiteral69520730213CDED741A5919BB83F6E4B8610EDBA;
-IL2CPP_EXTERN_C String_t* _stringLiteral6E3AD39F7CBF6DEAA2F28C2D97BE0B473D20274A;
 IL2CPP_EXTERN_C String_t* _stringLiteral6E406F54916DF3CDE0FE147E64F4BA201CA64793;
 IL2CPP_EXTERN_C String_t* _stringLiteral6F2265F59CF262365D2ACECA73999B6B899761A2;
 IL2CPP_EXTERN_C String_t* _stringLiteral6F234C226F3777E4B98B297558870FAD0B093515;
@@ -710,7 +709,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralACDF453007A75DBF73A9F9EC5708772F080D462B
 IL2CPP_EXTERN_C String_t* _stringLiteralADA468DF07AB544D2961532CE56EDD1E784217C8;
 IL2CPP_EXTERN_C String_t* _stringLiteralAE084F0379CAFD235A862CF7379A4314D37CE4C4;
 IL2CPP_EXTERN_C String_t* _stringLiteralAF421BF8E0756E9F4F0F70DC5572DEAA33CEAE15;
-IL2CPP_EXTERN_C String_t* _stringLiteralAFC3F595B39D01914F5DC093C7FD20AAFEEA4C11;
 IL2CPP_EXTERN_C String_t* _stringLiteralAFE97DFC27ED1AD5836BA3FBC6A7A6AD85E9AEC7;
 IL2CPP_EXTERN_C String_t* _stringLiteralB16E95778B32C902E686A009D2759DA9FE2B170E;
 IL2CPP_EXTERN_C String_t* _stringLiteralB25CF1C6B74339FBFCE846454A70688CE58C094C;
@@ -827,11 +825,11 @@ IL2CPP_EXTERN_C const RuntimeMethod* ClimateContext_RequestIndices_mC0CF7F5EB40C
 IL2CPP_EXTERN_C const RuntimeMethod* ClimateContext_RequestThermal_mB5A644C452BA1B7727D54B29B4E8EE5C63C399EE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ClimateIndicesPanel_Refresh_m1C08CBD7E41BBA6B22580C4F9106D20D9EC70BF4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ClimateIndicesPanel_ShowParams_mDBED3F75F262935E84EFC3B2D3486ED0E6100874_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* ClimateIndicesPanel_U3CTryBuildU3Eb__31_2_mBE47162CE0EBB1E3843B6083C7818705C66430DE_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* ClimateIndicesPanel_U3CTryBuildU3Eb__31_3_m0A6404973DD78073663A78A25A7EFC4EA7D29019_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* ClimateIndicesPanel_U3CTryBuildU3Eb__31_4_m0F1835C7E4D5B78EA534ADAD4A6E0F180E51FE69_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* ClimateIndicesPanel_U3CTryBuildU3Eb__31_5_mF4C28C1FB16C3A99CB413BBDC15913AF8D21734D_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* ClimateIndicesPanel_U3CTryBuildU3Eb__31_6_m0551CBFEB755AA8F6C81C530DABE09AC83E009A3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ClimateIndicesPanel_U3CTryBuildU3Eb__30_2_m6FB20D02B1BEA8B4838E74D39C11C50DBFDBEBB5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ClimateIndicesPanel_U3CTryBuildU3Eb__30_3_m5137F9122E7B8DD27B2964A59756F2C7E12EC0AA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ClimateIndicesPanel_U3CTryBuildU3Eb__30_4_m7C3406B324D83132CBBAD792495C65E7C7E1F3DE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ClimateIndicesPanel_U3CTryBuildU3Eb__30_5_m7ECFFC536818F7FB037FFF50A6B5CE719A5878F9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ClimateIndicesPanel_U3CTryBuildU3Eb__30_6_m02CC513A349E1C05BF94EF974924649F56C3907F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisCharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A_m9CF0DF91BC61CDD3F9DBCEE95792EE6151AC565F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mA5C534600978A673C682FADEE1BBFE1B535981AA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisBoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23_m59698092F1230C6FB7F40D0F58F643A931A732D7_RuntimeMethod_var;
@@ -947,8 +945,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CLoadRoutineU3Ed__46_System_Collections_I
 IL2CPP_EXTERN_C const RuntimeMethod* U3CRunU3Ed__59_System_Collections_IEnumerator_Reset_mE4E053AC94CF1003F23AA8AD92B7DEBDBC45EA1F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CTryBuildU3Eb__13_0_mEBC32226D275E66B1E3AF3B13C37CB96BAE56E58_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CTryBuildU3Eb__13_1_m9FA0EA1B064D66C7F2074DB83B27EB93299BBA65_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CTryBuildU3Eb__31_0_m854C6948AB3D0792CF82930F1AB1E471DC0CEC82_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CTryBuildU3Eb__31_1_m5A3B77AB7CF162D5562ACBB6A7C20B6567C333B2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CTryBuildU3Eb__30_0_m0A891F4DD011065D3128A922C276D8E2B56FA719_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CTryBuildU3Eb__30_1_mB13C1E66AA92D72289B5404F9E0C905E8A7DC67A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass10_0_U3CAddButtonU3Eb__0_m3E71450A9646AA2F2C3BF57F04893AB820D700A4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass28_0_U3CTryBuildU3Eb__6_mD82DF1BDE6755FD37283303C28AF9B6AC5668F8D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass44_0_U3CDeclaredU3Eb__0_m3C491117E36B109BDA9BB6E2D6058235D59C53EA_RuntimeMethod_var;
@@ -2395,14 +2393,14 @@ struct XRNode_t41F4B2F0EDD99DB33C49EC731C8C7F9DF142B5FF
 {
 	int32_t ___value__;
 };
-struct U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04  : public RuntimeObject
+struct U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
 	ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* ___U3CU3E4__this;
 	ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 ___ch;
 	bool ___tourism;
-	U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* ___U3CU3E8__1;
+	U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* ___U3CU3E8__1;
 };
 struct Risk_tEBA17615667503BB26A6BEF0066249522E1F345C 
 {
@@ -3061,7 +3059,6 @@ struct ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB  : public M
 	bool ___built;
 	bool ___busy;
 	float ___nextRefresh;
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___applyButton;
 	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___paramsView;
 	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___resultsView;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___summary;
@@ -3632,7 +3629,6 @@ struct SessionState_t494DCBCB0C8F28C3F431E1C881C5F7E3675D6299  : public NetworkB
 {
 	NetworkVariable_1_t8CDF37392A4E365EAAA0171433C7541339E5B9FD* ___HostClientId;
 	NetworkVariable_1_t99ADAC591202E455B26B3C2957CC36B4DE485FB6* ___Choice;
-	NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* ___Indices;
 	NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* ___Thermal;
 };
 struct VrPlayerAvatar_t65DB224485865133C85A34558E37ADB7E83A374C  : public NetworkBehaviour_t1F9CC6E5B76D29ECECBB61F02D8E8EDE24CDDDCE
@@ -4118,8 +4114,8 @@ struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_ThreadStaticFields
 struct U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields
 {
 	U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452* ___U3CU3E9;
-	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___U3CU3E9__31_0;
-	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___U3CU3E9__31_1;
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___U3CU3E9__30_0;
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___U3CU3E9__30_1;
 };
 struct U3CU3Ec_t1DC6D119051834191996BF06C3A0BDCFD563D215_StaticFields
 {
@@ -5564,8 +5560,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SessionState_set_Instance_mB
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool NetworkBehaviour_get_IsServer_m57CCCE498593E3A21E6B952AB9C4BAA482EB4CD6_inline (NetworkBehaviour_t1F9CC6E5B76D29ECECBB61F02D8E8EDE24CDDDCE* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SessionState_get_HostAssigned_m2C12B76856A0A35DD5F1758CB5E1434666422E31 (SessionState_t494DCBCB0C8F28C3F431E1C881C5F7E3675D6299* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClimateChoice_Equals_m56235C198DD022AB06001AB874A6101850007F14 (ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417* __this, ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 ___0_o, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 ClimateContext_get_IndicesRequest_m9CD016B13F7DA95120896A70A839F9B0B20ABAEE_inline (const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateContext_ApplyRemote_m73F763C185E721849110126A73ACB43B6A0928CD (ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 ___0_choice, ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 ___1_indices, ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 ___2_thermal, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateContext_ApplyRemote_m40BF1124CCCFA8C384F12A39C29C046FDA614986 (ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 ___0_choice, ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 ___1_thermal, const RuntimeMethod* method) ;
 inline void NetworkVariable_1__ctor_m693975ED691677E8A8DA7ADC032719FEAA0F54D0 (NetworkVariable_1_t8CDF37392A4E365EAAA0171433C7541339E5B9FD* __this, uint64_t ___0_value, int32_t ___1_readPerm, int32_t ___2_writePerm, const RuntimeMethod* method)
 {
 	((  void (*) (NetworkVariable_1_t8CDF37392A4E365EAAA0171433C7541339E5B9FD*, uint64_t, int32_t, int32_t, const RuntimeMethod*))NetworkVariable_1__ctor_m693975ED691677E8A8DA7ADC032719FEAA0F54D0_gshared)(__this, ___0_value, ___1_readPerm, ___2_writePerm, method);
@@ -5887,6 +5882,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ClimateContext_set_WindowMod
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ClimateContext_set_IndexType_m2E74AEA59E98997C9CDD734E5FE50ABD7D2471F4_inline (int32_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ClimateContext_get_Profile_m94F0043C61AFBFB20EB13500F26EB484E05F69B0_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ClimateContext_set_Profile_m2D0EB0C8E04D7D7A655E3872D9D4AA9060055E66_inline (int32_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 ClimateContext_get_IndicesRequest_m9CD016B13F7DA95120896A70A839F9B0B20ABAEE_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ClimateContext_set_IndicesRequest_m1E4B2E8428962AF76668FA36D6632473A95B45D1_inline (ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ClimateContext_set_ThermalRequest_mFE92596FD92BCFDB70B892C9915B20D294F1C42F_inline (ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_TryBuild_mA3C894E1DD6F661D8234F7E1F94954A990FFA32F (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, const RuntimeMethod* method) ;
@@ -5921,7 +5917,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ClimateIndicesPanel_ProfileId_m80E3
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_ShowResults_m5E5BABE850B3EE8359D6BAEB89E9E3F8E85C1A27 (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_Text_set_pageToDisplay_mBD985B613FCEC04266FDA43E916B19DD505D7469 (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ClimateIndicesPanel_FetchRoutine_m43E35D67A7B804C5E978B56805D9F9493C2778FA (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 ___0_ch, bool ___1_tourism, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFetchRoutineU3Ed__40__ctor_mA85E90204C2C3A6735CC61290115426574E5C16D (U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFetchRoutineU3Ed__39__ctor_m9684ED4943E28D7B6D0B9976F0999BDFC22A7198 (U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t TMP_Text_get_pageToDisplay_mAA3CCC7BD6CA9430558F3409E05B6E754D82C730_inline (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_UpdatePageStatus_m817D95E9DC88B41BD195AFDB4ACBB849FCE2C258 (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, const RuntimeMethod* method) ;
@@ -17702,9 +17698,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionState_OnNetworkSpawn_m96E9D62CCF3
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B5_0 = NULL;
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B4_0 = NULL;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:71>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:69>
 		SessionState_set_Instance_mB23F4086F5FD2E421B03323AF7B4B36FC01920CC_inline(__this, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:73>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:71>
 		bool L_0;
 		L_0 = NetworkBehaviour_get_IsServer_m57CCCE498593E3A21E6B952AB9C4BAA482EB4CD6_inline(__this, NULL);
 		if (!L_0)
@@ -17721,7 +17717,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionState_OnNetworkSpawn_m96E9D62CCF3
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:73>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:71>
 		NetworkVariable_1_t8CDF37392A4E365EAAA0171433C7541339E5B9FD* L_2 = __this->___HostClientId;
 		NetworkManager_t3C1F76E0C1B39BB363D1C5C7667A5CC90A6CE468* L_3;
 		L_3 = NetworkBehaviour_get_NetworkManager_mB42548F1F4877DC884DDBFF2F110F719D9EC8C57(__this, NULL);
@@ -17734,7 +17730,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionState_OnNetworkSpawn_m96E9D62CCF3
 
 IL_002c:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:74>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:72>
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_5 = ((SessionState_t494DCBCB0C8F28C3F431E1C881C5F7E3675D6299_StaticFields*)il2cpp_codegen_static_fields_for(SessionState_t494DCBCB0C8F28C3F431E1C881C5F7E3675D6299_il2cpp_TypeInfo_var))->___OnReady;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_6 = L_5;
 		if (L_6)
@@ -17752,7 +17748,7 @@ IL_0036:
 	{
 		NullCheck(G_B5_0);
 		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B5_0, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:75>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:73>
 		return;
 	}
 }
@@ -17766,7 +17762,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionState_OnNetworkDespawn_m3BFACE41E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:77>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:75>
 		SessionState_t494DCBCB0C8F28C3F431E1C881C5F7E3675D6299* L_0;
 		L_0 = SessionState_get_Instance_mE358A7BACD7E9AED265962B326F8043BA7C7F213_inline(NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -17778,13 +17774,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionState_OnNetworkDespawn_m3BFACE41E
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:77>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:75>
 		SessionState_set_Instance_mB23F4086F5FD2E421B03323AF7B4B36FC01920CC_inline((SessionState_t494DCBCB0C8F28C3F431E1C881C5F7E3675D6299*)NULL, NULL);
 	}
 
 IL_0013:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:77>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:75>
 		return;
 	}
 }
@@ -17801,14 +17797,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionState_Update_m587DE2F1D153C4B7D5C
 	memset((&V_0), 0, sizeof(V_0));
 	ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 V_1;
 	memset((&V_1), 0, sizeof(V_1));
-	ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 V_2;
+	ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 V_2;
 	memset((&V_2), 0, sizeof(V_2));
-	ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 V_3;
+	ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 V_3;
 	memset((&V_3), 0, sizeof(V_3));
-	ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 V_4;
-	memset((&V_4), 0, sizeof(V_4));
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:81>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:79>
 		bool L_0;
 		L_0 = NetworkBehaviour_get_IsSpawned_m61C7DDBA4399DA812385A297821986D619423C96_inline(__this, NULL);
 		if (L_0)
@@ -17817,42 +17811,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionState_Update_m587DE2F1D153C4B7D5C
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:81>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:79>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:83>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:81>
 		bool L_1;
 		L_1 = NetworkBehaviour_get_IsServer_m57CCCE498593E3A21E6B952AB9C4BAA482EB4CD6_inline(__this, NULL);
 		if (!L_1)
 		{
-			goto IL_008c;
+			goto IL_0062;
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:86>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:84>
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
 		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_2;
 		L_2 = ClimateContext_Snapshot_m1C06B14F007CB25D6E28B8F3262CFE918E354712_inline(NULL);
 		V_0 = L_2;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:87>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:85>
 		NetworkVariable_1_t99ADAC591202E455B26B3C2957CC36B4DE485FB6* L_3 = __this->___Choice;
 		NullCheck(L_3);
 		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_4;
 		L_4 = VirtualFuncInvoker0< ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 >::Invoke(18, L_3);
-		V_3 = L_4;
+		V_2 = L_4;
 		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_5 = V_0;
 		bool L_6;
-		L_6 = ClimateChoice_Equals_m56235C198DD022AB06001AB874A6101850007F14((&V_3), L_5, NULL);
+		L_6 = ClimateChoice_Equals_m56235C198DD022AB06001AB874A6101850007F14((&V_2), L_5, NULL);
 		if (L_6)
 		{
 			goto IL_0039;
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:87>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:85>
 		NetworkVariable_1_t99ADAC591202E455B26B3C2957CC36B4DE485FB6* L_7 = __this->___Choice;
 		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_8 = V_0;
 		NullCheck(L_7);
@@ -17861,85 +17855,52 @@ IL_0009:
 
 IL_0039:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:89>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:87>
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
 		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_9;
-		L_9 = ClimateContext_get_IndicesRequest_m9CD016B13F7DA95120896A70A839F9B0B20ABAEE_inline(NULL);
+		L_9 = ClimateContext_get_ThermalRequest_mEC5D29F8963A774CFCD02F52DEF63F874BD85507_inline(NULL);
 		V_1 = L_9;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:90>
-		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_10 = __this->___Indices;
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:88>
+		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_10 = __this->___Thermal;
 		NullCheck(L_10);
 		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_11;
 		L_11 = VirtualFuncInvoker0< ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 >::Invoke(18, L_10);
-		V_4 = L_11;
+		V_3 = L_11;
 		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_12 = V_1;
 		bool L_13;
-		L_13 = ClimateRequest_Equals_m1E19566DE64CFA0C27E85B51A8CF36611AE88741((&V_4), L_12, NULL);
+		L_13 = ClimateRequest_Equals_m1E19566DE64CFA0C27E85B51A8CF36611AE88741((&V_3), L_12, NULL);
 		if (L_13)
 		{
-			goto IL_0062;
+			goto IL_007d;
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:90>
-		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_14 = __this->___Indices;
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:88>
+		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_14 = __this->___Thermal;
 		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_15 = V_1;
 		NullCheck(L_14);
 		VirtualActionInvoker1< ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 >::Invoke(19, L_14, L_15);
+		return;
 	}
 
 IL_0062:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:92>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:93>
+		NetworkVariable_1_t99ADAC591202E455B26B3C2957CC36B4DE485FB6* L_16 = __this->___Choice;
+		NullCheck(L_16);
+		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_17;
+		L_17 = VirtualFuncInvoker0< ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 >::Invoke(18, L_16);
+		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_18 = __this->___Thermal;
+		NullCheck(L_18);
+		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_19;
+		L_19 = VirtualFuncInvoker0< ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 >::Invoke(18, L_18);
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
-		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_16;
-		L_16 = ClimateContext_get_ThermalRequest_mEC5D29F8963A774CFCD02F52DEF63F874BD85507_inline(NULL);
-		V_2 = L_16;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:93>
-		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_17 = __this->___Thermal;
-		NullCheck(L_17);
-		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_18;
-		L_18 = VirtualFuncInvoker0< ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 >::Invoke(18, L_17);
-		V_4 = L_18;
-		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_19 = V_2;
-		bool L_20;
-		L_20 = ClimateRequest_Equals_m1E19566DE64CFA0C27E85B51A8CF36611AE88741((&V_4), L_19, NULL);
-		if (L_20)
-		{
-			goto IL_00b2;
-		}
-	}
-	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:93>
-		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_21 = __this->___Thermal;
-		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_22 = V_2;
-		NullCheck(L_21);
-		VirtualActionInvoker1< ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 >::Invoke(19, L_21, L_22);
-		return;
+		ClimateContext_ApplyRemote_m40BF1124CCCFA8C384F12A39C29C046FDA614986(L_17, L_19, NULL);
 	}
 
-IL_008c:
+IL_007d:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:98>
-		NetworkVariable_1_t99ADAC591202E455B26B3C2957CC36B4DE485FB6* L_23 = __this->___Choice;
-		NullCheck(L_23);
-		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_24;
-		L_24 = VirtualFuncInvoker0< ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 >::Invoke(18, L_23);
-		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_25 = __this->___Indices;
-		NullCheck(L_25);
-		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_26;
-		L_26 = VirtualFuncInvoker0< ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 >::Invoke(18, L_25);
-		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_27 = __this->___Thermal;
-		NullCheck(L_27);
-		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_28;
-		L_28 = VirtualFuncInvoker0< ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 >::Invoke(18, L_27);
-		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
-		ClimateContext_ApplyRemote_m73F763C185E721849110126A73ACB43B6A0928CD(L_24, L_26, L_28, NULL);
-	}
-
-IL_00b2:
-	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:100>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:95>
 		return;
 	}
 }
@@ -17980,15 +17941,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionState__ctor_m03DC95EE929CC27BA53F
 		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_3 = V_1;
 		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_4 = (NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120*)il2cpp_codegen_object_new(NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120_il2cpp_TypeInfo_var);
 		NetworkVariable_1__ctor_m30B3DB8D09B570C0251ED34A7C3EC0E6D8A4C259(L_4, L_3, 0, 0, NetworkVariable_1__ctor_m30B3DB8D09B570C0251ED34A7C3EC0E6D8A4C259_RuntimeMethod_var);
-		__this->___Indices = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___Indices), (void*)L_4);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Network/SessionState.cs:65>
-		il2cpp_codegen_initobj((&V_1), sizeof(ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003));
-		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_5 = V_1;
-		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_6 = (NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120*)il2cpp_codegen_object_new(NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120_il2cpp_TypeInfo_var);
-		NetworkVariable_1__ctor_m30B3DB8D09B570C0251ED34A7C3EC0E6D8A4C259(L_6, L_5, 0, 0, NetworkVariable_1__ctor_m30B3DB8D09B570C0251ED34A7C3EC0E6D8A4C259_RuntimeMethod_var);
-		__this->___Thermal = L_6;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___Thermal), (void*)L_6);
+		__this->___Thermal = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___Thermal), (void*)L_4);
 		il2cpp_codegen_runtime_class_init_inline(NetworkBehaviour_t1F9CC6E5B76D29ECECBB61F02D8E8EDE24CDDDCE_il2cpp_TypeInfo_var);
 		NetworkBehaviour__ctor_m0BFD04A5D02376F13DD2E85274836CD4A3AD38E6(__this, NULL);
 		return;
@@ -18004,7 +17958,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionState___initializeVariables_mA6D7
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral29ED1A13998FA216DE590B7B4A0E1BA41687EF57);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6863CAD535BA256436DF16C3A52F453D14B6C897);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral751F75F989C853F8DF6DDB10BB491F85CDB991CE);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAFC3F595B39D01914F5DC093C7FD20AAFEEA4C11);
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
@@ -18059,7 +18012,7 @@ IL_006a:
 		NetworkVariable_1_t99ADAC591202E455B26B3C2957CC36B4DE485FB6* L_13 = __this->___Choice;
 		NullCheck(L_12);
 		List_1_Add_m54A78E41D3D8AD7DCECCECE6856C86A269CD0E30_inline(L_12, L_13, List_1_Add_m54A78E41D3D8AD7DCECCECE6856C86A269CD0E30_RuntimeMethod_var);
-		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_14 = __this->___Indices;
+		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_14 = __this->___Thermal;
 		V_0 = (bool)((((RuntimeObject*)(NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120*)L_14) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
 		bool L_15 = V_0;
 		if (!L_15)
@@ -18069,46 +18022,21 @@ IL_006a:
 	}
 	{
 		Exception_t* L_16 = (Exception_t*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)));
-		Exception__ctor_m9B2BD92CD68916245A75109105D9071C9D430E7F(L_16, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral6E3AD39F7CBF6DEAA2F28C2D97BE0B473D20274A)), NULL);
+		Exception__ctor_m9B2BD92CD68916245A75109105D9071C9D430E7F(L_16, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralEBE7F9B48331E48457CF30E1726F91F09F226264)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_16, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SessionState___initializeVariables_mA6D783A9F293F5564CDE3349E35392B77DE8FD06_RuntimeMethod_var)));
 	}
 
 IL_00b7:
 	{
-		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_17 = __this->___Indices;
+		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_17 = __this->___Thermal;
 		NullCheck(L_17);
 		NetworkVariableBase_Initialize_m3CDC76289526BDD5D31AEFC63650A394E4DAB8C7(L_17, __this, NULL);
-		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_18 = __this->___Indices;
-		NetworkBehaviour___nameNetworkVariable_mD7923CFA9074BE302ABD036CB22D5CF397FE0250(__this, L_18, _stringLiteralAFC3F595B39D01914F5DC093C7FD20AAFEEA4C11, NULL);
+		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_18 = __this->___Thermal;
+		NetworkBehaviour___nameNetworkVariable_mD7923CFA9074BE302ABD036CB22D5CF397FE0250(__this, L_18, _stringLiteral751F75F989C853F8DF6DDB10BB491F85CDB991CE, NULL);
 		List_1_tB6CC3AFBA7164AC34B1EF29A0A73721899567AE3* L_19 = ((NetworkBehaviour_t1F9CC6E5B76D29ECECBB61F02D8E8EDE24CDDDCE*)__this)->___NetworkVariableFields;
-		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_20 = __this->___Indices;
+		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_20 = __this->___Thermal;
 		NullCheck(L_19);
 		List_1_Add_m54A78E41D3D8AD7DCECCECE6856C86A269CD0E30_inline(L_19, L_20, List_1_Add_m54A78E41D3D8AD7DCECCECE6856C86A269CD0E30_RuntimeMethod_var);
-		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_21 = __this->___Thermal;
-		V_0 = (bool)((((RuntimeObject*)(NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120*)L_21) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
-		bool L_22 = V_0;
-		if (!L_22)
-		{
-			goto IL_0104;
-		}
-	}
-	{
-		Exception_t* L_23 = (Exception_t*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)));
-		Exception__ctor_m9B2BD92CD68916245A75109105D9071C9D430E7F(L_23, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralEBE7F9B48331E48457CF30E1726F91F09F226264)), NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_23, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SessionState___initializeVariables_mA6D783A9F293F5564CDE3349E35392B77DE8FD06_RuntimeMethod_var)));
-	}
-
-IL_0104:
-	{
-		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_24 = __this->___Thermal;
-		NullCheck(L_24);
-		NetworkVariableBase_Initialize_m3CDC76289526BDD5D31AEFC63650A394E4DAB8C7(L_24, __this, NULL);
-		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_25 = __this->___Thermal;
-		NetworkBehaviour___nameNetworkVariable_mD7923CFA9074BE302ABD036CB22D5CF397FE0250(__this, L_25, _stringLiteral751F75F989C853F8DF6DDB10BB491F85CDB991CE, NULL);
-		List_1_tB6CC3AFBA7164AC34B1EF29A0A73721899567AE3* L_26 = ((NetworkBehaviour_t1F9CC6E5B76D29ECECBB61F02D8E8EDE24CDDDCE*)__this)->___NetworkVariableFields;
-		NetworkVariable_1_t4C2FA9508AE1C4CAC817A0EB591241B6468C4120* L_27 = __this->___Thermal;
-		NullCheck(L_26);
-		List_1_Add_m54A78E41D3D8AD7DCECCECE6856C86A269CD0E30_inline(L_26, L_27, List_1_Add_m54A78E41D3D8AD7DCECCECE6856C86A269CD0E30_RuntimeMethod_var);
 		NetworkBehaviour___initializeVariables_mAB026F647922F2011C30132D522A684B36D7560A(__this, NULL);
 		return;
 	}
@@ -25945,33 +25873,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateContext_RequestIndices_mC0CF7F5EB
 	ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:210>
-		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
-		bool L_0;
-		L_0 = ClimateContext_get_CanEdit_mF5CEA56D6ECA3D3236098A4E796D29B546751144(NULL);
-		if (L_0)
-		{
-			goto IL_0008;
-		}
-	}
-	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:210>
-		return;
-	}
-
-IL_0008:
-	{
 		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:211>
 		il2cpp_codegen_initobj((&V_0), sizeof(ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003));
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
-		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_1;
-		L_1 = ClimateContext_get_IndicesRequest_m9CD016B13F7DA95120896A70A839F9B0B20ABAEE_inline(NULL);
-		int32_t L_2 = L_1.___Serial;
-		(&V_0)->___Serial = ((int32_t)il2cpp_codegen_add(L_2, 1));
-		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_3 = ((ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_StaticFields*)il2cpp_codegen_static_fields_for(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var))->___c;
-		(&V_0)->___Choice = L_3;
-		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_4 = V_0;
-		ClimateContext_set_IndicesRequest_m1E4B2E8428962AF76668FA36D6632473A95B45D1_inline(L_4, NULL);
+		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_0;
+		L_0 = ClimateContext_get_IndicesRequest_m9CD016B13F7DA95120896A70A839F9B0B20ABAEE_inline(NULL);
+		int32_t L_1 = L_0.___Serial;
+		(&V_0)->___Serial = ((int32_t)il2cpp_codegen_add(L_1, 1));
+		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_2 = ((ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_StaticFields*)il2cpp_codegen_static_fields_for(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var))->___c;
+		(&V_0)->___Choice = L_2;
+		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_3 = V_0;
+		ClimateContext_set_IndicesRequest_m1E4B2E8428962AF76668FA36D6632473A95B45D1_inline(L_3, NULL);
 		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:212>
 		return;
 	}
@@ -26020,7 +25932,7 @@ IL_0008:
 	}
 }
 // Method Definition Index: 126336
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateContext_ApplyRemote_m73F763C185E721849110126A73ACB43B6A0928CD (ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 ___0_choice, ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 ___1_indices, ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 ___2_thermal, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateContext_ApplyRemote_m40BF1124CCCFA8C384F12A39C29C046FDA614986 (ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 ___0_choice, ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 ___1_thermal, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -26045,35 +25957,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateContext_ApplyRemote_m73F763C185E7
 IL_0009:
 	{
 		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:232>
-		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_2 = ___1_indices;
+		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_2 = ___1_thermal;
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
-		ClimateContext_set_IndicesRequest_m1E4B2E8428962AF76668FA36D6632473A95B45D1_inline(L_2, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:233>
-		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_3 = ___2_thermal;
-		ClimateContext_set_ThermalRequest_mFE92596FD92BCFDB70B892C9915B20D294F1C42F_inline(L_3, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:235>
-		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_4 = ((ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_StaticFields*)il2cpp_codegen_static_fields_for(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var))->___c;
-		bool L_5;
-		L_5 = ClimateChoice_Equals_m56235C198DD022AB06001AB874A6101850007F14((&___0_choice), L_4, NULL);
-		if (!L_5)
+		ClimateContext_set_ThermalRequest_mFE92596FD92BCFDB70B892C9915B20D294F1C42F_inline(L_2, NULL);
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:234>
+		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_3 = ((ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_StaticFields*)il2cpp_codegen_static_fields_for(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var))->___c;
+		bool L_4;
+		L_4 = ClimateChoice_Equals_m56235C198DD022AB06001AB874A6101850007F14((&___0_choice), L_3, NULL);
+		if (!L_4)
 		{
-			goto IL_0024;
+			goto IL_001e;
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:235>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:234>
 		return;
 	}
 
-IL_0024:
+IL_001e:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:236>
-		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_6 = ___0_choice;
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:235>
+		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_5 = ___0_choice;
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
-		((ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_StaticFields*)il2cpp_codegen_static_fields_for(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var))->___c = L_6;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:237>
+		((ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_StaticFields*)il2cpp_codegen_static_fields_for(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var))->___c = L_5;
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:236>
 		ClimateContext_Changed_m4F24BC2132D4E54D2FD5B3734506B2F9C4288946(NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:238>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:237>
 		return;
 	}
 }
@@ -26089,7 +25998,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateContext_Changed_m4F24BC2132D4E54D
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B2_0 = NULL;
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B1_0 = NULL;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:240>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:239>
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = ((ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_StaticFields*)il2cpp_codegen_static_fields_for(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var))->___OnChanged;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = L_0;
@@ -26244,7 +26153,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_Update_mC880955F5539
 	ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:130>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:126>
 		bool L_0 = __this->___built;
 		if (L_0)
 		{
@@ -26252,20 +26161,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_Update_mC880955F5539
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:130>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:126>
 		ClimateIndicesPanel_TryBuild_mA3C894E1DD6F661D8234F7E1F94954A990FFA32F(__this, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:130>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:126>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:133>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:129>
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
 		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_1;
 		L_1 = ClimateContext_get_IndicesRequest_m9CD016B13F7DA95120896A70A839F9B0B20ABAEE_inline(NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:134>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:130>
 		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_2 = V_0;
 		int32_t L_3 = L_2.___Serial;
 		if (!L_3)
@@ -26291,11 +26200,11 @@ IL_000f:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:136>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:132>
 		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_7 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB_il2cpp_TypeInfo_var);
 		((ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB_StaticFields*)il2cpp_codegen_static_fields_for(ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB_il2cpp_TypeInfo_var))->___lastFetched = L_7;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:137>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:133>
 		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_8 = V_0;
 		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_9 = L_8.___Choice;
 		ClimateIndicesPanel_Fetch_m59533096B8B77D0425B75ABF0B86A415CB509A2E(__this, L_9, NULL);
@@ -26303,7 +26212,7 @@ IL_000f:
 
 IL_0045:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:141>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:137>
 		float L_10;
 		L_10 = Time_get_unscaledTime_mAF4040B858903E1325D1C65B8BF1AC61460B2503(NULL);
 		float L_11 = __this->___nextRefresh;
@@ -26313,17 +26222,17 @@ IL_0045:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:143>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:139>
 		float L_12;
 		L_12 = Time_get_unscaledTime_mAF4040B858903E1325D1C65B8BF1AC61460B2503(NULL);
 		__this->___nextRefresh = ((float)il2cpp_codegen_add(L_12, (0.5f)));
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:144>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:140>
 		ClimateIndicesPanel_Refresh_m1C08CBD7E41BBA6B22580C4F9106D20D9EC70BF4(__this, NULL);
 	}
 
 IL_0069:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:146>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:142>
 		return;
 	}
 }
@@ -26339,12 +26248,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_OnDestroy_m35FBE5776
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:148>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:144>
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_0 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_0, __this, (intptr_t)((void*)ClimateIndicesPanel_Refresh_m1C08CBD7E41BBA6B22580C4F9106D20D9EC70BF4_RuntimeMethod_var), NULL);
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
 		ClimateContext_remove_OnChanged_mBC85C7C3042E704648273E3B3CADD257DAFFE2B9(L_0, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:148>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:144>
 		return;
 	}
 }
@@ -26360,19 +26269,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_TryBuild_mA3C894E1DD
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateIndicesPanel_Refresh_m1C08CBD7E41BBA6B22580C4F9106D20D9EC70BF4_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateIndicesPanel_ShowParams_mDBED3F75F262935E84EFC3B2D3486ED0E6100874_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateIndicesPanel_U3CTryBuildU3Eb__31_2_mBE47162CE0EBB1E3843B6083C7818705C66430DE_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateIndicesPanel_U3CTryBuildU3Eb__31_3_m0A6404973DD78073663A78A25A7EFC4EA7D29019_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateIndicesPanel_U3CTryBuildU3Eb__31_4_m0F1835C7E4D5B78EA534ADAD4A6E0F180E51FE69_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateIndicesPanel_U3CTryBuildU3Eb__31_5_mF4C28C1FB16C3A99CB413BBDC15913AF8D21734D_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateIndicesPanel_U3CTryBuildU3Eb__31_6_m0551CBFEB755AA8F6C81C530DABE09AC83E009A3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateIndicesPanel_U3CTryBuildU3Eb__30_2_m6FB20D02B1BEA8B4838E74D39C11C50DBFDBEBB5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateIndicesPanel_U3CTryBuildU3Eb__30_3_m5137F9122E7B8DD27B2964A59756F2C7E12EC0AA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateIndicesPanel_U3CTryBuildU3Eb__30_4_m7C3406B324D83132CBBAD792495C65E7C7E1F3DE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateIndicesPanel_U3CTryBuildU3Eb__30_5_m7ECFFC536818F7FB037FFF50A6B5CE719A5878F9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateIndicesPanel_U3CTryBuildU3Eb__30_6_m02CC513A349E1C05BF94EF974924649F56C3907F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mA5C534600978A673C682FADEE1BBFE1B535981AA_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisFutureClimateClient_t7EF4CC7B4C461B48DB528053B23BF807463FC5D2_m84F37BF9368550DE08C60AE964E39A2658B3E78D_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisLayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A_mBEDAB0EBAEF4ADA5377B97FC2318DE8020F2D639_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_FindFirstObjectByType_TisFutureClimateClient_t7EF4CC7B4C461B48DB528053B23BF807463FC5D2_m4EE027EB52C639146CF37D5216D02AE1FFFA2DD6_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CTryBuildU3Eb__31_0_m854C6948AB3D0792CF82930F1AB1E471DC0CEC82_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CTryBuildU3Eb__31_1_m5A3B77AB7CF162D5562ACBB6A7C20B6567C333B2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CTryBuildU3Eb__30_0_m0A891F4DD011065D3128A922C276D8E2B56FA719_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CTryBuildU3Eb__30_1_mB13C1E66AA92D72289B5404F9E0C905E8A7DC67A_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA_il2cpp_TypeInfo_var);
@@ -26416,13 +26325,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_TryBuild_mA3C894E1DD
 	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* G_B9_2 = NULL;
 	VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* G_B9_3 = NULL;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:156>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:152>
 		il2cpp_codegen_runtime_class_init_inline(VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA_il2cpp_TypeInfo_var);
 		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_0;
 		L_0 = VrHud_get_Instance_m13A8E7FA8796AD1F11220D98B23E20CBA863F8ED_inline(NULL);
 		__this->___hud = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___hud), (void*)L_0);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:157>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:153>
 		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_1 = __this->___hud;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
@@ -26433,13 +26342,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_TryBuild_mA3C894E1DD
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:157>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:153>
 		return;
 	}
 
 IL_001a:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:159>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:155>
 		FutureClimateClient_t7EF4CC7B4C461B48DB528053B23BF807463FC5D2* L_3 = __this->___client;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -26450,7 +26359,7 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:159>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:155>
 		FutureClimateClient_t7EF4CC7B4C461B48DB528053B23BF807463FC5D2* L_5;
 		L_5 = Component_GetComponent_TisFutureClimateClient_t7EF4CC7B4C461B48DB528053B23BF807463FC5D2_m84F37BF9368550DE08C60AE964E39A2658B3E78D(__this, Component_GetComponent_TisFutureClimateClient_t7EF4CC7B4C461B48DB528053B23BF807463FC5D2_m84F37BF9368550DE08C60AE964E39A2658B3E78D_RuntimeMethod_var);
 		__this->___client = L_5;
@@ -26459,7 +26368,7 @@ IL_001a:
 
 IL_0034:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:160>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:156>
 		FutureClimateClient_t7EF4CC7B4C461B48DB528053B23BF807463FC5D2* L_6 = __this->___client;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -26470,7 +26379,7 @@ IL_0034:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:160>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:156>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		FutureClimateClient_t7EF4CC7B4C461B48DB528053B23BF807463FC5D2* L_8;
 		L_8 = Object_FindFirstObjectByType_TisFutureClimateClient_t7EF4CC7B4C461B48DB528053B23BF807463FC5D2_m4EE027EB52C639146CF37D5216D02AE1FFFA2DD6(Object_FindFirstObjectByType_TisFutureClimateClient_t7EF4CC7B4C461B48DB528053B23BF807463FC5D2_m4EE027EB52C639146CF37D5216D02AE1FFFA2DD6_RuntimeMethod_var);
@@ -26480,27 +26389,27 @@ IL_0034:
 
 IL_004d:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:162>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:158>
 		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_9 = __this->___hud;
 		String_t* L_10 = __this->___tabTitle;
 		NullCheck(L_9);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_11;
 		L_11 = VrHud_CreateTab_mDA0A5CE1FC2AA0B55ED53EA5CB49F9DF7909699F(L_9, L_10, NULL);
 		V_0 = L_11;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:163>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:159>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_12 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB_il2cpp_TypeInfo_var);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_13;
 		L_13 = ClimateIndicesPanel_MakeView_mA7F362B9A130B9282C26A05F1FB88C2C11443984(L_12, _stringLiteralD1E55ACA8A9811ECB27C48CFCBA86CB70E461E9C, NULL);
 		__this->___paramsView = L_13;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___paramsView), (void*)L_13);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:164>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:160>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_14 = V_0;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_15;
 		L_15 = ClimateIndicesPanel_MakeView_mA7F362B9A130B9282C26A05F1FB88C2C11443984(L_14, _stringLiteral385BDA213A2E6EDB910E84F082BCA2AD13D4910E, NULL);
 		__this->___resultsView = L_15;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___resultsView), (void*)L_15);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:167>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:163>
 		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_16 = __this->___hud;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_17 = __this->___paramsView;
 		NullCheck(L_16);
@@ -26508,21 +26417,21 @@ IL_004d:
 		L_18 = VrHud_MakeLabel_m645CC9D9432BC387AAB491D20DC670D12FEA5E6B(L_16, L_17, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, (18.0f), ((int32_t)514), NULL);
 		__this->___summary = L_18;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___summary), (void*)L_18);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:168>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:164>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_19 = __this->___summary;
 		ClimateIndicesPanel_SetHeight_mAF31B738B7D36510BF080BFE1779B34B85D22D5A(L_19, (44.0f), NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:170>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:166>
 		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_20 = __this->___hud;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_21 = __this->___paramsView;
 		NullCheck(L_20);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_22;
 		L_22 = VrHud_MakeRow_mE74C839161647CB248E5849811902E957481DF70(L_20, L_21, (52.0f), NULL);
 		V_1 = L_22;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:171>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:167>
 		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_23 = __this->___hud;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_24 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var);
-		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_25 = ((U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var))->___U3CU3E9__31_0;
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_25 = ((U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var))->___U3CU3E9__30_0;
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_26 = L_25;
 		if (L_26)
 		{
@@ -26541,10 +26450,10 @@ IL_004d:
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var);
 		U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452* L_27 = ((U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var))->___U3CU3E9;
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_28 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
-		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_28, L_27, (intptr_t)((void*)U3CU3Ec_U3CTryBuildU3Eb__31_0_m854C6948AB3D0792CF82930F1AB1E471DC0CEC82_RuntimeMethod_var), NULL);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_28, L_27, (intptr_t)((void*)U3CU3Ec_U3CTryBuildU3Eb__30_0_m0A891F4DD011065D3128A922C276D8E2B56FA719_RuntimeMethod_var), NULL);
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_29 = L_28;
-		((U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var))->___U3CU3E9__31_0 = L_29;
-		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var))->___U3CU3E9__31_0), (void*)L_29);
+		((U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var))->___U3CU3E9__30_0 = L_29;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var))->___U3CU3E9__30_0), (void*)L_29);
 		G_B8_0 = L_29;
 		G_B8_1 = G_B7_1;
 		G_B8_2 = G_B7_2;
@@ -26557,11 +26466,11 @@ IL_00f9:
 		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_30;
 		L_30 = VrHud_MakeButton_mADBBA39EBD46C4EBFC282540010E6F229CCDF7C4(G_B8_3, G_B8_2, G_B8_1, G_B8_0, NULL);
 		V_2 = L_30;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:172>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:168>
 		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_31 = __this->___hud;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_32 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var);
-		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_33 = ((U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var))->___U3CU3E9__31_1;
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_33 = ((U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var))->___U3CU3E9__30_1;
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_34 = L_33;
 		if (L_34)
 		{
@@ -26580,10 +26489,10 @@ IL_00f9:
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var);
 		U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452* L_35 = ((U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var))->___U3CU3E9;
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_36 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
-		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_36, L_35, (intptr_t)((void*)U3CU3Ec_U3CTryBuildU3Eb__31_1_m5A3B77AB7CF162D5562ACBB6A7C20B6567C333B2_RuntimeMethod_var), NULL);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_36, L_35, (intptr_t)((void*)U3CU3Ec_U3CTryBuildU3Eb__30_1_mB13C1E66AA92D72289B5404F9E0C905E8A7DC67A_RuntimeMethod_var), NULL);
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_37 = L_36;
-		((U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var))->___U3CU3E9__31_1 = L_37;
-		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var))->___U3CU3E9__31_1), (void*)L_37);
+		((U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var))->___U3CU3E9__30_1 = L_37;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var))->___U3CU3E9__30_1), (void*)L_37);
 		G_B10_0 = L_37;
 		G_B10_1 = G_B9_1;
 		G_B10_2 = G_B9_2;
@@ -26596,59 +26505,59 @@ IL_012a:
 		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_38;
 		L_38 = VrHud_MakeButton_mADBBA39EBD46C4EBFC282540010E6F229CCDF7C4(G_B10_3, G_B10_2, G_B10_1, G_B10_0, NULL);
 		V_3 = L_38;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:173>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:169>
 		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_39 = V_2;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_40 = L_39.___Item2;
 		__this->___heritageImage = L_40;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___heritageImage), (void*)L_40);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:173>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:169>
 		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_41 = V_3;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_42 = L_41.___Item2;
 		__this->___tourismImage = L_42;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___tourismImage), (void*)L_42);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:176>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:177>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:172>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:173>
 		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_43 = __this->___hud;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_44 = V_1;
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_45 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
-		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_45, __this, (intptr_t)((void*)ClimateIndicesPanel_U3CTryBuildU3Eb__31_2_mBE47162CE0EBB1E3843B6083C7818705C66430DE_RuntimeMethod_var), NULL);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_45, __this, (intptr_t)((void*)ClimateIndicesPanel_U3CTryBuildU3Eb__30_2_m6FB20D02B1BEA8B4838E74D39C11C50DBFDBEBB5_RuntimeMethod_var), NULL);
 		NullCheck(L_43);
 		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_46;
 		L_46 = VrHud_MakeButton_mADBBA39EBD46C4EBFC282540010E6F229CCDF7C4(L_43, L_44, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, L_45, NULL);
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_47 = L_46.___Item1;
 		__this->___profileButton = L_47;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___profileButton), (void*)L_47);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:178>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:174>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_48 = __this->___profileButton;
 		NullCheck(L_48);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_49;
 		L_49 = Component_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mA5C534600978A673C682FADEE1BBFE1B535981AA(L_48, Component_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mA5C534600978A673C682FADEE1BBFE1B535981AA_RuntimeMethod_var);
 		__this->___profileText = L_49;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___profileText), (void*)L_49);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:180>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:176>
 		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_50 = __this->___hud;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_51 = __this->___paramsView;
 		NullCheck(L_50);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_52;
 		L_52 = VrHud_MakeRow_mE74C839161647CB248E5849811902E957481DF70(L_50, L_51, (52.0f), NULL);
 		V_4 = L_52;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:181>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:177>
 		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_53 = __this->___hud;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_54 = V_4;
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_55 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
-		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_55, __this, (intptr_t)((void*)ClimateIndicesPanel_U3CTryBuildU3Eb__31_3_m0A6404973DD78073663A78A25A7EFC4EA7D29019_RuntimeMethod_var), NULL);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_55, __this, (intptr_t)((void*)ClimateIndicesPanel_U3CTryBuildU3Eb__30_3_m5137F9122E7B8DD27B2964A59756F2C7E12EC0AA_RuntimeMethod_var), NULL);
 		NullCheck(L_53);
 		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_56;
 		L_56 = VrHud_MakeButton_mADBBA39EBD46C4EBFC282540010E6F229CCDF7C4(L_53, L_54, _stringLiteralE3E71E076A3A73DC5810E09C3BD20ABEDEB96BE1, L_55, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:182>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:178>
 		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_57 = __this->___hud;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_58 = V_4;
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_59 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
-		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_59, __this, (intptr_t)((void*)ClimateIndicesPanel_U3CTryBuildU3Eb__31_4_m0F1835C7E4D5B78EA534ADAD4A6E0F180E51FE69_RuntimeMethod_var), NULL);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_59, __this, (intptr_t)((void*)ClimateIndicesPanel_U3CTryBuildU3Eb__30_4_m7C3406B324D83132CBBAD792495C65E7C7E1F3DE_RuntimeMethod_var), NULL);
 		NullCheck(L_57);
 		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_60;
 		L_60 = VrHud_MakeButton_mADBBA39EBD46C4EBFC282540010E6F229CCDF7C4(L_57, L_58, _stringLiteral2A0E35B9E2F7FC00ABB2E7B9A6D46879862357FE, L_59, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:183>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:179>
 		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_61 = __this->___hud;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_62 = V_4;
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_63 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
@@ -26657,7 +26566,7 @@ IL_012a:
 		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_64;
 		L_64 = VrHud_MakeButton_mADBBA39EBD46C4EBFC282540010E6F229CCDF7C4(L_61, L_62, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, L_63, NULL);
 		V_5 = L_64;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:184>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:180>
 		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_65 = V_5;
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_66 = L_65.___Item1;
 		NullCheck(L_66);
@@ -26665,7 +26574,7 @@ IL_012a:
 		L_67 = Component_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mA5C534600978A673C682FADEE1BBFE1B535981AA(L_66, Component_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mA5C534600978A673C682FADEE1BBFE1B535981AA_RuntimeMethod_var);
 		__this->___modeText = L_67;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___modeText), (void*)L_67);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:187>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:183>
 		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_68 = __this->___hud;
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_69 = V_4;
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_70 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
@@ -26673,96 +26582,93 @@ IL_012a:
 		NullCheck(L_68);
 		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_71;
 		L_71 = VrHud_MakeButton_mADBBA39EBD46C4EBFC282540010E6F229CCDF7C4(L_68, L_69, _stringLiteralADA468DF07AB544D2961532CE56EDD1E784217C8, L_70, NULL);
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_72 = L_71.___Item1;
-		__this->___applyButton = L_72;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___applyButton), (void*)L_72);
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:186>
+		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_72 = __this->___hud;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_73 = __this->___resultsView;
+		NullCheck(L_72);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_74;
+		L_74 = VrHud_MakeLabel_m645CC9D9432BC387AAB491D20DC670D12FEA5E6B(L_72, L_73, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, (19.0f), ((int32_t)514), NULL);
+		__this->___title = L_74;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___title), (void*)L_74);
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:187>
+		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_75 = __this->___hud;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_76 = __this->___resultsView;
+		NullCheck(L_75);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_77;
+		L_77 = VrHud_MakeLabel_m645CC9D9432BC387AAB491D20DC670D12FEA5E6B(L_75, L_76, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, (15.0f), ((int32_t)514), NULL);
+		__this->___status = L_77;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___status), (void*)L_77);
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:189>
+		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_78 = __this->___hud;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_79 = __this->___resultsView;
+		NullCheck(L_78);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_80;
+		L_80 = VrHud_MakeLabel_m645CC9D9432BC387AAB491D20DC670D12FEA5E6B(L_78, L_79, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, (17.0f), ((int32_t)257), NULL);
+		__this->___body = L_80;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___body), (void*)L_80);
 		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:190>
-		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_73 = __this->___hud;
-		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_74 = __this->___resultsView;
-		NullCheck(L_73);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_75;
-		L_75 = VrHud_MakeLabel_m645CC9D9432BC387AAB491D20DC670D12FEA5E6B(L_73, L_74, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, (19.0f), ((int32_t)514), NULL);
-		__this->___title = L_75;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___title), (void*)L_75);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_81 = __this->___body;
+		NullCheck(L_81);
+		LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A* L_82;
+		L_82 = Component_GetComponent_TisLayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A_mBEDAB0EBAEF4ADA5377B97FC2318DE8020F2D639(L_81, Component_GetComponent_TisLayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A_mBEDAB0EBAEF4ADA5377B97FC2318DE8020F2D639_RuntimeMethod_var);
 		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:191>
-		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_76 = __this->___hud;
-		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_77 = __this->___resultsView;
-		NullCheck(L_76);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_78;
-		L_78 = VrHud_MakeLabel_m645CC9D9432BC387AAB491D20DC670D12FEA5E6B(L_76, L_77, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, (15.0f), ((int32_t)514), NULL);
-		__this->___status = L_78;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___status), (void*)L_78);
+		LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A* L_83 = L_82;
+		NullCheck(L_83);
+		VirtualActionInvoker1< float >::Invoke(38, L_83, (140.0f));
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:191>
+		NullCheck(L_83);
+		VirtualActionInvoker1< float >::Invoke(42, L_83, (1.0f));
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:192>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_84 = __this->___body;
+		NullCheck(L_84);
+		TMP_Text_set_richText_mAB3D04F620E13F02117B34BBA2EF7BD30AAE6F0F(L_84, (bool)1, NULL);
 		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:193>
-		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_79 = __this->___hud;
-		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_80 = __this->___resultsView;
-		NullCheck(L_79);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_81;
-		L_81 = VrHud_MakeLabel_m645CC9D9432BC387AAB491D20DC670D12FEA5E6B(L_79, L_80, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, (17.0f), ((int32_t)257), NULL);
-		__this->___body = L_81;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___body), (void*)L_81);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:194>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_82 = __this->___body;
-		NullCheck(L_82);
-		LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A* L_83;
-		L_83 = Component_GetComponent_TisLayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A_mBEDAB0EBAEF4ADA5377B97FC2318DE8020F2D639(L_82, Component_GetComponent_TisLayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A_mBEDAB0EBAEF4ADA5377B97FC2318DE8020F2D639_RuntimeMethod_var);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:195>
-		LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A* L_84 = L_83;
-		NullCheck(L_84);
-		VirtualActionInvoker1< float >::Invoke(38, L_84, (140.0f));
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:195>
-		NullCheck(L_84);
-		VirtualActionInvoker1< float >::Invoke(42, L_84, (1.0f));
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:196>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_85 = __this->___body;
 		NullCheck(L_85);
-		TMP_Text_set_richText_mAB3D04F620E13F02117B34BBA2EF7BD30AAE6F0F(L_85, (bool)1, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:197>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_86 = __this->___body;
+		TMP_Text_set_overflowMode_mB8911BA07CEE0AC1E4E108B5EB79B230F90E96A1(L_85, 5, NULL);
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:195>
+		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_86 = __this->___hud;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_87 = __this->___resultsView;
 		NullCheck(L_86);
-		TMP_Text_set_overflowMode_mB8911BA07CEE0AC1E4E108B5EB79B230F90E96A1(L_86, 5, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:199>
-		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_87 = __this->___hud;
-		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_88 = __this->___resultsView;
-		NullCheck(L_87);
-		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_89;
-		L_89 = VrHud_MakeRow_mE74C839161647CB248E5849811902E957481DF70(L_87, L_88, (52.0f), NULL);
-		V_6 = L_89;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_88;
+		L_88 = VrHud_MakeRow_mE74C839161647CB248E5849811902E957481DF70(L_86, L_87, (52.0f), NULL);
+		V_6 = L_88;
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:196>
+		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_89 = __this->___hud;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_90 = V_6;
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_91 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_91, __this, (intptr_t)((void*)ClimateIndicesPanel_U3CTryBuildU3Eb__30_5_m7ECFFC536818F7FB037FFF50A6B5CE719A5878F9_RuntimeMethod_var), NULL);
+		NullCheck(L_89);
+		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_92;
+		L_92 = VrHud_MakeButton_mADBBA39EBD46C4EBFC282540010E6F229CCDF7C4(L_89, L_90, _stringLiteral8B80FC26B464DBA952BAEEB2AF779996E80D270A, L_91, NULL);
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:197>
+		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_93 = __this->___hud;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_94 = V_6;
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_95 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_95, __this, (intptr_t)((void*)ClimateIndicesPanel_ShowParams_mDBED3F75F262935E84EFC3B2D3486ED0E6100874_RuntimeMethod_var), NULL);
+		NullCheck(L_93);
+		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_96;
+		L_96 = VrHud_MakeButton_mADBBA39EBD46C4EBFC282540010E6F229CCDF7C4(L_93, L_94, _stringLiteral4A261EB7E7319776625F5A015EA18053797E6890, L_95, NULL);
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:198>
+		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_97 = __this->___hud;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_98 = V_6;
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_99 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_99, __this, (intptr_t)((void*)ClimateIndicesPanel_U3CTryBuildU3Eb__30_6_m02CC513A349E1C05BF94EF974924649F56C3907F_RuntimeMethod_var), NULL);
+		NullCheck(L_97);
+		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_100;
+		L_100 = VrHud_MakeButton_mADBBA39EBD46C4EBFC282540010E6F229CCDF7C4(L_97, L_98, _stringLiteral7CCC05ABFA05BF58B9970319C6C7D52E94305939, L_99, NULL);
 		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:200>
-		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_90 = __this->___hud;
-		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_91 = V_6;
-		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_92 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
-		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_92, __this, (intptr_t)((void*)ClimateIndicesPanel_U3CTryBuildU3Eb__31_5_mF4C28C1FB16C3A99CB413BBDC15913AF8D21734D_RuntimeMethod_var), NULL);
-		NullCheck(L_90);
-		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_93;
-		L_93 = VrHud_MakeButton_mADBBA39EBD46C4EBFC282540010E6F229CCDF7C4(L_90, L_91, _stringLiteral8B80FC26B464DBA952BAEEB2AF779996E80D270A, L_92, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:201>
-		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_94 = __this->___hud;
-		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_95 = V_6;
-		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_96 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
-		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_96, __this, (intptr_t)((void*)ClimateIndicesPanel_ShowParams_mDBED3F75F262935E84EFC3B2D3486ED0E6100874_RuntimeMethod_var), NULL);
-		NullCheck(L_94);
-		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_97;
-		L_97 = VrHud_MakeButton_mADBBA39EBD46C4EBFC282540010E6F229CCDF7C4(L_94, L_95, _stringLiteral4A261EB7E7319776625F5A015EA18053797E6890, L_96, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:202>
-		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_98 = __this->___hud;
-		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_99 = V_6;
-		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_100 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
-		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_100, __this, (intptr_t)((void*)ClimateIndicesPanel_U3CTryBuildU3Eb__31_6_m0551CBFEB755AA8F6C81C530DABE09AC83E009A3_RuntimeMethod_var), NULL);
-		NullCheck(L_98);
-		ValueTuple_2_t056543C652E819B6CB4E0BCCEFD276BBFB032CF8 L_101;
-		L_101 = VrHud_MakeButton_mADBBA39EBD46C4EBFC282540010E6F229CCDF7C4(L_98, L_99, _stringLiteral7CCC05ABFA05BF58B9970319C6C7D52E94305939, L_100, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:204>
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_102 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_102, __this, (intptr_t)((void*)ClimateIndicesPanel_Refresh_m1C08CBD7E41BBA6B22580C4F9106D20D9EC70BF4_RuntimeMethod_var), NULL);
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_101 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_101, __this, (intptr_t)((void*)ClimateIndicesPanel_Refresh_m1C08CBD7E41BBA6B22580C4F9106D20D9EC70BF4_RuntimeMethod_var), NULL);
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
-		ClimateContext_add_OnChanged_mFC0EF4D8492BE70FEF52DCC1956B5A498E8CFC71(L_102, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:205>
+		ClimateContext_add_OnChanged_mFC0EF4D8492BE70FEF52DCC1956B5A498E8CFC71(L_101, NULL);
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:201>
 		__this->___built = (bool)1;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:206>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:202>
 		ClimateIndicesPanel_ShowParams_mDBED3F75F262935E84EFC3B2D3486ED0E6100874(__this, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:207>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:203>
 		ClimateIndicesPanel_Refresh_m1C08CBD7E41BBA6B22580C4F9106D20D9EC70BF4(__this, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:208>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:204>
 		return;
 	}
 }
@@ -26783,7 +26689,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RectTransform_t6C5DA5E41A89E0F488B001E45E5896
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:213>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:209>
 		String_t* L_0 = ___1_name;
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_1 = (TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB*)(TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB*)SZArrayNew(TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB_il2cpp_TypeInfo_var, (uint32_t)3);
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_2 = L_1;
@@ -26810,7 +26716,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RectTransform_t6C5DA5E41A89E0F488B001E45E5896
 		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(2), (Type_t*)L_10);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
 		GameObject__ctor_m721D643351E55308EA4F5F41B67D5446D11C61F0(L_11, L_0, L_8, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:214>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:210>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = L_11;
 		NullCheck(L_12);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13;
@@ -26818,47 +26724,47 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RectTransform_t6C5DA5E41A89E0F488B001E45E5896
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14 = ___0_page;
 		NullCheck(L_13);
 		Transform_SetParent_m9BDD7B7476714B2D7919B10BDC22CE75C0A0A195(L_13, L_14, (bool)0, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:215>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:211>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = L_12;
 		NullCheck(L_15);
 		VerticalLayoutGroup_t06B5E51FC8051BF2009E6494876FBB9F3E5320B8* L_16;
 		L_16 = GameObject_GetComponent_TisVerticalLayoutGroup_t06B5E51FC8051BF2009E6494876FBB9F3E5320B8_mA495DDE259B2F34EE37A95CF1506161130698C8C(L_15, GameObject_GetComponent_TisVerticalLayoutGroup_t06B5E51FC8051BF2009E6494876FBB9F3E5320B8_mA495DDE259B2F34EE37A95CF1506161130698C8C_RuntimeMethod_var);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:216>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:212>
 		VerticalLayoutGroup_t06B5E51FC8051BF2009E6494876FBB9F3E5320B8* L_17 = L_16;
 		NullCheck(L_17);
 		LayoutGroup_set_childAlignment_mA97DF1F2CF43C0CD1B83CFE7883626AA86ABB0AF(L_17, 1, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:216>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:212>
 		VerticalLayoutGroup_t06B5E51FC8051BF2009E6494876FBB9F3E5320B8* L_18 = L_17;
 		NullCheck(L_18);
 		HorizontalOrVerticalLayoutGroup_set_spacing_m90373F54D37DA8DFA90E102DC60EC33E542FD859(L_18, (10.0f), NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:217>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:213>
 		VerticalLayoutGroup_t06B5E51FC8051BF2009E6494876FBB9F3E5320B8* L_19 = L_18;
 		NullCheck(L_19);
 		HorizontalOrVerticalLayoutGroup_set_childControlWidth_m0B9A78B8284E17C438645684984796AC0E2D1BD8(L_19, (bool)1, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:217>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:213>
 		VerticalLayoutGroup_t06B5E51FC8051BF2009E6494876FBB9F3E5320B8* L_20 = L_19;
 		NullCheck(L_20);
 		HorizontalOrVerticalLayoutGroup_set_childControlHeight_m8DD189C9B1F926641F4A2FD41F41F2097E4D7751(L_20, (bool)1, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:218>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:214>
 		VerticalLayoutGroup_t06B5E51FC8051BF2009E6494876FBB9F3E5320B8* L_21 = L_20;
 		NullCheck(L_21);
 		HorizontalOrVerticalLayoutGroup_set_childForceExpandWidth_m351827AA1A453ACD17C2EAC7B4DAB9C5DB1760E5(L_21, (bool)1, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:218>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:214>
 		NullCheck(L_21);
 		HorizontalOrVerticalLayoutGroup_set_childForceExpandHeight_mA144CF421614F41813DE346AA9D1C64621C6C2E5(L_21, (bool)0, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:219>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:215>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = L_15;
 		NullCheck(L_22);
 		LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A* L_23;
 		L_23 = GameObject_GetComponent_TisLayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A_mB80DDAE1EBBC24C6967E5633AD129139079853E4(L_22, GameObject_GetComponent_TisLayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A_mB80DDAE1EBBC24C6967E5633AD129139079853E4_RuntimeMethod_var);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:220>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:216>
 		LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A* L_24 = L_23;
 		NullCheck(L_24);
 		VirtualActionInvoker1< float >::Invoke(40, L_24, (1.0f));
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:220>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:216>
 		NullCheck(L_24);
 		VirtualActionInvoker1< float >::Invoke(42, L_24, (1.0f));
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:221>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:217>
 		NullCheck(L_22);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_25;
 		L_25 = GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4(L_22, GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var);
@@ -26877,13 +26783,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_SetHeight_mAF31B738B
 	}
 	LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A* V_0 = NULL;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:226>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:222>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = ___0_t;
 		NullCheck(L_0);
 		LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A* L_1;
 		L_1 = Component_GetComponent_TisLayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A_mBEDAB0EBAEF4ADA5377B97FC2318DE8020F2D639(L_0, Component_GetComponent_TisLayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A_mBEDAB0EBAEF4ADA5377B97FC2318DE8020F2D639_RuntimeMethod_var);
 		V_0 = L_1;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:227>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:223>
 		LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A* L_2 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -26894,7 +26800,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_SetHeight_mAF31B738B
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:227>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:223>
 		LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A* L_4 = V_0;
 		float L_5 = ___1_h;
 		NullCheck(L_4);
@@ -26903,7 +26809,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_SetHeight_mAF31B738B
 
 IL_0017:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:228>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:224>
 		return;
 	}
 }
@@ -26911,21 +26817,21 @@ IL_0017:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_ShowParams_mDBED3F75F262935E84EFC3B2D3486ED0E6100874 (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:234>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:230>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_0 = __this->___paramsView;
 		NullCheck(L_0);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
 		L_1 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_0, NULL);
 		NullCheck(L_1);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:235>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:231>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_2 = __this->___resultsView;
 		NullCheck(L_2);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
 		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_2, NULL);
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:236>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:232>
 		return;
 	}
 }
@@ -26933,21 +26839,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_ShowParams_mDBED3F75
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_ShowResults_m5E5BABE850B3EE8359D6BAEB89E9E3F8E85C1A27 (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:240>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:236>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_0 = __this->___paramsView;
 		NullCheck(L_0);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
 		L_1 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_0, NULL);
 		NullCheck(L_1);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)0, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:241>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:237>
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_2 = __this->___resultsView;
 		NullCheck(L_2);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
 		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_2, NULL);
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)1, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:242>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:238>
 		return;
 	}
 }
@@ -26991,7 +26897,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_Refresh_m1C08CBD7E41
 	String_t* G_B14_0 = NULL;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B14_1 = NULL;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:246>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:242>
 		bool L_0 = __this->___built;
 		if (L_0)
 		{
@@ -26999,20 +26905,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_Refresh_m1C08CBD7E41
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:246>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:242>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:248>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:244>
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = ClimateContext_get_CanEdit_mF5CEA56D6ECA3D3236098A4E796D29B546751144(NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:251>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:252>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:253>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:247>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:248>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:249>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_2 = __this->___summary;
 		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_3;
 		L_3 = ClimateContext_Snapshot_m1C06B14F007CB25D6E28B8F3262CFE918E354712_inline(NULL);
@@ -27061,135 +26967,130 @@ IL_002e:
 		L_14 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(G_B5_1, G_B5_0, _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD, L_13, NULL);
 		NullCheck(G_B5_2);
 		VirtualActionInvoker1< String_t* >::Invoke(66, G_B5_2, L_14);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:256>
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_15 = __this->___applyButton;
-		bool L_16 = V_0;
-		NullCheck(L_15);
-		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_15, L_16, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:257>
-		int32_t L_17;
-		L_17 = ClimateContext_get_IndexType_mD673204842695C918F67BD1A7245DBEAC550B563_inline(NULL);
-		V_1 = L_17;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:259>
-		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_18 = __this->___heritageImage;
-		int32_t L_19 = V_1;
-		if (!L_19)
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:251>
+		int32_t L_15;
+		L_15 = ClimateContext_get_IndexType_mD673204842695C918F67BD1A7245DBEAC550B563_inline(NULL);
+		V_1 = L_15;
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:253>
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_16 = __this->___heritageImage;
+		int32_t L_17 = V_1;
+		if (!L_17)
 		{
-			G_B7_0 = L_18;
-			goto IL_0084;
+			G_B7_0 = L_16;
+			goto IL_0078;
 		}
-		G_B6_0 = L_18;
+		G_B6_0 = L_16;
 	}
+	{
+		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_18 = __this->___hud;
+		NullCheck(L_18);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_19;
+		L_19 = VrHud_get_ButtonColor_mACE3118694D946EC7B7D87AD02E05D93CC7F9990_inline(L_18, NULL);
+		G_B8_0 = L_19;
+		G_B8_1 = G_B6_0;
+		goto IL_0083;
+	}
+
+IL_0078:
 	{
 		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_20 = __this->___hud;
 		NullCheck(L_20);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_21;
-		L_21 = VrHud_get_ButtonColor_mACE3118694D946EC7B7D87AD02E05D93CC7F9990_inline(L_20, NULL);
+		L_21 = VrHud_get_ActiveColor_m3B1DCE9F0D7F820F0E74130CF1DF19B254ECE22F_inline(L_20, NULL);
 		G_B8_0 = L_21;
-		G_B8_1 = G_B6_0;
-		goto IL_008f;
-	}
-
-IL_0084:
-	{
-		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_22 = __this->___hud;
-		NullCheck(L_22);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_23;
-		L_23 = VrHud_get_ActiveColor_m3B1DCE9F0D7F820F0E74130CF1DF19B254ECE22F_inline(L_22, NULL);
-		G_B8_0 = L_23;
 		G_B8_1 = G_B7_0;
 	}
 
-IL_008f:
+IL_0083:
 	{
 		NullCheck(G_B8_1);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, G_B8_1, G_B8_0);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:260>
-		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_24 = __this->___tourismImage;
-		int32_t L_25 = V_1;
-		if ((((int32_t)L_25) == ((int32_t)1)))
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:254>
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_22 = __this->___tourismImage;
+		int32_t L_23 = V_1;
+		if ((((int32_t)L_23) == ((int32_t)1)))
 		{
-			G_B10_0 = L_24;
-			goto IL_00ab;
+			G_B10_0 = L_22;
+			goto IL_009f;
 		}
-		G_B9_0 = L_24;
+		G_B9_0 = L_22;
 	}
+	{
+		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_24 = __this->___hud;
+		NullCheck(L_24);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_25;
+		L_25 = VrHud_get_ButtonColor_mACE3118694D946EC7B7D87AD02E05D93CC7F9990_inline(L_24, NULL);
+		G_B11_0 = L_25;
+		G_B11_1 = G_B9_0;
+		goto IL_00aa;
+	}
+
+IL_009f:
 	{
 		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_26 = __this->___hud;
 		NullCheck(L_26);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_27;
-		L_27 = VrHud_get_ButtonColor_mACE3118694D946EC7B7D87AD02E05D93CC7F9990_inline(L_26, NULL);
+		L_27 = VrHud_get_ActiveColor_m3B1DCE9F0D7F820F0E74130CF1DF19B254ECE22F_inline(L_26, NULL);
 		G_B11_0 = L_27;
-		G_B11_1 = G_B9_0;
-		goto IL_00b6;
-	}
-
-IL_00ab:
-	{
-		VrHud_t91FCF003682D29DA47B23D67B54D48766C6EE1DA* L_28 = __this->___hud;
-		NullCheck(L_28);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_29;
-		L_29 = VrHud_get_ActiveColor_m3B1DCE9F0D7F820F0E74130CF1DF19B254ECE22F_inline(L_28, NULL);
-		G_B11_0 = L_29;
 		G_B11_1 = G_B10_0;
 	}
 
-IL_00b6:
+IL_00aa:
 	{
 		NullCheck(G_B11_1);
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, G_B11_1, G_B11_0);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:264>
-		int32_t L_30 = V_1;
-		V_2 = (bool)((((int32_t)L_30) == ((int32_t)1))? 1 : 0);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:265>
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_31 = __this->___profileButton;
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:258>
+		int32_t L_28 = V_1;
+		V_2 = (bool)((((int32_t)L_28) == ((int32_t)1))? 1 : 0);
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:259>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_29 = __this->___profileButton;
+		bool L_30 = V_2;
+		NullCheck(L_29);
+		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_29, L_30, NULL);
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:260>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_31 = __this->___profileText;
 		bool L_32 = V_2;
-		NullCheck(L_31);
-		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_31, L_32, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:266>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_33 = __this->___profileText;
-		bool L_34 = V_2;
-		if (L_34)
+		if (L_32)
 		{
-			G_B13_0 = L_33;
-			goto IL_00dc;
+			G_B13_0 = L_31;
+			goto IL_00d0;
 		}
-		G_B12_0 = L_33;
+		G_B12_0 = L_31;
 	}
 	{
 		G_B14_0 = _stringLiteralD5EB1A5943E4DE4FCA5B2BE3256F27DFE3527FF1;
 		G_B14_1 = G_B12_0;
-		goto IL_00e7;
+		goto IL_00db;
 	}
 
-IL_00dc:
+IL_00d0:
 	{
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
-		int32_t L_35;
-		L_35 = ClimateContext_get_Profile_m94F0043C61AFBFB20EB13500F26EB484E05F69B0_inline(NULL);
-		String_t* L_36;
-		L_36 = ClimateIndicesPanel_ProfileLabel_m57BDC5C438A8F991BDF9CD99FEC4375AF5BAEA37(__this, L_35, NULL);
-		G_B14_0 = L_36;
+		int32_t L_33;
+		L_33 = ClimateContext_get_Profile_m94F0043C61AFBFB20EB13500F26EB484E05F69B0_inline(NULL);
+		String_t* L_34;
+		L_34 = ClimateIndicesPanel_ProfileLabel_m57BDC5C438A8F991BDF9CD99FEC4375AF5BAEA37(__this, L_33, NULL);
+		G_B14_0 = L_34;
 		G_B14_1 = G_B13_0;
 	}
 
-IL_00e7:
+IL_00db:
 	{
 		NullCheck(G_B14_1);
 		VirtualActionInvoker1< String_t* >::Invoke(66, G_B14_1, G_B14_0);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:267>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_37 = __this->___modeText;
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:261>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_35 = __this->___modeText;
 		il2cpp_codegen_runtime_class_init_inline(ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB_il2cpp_TypeInfo_var);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_38 = ((ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB_StaticFields*)il2cpp_codegen_static_fields_for(ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB_il2cpp_TypeInfo_var))->___WindowModeLabels;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_36 = ((ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB_StaticFields*)il2cpp_codegen_static_fields_for(ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB_il2cpp_TypeInfo_var))->___WindowModeLabels;
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
-		int32_t L_39;
-		L_39 = ClimateContext_get_WindowMode_m22738B43E69E9687E00476BD866728E8DB184763_inline(NULL);
-		NullCheck(L_38);
-		int32_t L_40 = L_39;
-		String_t* L_41 = (L_38)->GetAt(static_cast<il2cpp_array_size_t>(L_40));
-		NullCheck(L_37);
-		VirtualActionInvoker1< String_t* >::Invoke(66, L_37, L_41);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:268>
+		int32_t L_37;
+		L_37 = ClimateContext_get_WindowMode_m22738B43E69E9687E00476BD866728E8DB184763_inline(NULL);
+		NullCheck(L_36);
+		int32_t L_38 = L_37;
+		String_t* L_39 = (L_36)->GetAt(static_cast<il2cpp_array_size_t>(L_38));
+		NullCheck(L_35);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_35, L_39);
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:262>
 		return;
 	}
 }
@@ -27197,8 +27098,8 @@ IL_00e7:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ClimateIndicesPanel_ProfileLabel_m57BDC5C438A8F991BDF9CD99FEC4375AF5BAEA37 (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, int32_t ___0_profile, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:272>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:273>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:266>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:267>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = __this->___tourismProfileLabels;
 		if (!L_0)
 		{
@@ -27228,7 +27129,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ClimateIndicesPanel_ProfileLabel_m5
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:274>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:268>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8 = __this->___tourismProfileLabels;
 		int32_t L_9 = ___0_profile;
 		NullCheck(L_8);
@@ -27239,7 +27140,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ClimateIndicesPanel_ProfileLabel_m5
 
 IL_002b:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:275>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:269>
 		int32_t L_12 = ___0_profile;
 		String_t* L_13;
 		L_13 = ClimateIndicesPanel_ProfileId_m80E396050B7A99FA764F63F36A3D0603BF32BFBF(__this, L_12, NULL);
@@ -27257,7 +27158,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ClimateIndicesPanel_ProfileId_m80E3
 	}
 	String_t* V_0 = NULL;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:280>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:274>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = __this->___tourismProfileIds;
 		if (!L_0)
 		{
@@ -27275,13 +27176,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ClimateIndicesPanel_ProfileId_m80E3
 
 IL_0011:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:280>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:274>
 		return _stringLiteral28B1307FF3333C8473253DE8F9C48C73336C5DDF;
 	}
 
 IL_0017:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:281>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:275>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = __this->___tourismProfileIds;
 		int32_t L_3 = ___0_profile;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = __this->___tourismProfileIds;
@@ -27292,7 +27193,7 @@ IL_0017:
 		int32_t L_6 = L_5;
 		String_t* L_7 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		V_0 = L_7;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:282>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:276>
 		String_t* L_8 = V_0;
 		bool L_9;
 		L_9 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_8, NULL);
@@ -27332,7 +27233,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_Fetch_m59533096B8B77
 	String_t* G_B5_0 = NULL;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B5_1 = NULL;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:289>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:283>
 		bool L_0 = __this->___busy;
 		if (!L_0)
 		{
@@ -27340,20 +27241,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_Fetch_m59533096B8B77
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:289>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:283>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:290>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:284>
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
 		int32_t L_1;
 		L_1 = ClimateContext_get_IndexType_mD673204842695C918F67BD1A7245DBEAC550B563_inline(NULL);
 		V_0 = (bool)((((int32_t)L_1) == ((int32_t)1))? 1 : 0);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:292>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:286>
 		ClimateIndicesPanel_ShowResults_m5E5BABE850B3EE8359D6BAEB89E9E3F8E85C1A27(__this, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:293>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:287>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_2 = __this->___title;
 		bool L_3 = V_0;
 		if (L_3)
@@ -27379,15 +27280,15 @@ IL_002d:
 	{
 		NullCheck(G_B5_1);
 		VirtualActionInvoker1< String_t* >::Invoke(66, G_B5_1, G_B5_0);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:294>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:288>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = __this->___body;
 		NullCheck(L_4);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_4, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:295>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:289>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->___body;
 		NullCheck(L_5);
 		TMP_Text_set_pageToDisplay_mBD985B613FCEC04266FDA43E916B19DD505D7469(L_5, 1, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:297>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:291>
 		FutureClimateClient_t7EF4CC7B4C461B48DB528053B23BF807463FC5D2* L_6 = __this->___client;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_7;
@@ -27398,28 +27299,28 @@ IL_002d:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:300>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:294>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_8 = __this->___status;
 		NullCheck(L_8);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_8, _stringLiteralBC4699C054E3E70389A590DF354BC1942018AD70);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:301>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:295>
 		return;
 	}
 
 IL_006d:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:304>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:298>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_9 = __this->___status;
 		NullCheck(L_9);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_9, _stringLiteralBE86F00232CDCD6B0AE55F07CC02A298271564FA);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:305>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:299>
 		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_10 = ___0_ch;
 		bool L_11 = V_0;
 		RuntimeObject* L_12;
 		L_12 = ClimateIndicesPanel_FetchRoutine_m43E35D67A7B804C5E978B56805D9F9493C2778FA(__this, L_10, L_11, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_13;
 		L_13 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_12, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:306>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:300>
 		return;
 	}
 }
@@ -27429,21 +27330,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ClimateIndicesPanel_FetchRouti
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04* L_0 = (U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04*)il2cpp_codegen_object_new(U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04_il2cpp_TypeInfo_var);
-		U3CFetchRoutineU3Ed__40__ctor_mA85E90204C2C3A6735CC61290115426574E5C16D(L_0, 0, NULL);
-		U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04* L_1 = L_0;
+		U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083* L_0 = (U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083*)il2cpp_codegen_object_new(U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083_il2cpp_TypeInfo_var);
+		U3CFetchRoutineU3Ed__39__ctor_m9684ED4943E28D7B6D0B9976F0999BDFC22A7198(L_0, 0, NULL);
+		U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083* L_1 = L_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
-		U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04* L_2 = L_1;
+		U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083* L_2 = L_1;
 		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 L_3 = ___0_ch;
 		NullCheck(L_2);
 		L_2->___ch = L_3;
-		U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04* L_4 = L_2;
+		U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083* L_4 = L_2;
 		bool L_5 = ___1_tourism;
 		NullCheck(L_4);
 		L_4->___tourism = L_5;
@@ -27455,11 +27356,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_TurnPage_m4087A40E7B
 {
 	int32_t V_0 = 0;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:354>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:348>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___body;
 		NullCheck(L_0);
 		VirtualActionInvoker2< bool, bool >::Invoke(106, L_0, (bool)0, (bool)0);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:355>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:349>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_1 = __this->___body;
 		NullCheck(L_1);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_2;
@@ -27469,7 +27370,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_TurnPage_m4087A40E7B
 		int32_t L_4;
 		L_4 = Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline(1, L_3, NULL);
 		V_0 = L_4;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:356>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:350>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->___body;
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___body;
 		NullCheck(L_6);
@@ -27481,9 +27382,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_TurnPage_m4087A40E7B
 		L_10 = Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline(((int32_t)il2cpp_codegen_add(L_7, L_8)), 1, L_9, NULL);
 		NullCheck(L_5);
 		TMP_Text_set_pageToDisplay_mBD985B613FCEC04266FDA43E916B19DD505D7469(L_5, L_10, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:357>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:351>
 		ClimateIndicesPanel_UpdatePageStatus_m817D95E9DC88B41BD195AFDB4ACBB849FCE2C258(__this, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:358>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:352>
 		return;
 	}
 }
@@ -27503,11 +27404,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_UpdatePageStatus_m81
 	String_t* G_B3_0 = NULL;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* G_B3_1 = NULL;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:362>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:356>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___body;
 		NullCheck(L_0);
 		VirtualActionInvoker2< bool, bool >::Invoke(106, L_0, (bool)0, (bool)0);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:363>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:357>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_1 = __this->___body;
 		NullCheck(L_1);
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_2;
@@ -27517,7 +27418,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_UpdatePageStatus_m81
 		int32_t L_4;
 		L_4 = Mathf_Max_m7FA442918DE37E3A00106D1F2E789D65829792B8_inline(1, L_3, NULL);
 		V_0 = L_4;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:364>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:358>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->___status;
 		int32_t L_6 = V_0;
 		if ((((int32_t)L_6) > ((int32_t)1)))
@@ -27554,7 +27455,7 @@ IL_0055:
 	{
 		NullCheck(G_B3_1);
 		VirtualActionInvoker1< String_t* >::Invoke(66, G_B3_1, G_B3_0);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:365>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:359>
 		return;
 	}
 }
@@ -27591,11 +27492,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ClimateIndicesPanel_BuildColoredBod
 	memset((&V_3), 0, sizeof(V_3));
 	String_t* V_4 = NULL;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:373>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:367>
 		StringBuilder_t* L_0 = (StringBuilder_t*)il2cpp_codegen_object_new(StringBuilder_t_il2cpp_TypeInfo_var);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_0, NULL);
 		V_0 = L_0;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:375>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:369>
 		WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* L_1 = ___0_res;
 		NullCheck(L_1);
 		String_t* L_2 = L_1->___periodText;
@@ -27607,7 +27508,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ClimateIndicesPanel_BuildColoredBod
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:376>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:370>
 		StringBuilder_t* L_4 = V_0;
 		WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* L_5 = ___0_res;
 		NullCheck(L_5);
@@ -27626,7 +27527,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ClimateIndicesPanel_BuildColoredBod
 
 IL_0035:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:378>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:372>
 		WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* L_11 = ___0_res;
 		NullCheck(L_11);
 		List_1_t0A48E690654471E08178A9A249C412431FF0065A* L_12 = L_11->___indices;
@@ -27648,7 +27549,7 @@ IL_0035:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:380>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:374>
 		WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* L_16 = ___0_res;
 		NullCheck(L_16);
 		List_1_t0A48E690654471E08178A9A249C412431FF0065A* L_17 = L_16->___indices;
@@ -27675,11 +27576,11 @@ FINALLY_00a1:
 
 IL_0059_1:
 			{
-				//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:380>
+				//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:374>
 				IndexEntry_tF06BAA833FC828D021D33A851B547AB0C47EA92E* L_19;
 				L_19 = Enumerator_get_Current_mB41466405B5E2C9BAAD222A8F2A7A0D59D51ACDA_inline((&V_1), Enumerator_get_Current_mB41466405B5E2C9BAAD222A8F2A7A0D59D51ACDA_RuntimeMethod_var);
 				V_2 = L_19;
-				//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:381>
+				//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:375>
 				StringBuilder_t* L_20 = V_0;
 				IndexEntry_tF06BAA833FC828D021D33A851B547AB0C47EA92E* L_21 = V_2;
 				NullCheck(L_21);
@@ -27705,7 +27606,7 @@ IL_0059_1:
 
 IL_0096_1:
 			{
-				//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:380>
+				//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:374>
 				bool L_31;
 				L_31 = Enumerator_MoveNext_m037E4B7E77FA4B30E14FBF7D55CC8602F52C7526((&V_1), Enumerator_MoveNext_m037E4B7E77FA4B30E14FBF7D55CC8602F52C7526_RuntimeMethod_var);
 				if (L_31)
@@ -27725,7 +27626,7 @@ IL_0096_1:
 
 IL_00af:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:385>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:379>
 		StringBuilder_t* L_32 = V_0;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_33 = __this->___neutralColor;
 		il2cpp_codegen_runtime_class_init_inline(ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB_il2cpp_TypeInfo_var);
@@ -27741,7 +27642,7 @@ IL_00af:
 
 IL_00cd:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:388>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:382>
 		WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* L_37 = ___0_res;
 		NullCheck(L_37);
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_38 = L_37->___notes;
@@ -27763,7 +27664,7 @@ IL_00cd:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:390>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:384>
 		StringBuilder_t* L_42 = V_0;
 		NullCheck(L_42);
 		StringBuilder_t* L_43;
@@ -27778,7 +27679,7 @@ IL_00cd:
 		NullCheck(L_46);
 		StringBuilder_t* L_47;
 		L_47 = StringBuilder_Append_m71228B30F05724CD2CD96D9611DCD61BFB96A6E1(L_46, ((int32_t)10), NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:391>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:385>
 		WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* L_48 = ___0_res;
 		NullCheck(L_48);
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_49 = L_48->___notes;
@@ -27805,11 +27706,11 @@ FINALLY_0152:
 
 IL_0119_1:
 			{
-				//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:391>
+				//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:385>
 				String_t* L_51;
 				L_51 = Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_inline((&V_3), Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_RuntimeMethod_var);
 				V_4 = L_51;
-				//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:392>
+				//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:386>
 				StringBuilder_t* L_52 = V_0;
 				String_t* L_53 = V_4;
 				String_t* L_54;
@@ -27828,7 +27729,7 @@ IL_0119_1:
 
 IL_0147_1:
 			{
-				//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:391>
+				//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:385>
 				bool L_59;
 				L_59 = Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED((&V_3), Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED_RuntimeMethod_var);
 				if (L_59)
@@ -27848,7 +27749,7 @@ IL_0147_1:
 
 IL_0160:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:395>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:389>
 		StringBuilder_t* L_60 = V_0;
 		NullCheck(L_60);
 		String_t* L_61;
@@ -27861,7 +27762,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C
 {
 	int32_t V_0 = 0;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:400>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:394>
 		IndexEntry_tF06BAA833FC828D021D33A851B547AB0C47EA92E* L_0 = ___0_e;
 		if (!L_0)
 		{
@@ -27880,14 +27781,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C
 
 IL_000b:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:400>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:394>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = __this->___neutralColor;
 		return L_3;
 	}
 
 IL_0012:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:401>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:395>
 		IndexEntry_tF06BAA833FC828D021D33A851B547AB0C47EA92E* L_4 = ___0_e;
 		NullCheck(L_4);
 		String_t* L_5 = L_4->___name;
@@ -27920,28 +27821,28 @@ IL_0012:
 
 IL_003b:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:403>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:397>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_10 = __this->___greenColor;
 		return L_10;
 	}
 
 IL_0042:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:404>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:398>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = __this->___orangeColor;
 		return L_11;
 	}
 
 IL_0049:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:405>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:399>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_12 = __this->___redColor;
 		return L_12;
 	}
 
 IL_0050:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:406>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:400>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_13 = __this->___neutralColor;
 		return L_13;
 	}
@@ -27960,7 +27861,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ClimateIndicesPanel_Classify_mC840F3D
 	int32_t V_2 = 0;
 	IndexRiskRule_tBDD9758E2B53CD643A5DD2B8BBFCAF2FAFBD7F8E* V_3 = NULL;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:412>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:406>
 		IndexRiskRuleU5BU5D_tF88910214EA5222A7C40DCD96848703C6164054B* L_0 = __this->___riskRules;
 		if (!L_0)
 		{
@@ -27979,19 +27880,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ClimateIndicesPanel_Classify_mC840F3D
 
 IL_0010:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:412>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:406>
 		return (int32_t)(0);
 	}
 
 IL_0012:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:413>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:407>
 		String_t* L_3 = ___0_name;
 		NullCheck(L_3);
 		String_t* L_4;
 		L_4 = String_ToLowerInvariant_mBE32C93DE27C5353FEA3FA654FC1DDBE3D0EB0F2(L_3, NULL);
 		V_0 = L_4;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:414>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:408>
 		IndexRiskRuleU5BU5D_tF88910214EA5222A7C40DCD96848703C6164054B* L_5 = __this->___riskRules;
 		V_1 = L_5;
 		V_2 = 0;
@@ -28000,14 +27901,14 @@ IL_0012:
 
 IL_0024:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:414>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:408>
 		IndexRiskRuleU5BU5D_tF88910214EA5222A7C40DCD96848703C6164054B* L_6 = V_1;
 		int32_t L_7 = V_2;
 		NullCheck(L_6);
 		int32_t L_8 = L_7;
 		IndexRiskRule_tBDD9758E2B53CD643A5DD2B8BBFCAF2FAFBD7F8E* L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
 		V_3 = L_9;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:416>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:410>
 		IndexRiskRule_tBDD9758E2B53CD643A5DD2B8BBFCAF2FAFBD7F8E* L_10 = V_3;
 		if (!L_10)
 		{
@@ -28026,7 +27927,7 @@ IL_0024:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:417>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:411>
 		String_t* L_14 = V_0;
 		IndexRiskRule_tBDD9758E2B53CD643A5DD2B8BBFCAF2FAFBD7F8E* L_15 = V_3;
 		NullCheck(L_15);
@@ -28043,7 +27944,7 @@ IL_0024:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:419>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:413>
 		IndexRiskRule_tBDD9758E2B53CD643A5DD2B8BBFCAF2FAFBD7F8E* L_19 = V_3;
 		NullCheck(L_19);
 		bool L_20 = L_19->___higherIsWorse;
@@ -28053,7 +27954,7 @@ IL_0024:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:421>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:415>
 		float L_21 = ___1_value;
 		IndexRiskRule_tBDD9758E2B53CD643A5DD2B8BBFCAF2FAFBD7F8E* L_22 = V_3;
 		NullCheck(L_22);
@@ -28064,13 +27965,13 @@ IL_0024:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:421>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:415>
 		return (int32_t)(3);
 	}
 
 IL_005e:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:422>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:416>
 		float L_24 = ___1_value;
 		IndexRiskRule_tBDD9758E2B53CD643A5DD2B8BBFCAF2FAFBD7F8E* L_25 = V_3;
 		NullCheck(L_25);
@@ -28081,19 +27982,19 @@ IL_005e:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:422>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:416>
 		return (int32_t)(2);
 	}
 
 IL_0069:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:423>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:417>
 		return (int32_t)(1);
 	}
 
 IL_006b:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:425>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:419>
 		float L_27 = ___1_value;
 		IndexRiskRule_tBDD9758E2B53CD643A5DD2B8BBFCAF2FAFBD7F8E* L_28 = V_3;
 		NullCheck(L_28);
@@ -28104,13 +28005,13 @@ IL_006b:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:425>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:419>
 		return (int32_t)(3);
 	}
 
 IL_0076:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:426>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:420>
 		float L_30 = ___1_value;
 		IndexRiskRule_tBDD9758E2B53CD643A5DD2B8BBFCAF2FAFBD7F8E* L_31 = V_3;
 		NullCheck(L_31);
@@ -28121,13 +28022,13 @@ IL_0076:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:426>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:420>
 		return (int32_t)(2);
 	}
 
 IL_0081:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:427>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:421>
 		return (int32_t)(1);
 	}
 
@@ -28139,7 +28040,7 @@ IL_0083:
 
 IL_0087:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:414>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:408>
 		int32_t L_34 = V_2;
 		IndexRiskRuleU5BU5D_tF88910214EA5222A7C40DCD96848703C6164054B* L_35 = V_1;
 		NullCheck(L_35);
@@ -28149,7 +28050,7 @@ IL_0087:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:429>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:423>
 		return (int32_t)(0);
 	}
 }
@@ -28169,7 +28070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClimateIndicesPanel_TokenMatch_m47C8F8BD
 	bool V_4 = false;
 	int32_t V_5 = 0;
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:437>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:431>
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_0 = (CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)SZArrayNew(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var, (uint32_t)2);
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_1 = L_0;
 		NullCheck(L_1);
@@ -28178,21 +28079,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClimateIndicesPanel_TokenMatch_m47C8F8BD
 		NullCheck(L_2);
 		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppChar)((int32_t)9));
 		V_0 = L_2;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:438>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:432>
 		String_t* L_3 = ___0_nameLower;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_4 = V_0;
 		NullCheck(L_3);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5;
 		L_5 = String_Split_m6811F7CF4DE7C68019D76E9DC6D17B2293BA8B12(L_3, L_4, 1, NULL);
 		V_1 = L_5;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:439>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:433>
 		String_t* L_6 = ___1_keyLower;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_7 = V_0;
 		NullCheck(L_6);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8;
 		L_8 = String_Split_m6811F7CF4DE7C68019D76E9DC6D17B2293BA8B12(L_6, L_7, 1, NULL);
 		V_2 = L_8;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:440>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:434>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = V_2;
 		NullCheck(L_9);
 		if (!(((RuntimeArray*)L_9)->max_length))
@@ -28213,29 +28114,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClimateIndicesPanel_TokenMatch_m47C8F8BD
 
 IL_002f:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:440>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:434>
 		return (bool)0;
 	}
 
 IL_0031:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:442>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:436>
 		V_3 = 0;
 		goto IL_006a;
 	}
 
 IL_0035:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:444>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:438>
 		V_4 = (bool)1;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:445>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:439>
 		V_5 = 0;
 		goto IL_0059;
 	}
 
 IL_003d:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:446>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:440>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_12 = V_1;
 		int32_t L_13 = V_3;
 		int32_t L_14 = V_5;
@@ -28255,22 +28156,22 @@ IL_003d:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:446>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:440>
 		V_4 = (bool)0;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:446>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:440>
 		goto IL_0060;
 	}
 
 IL_0053:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:445>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:439>
 		int32_t L_22 = V_5;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_22, 1));
 	}
 
 IL_0059:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:445>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:439>
 		int32_t L_23 = V_5;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_24 = V_2;
 		NullCheck(L_24);
@@ -28282,7 +28183,7 @@ IL_0059:
 
 IL_0060:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:447>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:441>
 		bool L_25 = V_4;
 		if (!L_25)
 		{
@@ -28290,20 +28191,20 @@ IL_0060:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:447>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:441>
 		return (bool)1;
 	}
 
 IL_0066:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:442>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:436>
 		int32_t L_26 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_26, 1));
 	}
 
 IL_006a:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:442>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:436>
 		int32_t L_27 = V_3;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_28 = V_2;
 		NullCheck(L_28);
@@ -28315,7 +28216,7 @@ IL_006a:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:449>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:443>
 		return (bool)0;
 	}
 }
@@ -28332,7 +28233,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ClimateIndicesPanel_Wrap_mCB8E2FB0F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:453>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:447>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = L_0;
 		NullCheck(L_1);
@@ -28387,12 +28288,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel__ctor_mB60A4531B3553
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:67>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:64>
 		__this->___tabTitle = _stringLiteralA09801DC0FF6E09C80D819FD42CD8E00ED55BD6E;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___tabTitle), (void*)_stringLiteralA09801DC0FF6E09C80D819FD42CD8E00ED55BD6E);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:73>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:70>
 		__this->___windowDaysStep = 5;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:77>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:74>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)2);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = L_0;
 		NullCheck(L_1);
@@ -28402,7 +28303,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel__ctor_mB60A4531B3553
 		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteralC7B687D729229070BA7E958FA9E7BFD3244BA37D);
 		__this->___tourismProfileIds = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___tourismProfileIds), (void*)L_2);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:78>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:75>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)2);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = L_3;
 		NullCheck(L_4);
@@ -28412,26 +28313,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel__ctor_mB60A4531B3553
 		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral7F4682F559107108074468C96021CDFA3B5C0C04);
 		__this->___tourismProfileLabels = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___tourismProfileLabels), (void*)L_5);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:81>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:78>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_6;
 		memset((&L_6), 0, sizeof(L_6));
 		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_6), (0.850000024f), (0.879999995f), (0.920000017f), NULL);
 		__this->___neutralColor = L_6;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:82>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:79>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_7;
 		memset((&L_7), 0, sizeof(L_7));
 		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_7), (0.349999994f), (0.800000012f), (0.449999988f), NULL);
 		__this->___greenColor = L_7;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:83>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:80>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_8;
 		memset((&L_8), 0, sizeof(L_8));
 		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_8), (0.959999979f), (0.620000005f), (0.200000003f), NULL);
 		__this->___orangeColor = L_8;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:84>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:81>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_9;
 		memset((&L_9), 0, sizeof(L_9));
 		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_9), (0.920000017f), (0.319999993f), (0.280000001f), NULL);
 		__this->___redColor = L_9;
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:86>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:87>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:88>
 		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:89>
 		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:90>
 		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:91>
@@ -28446,9 +28350,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel__ctor_mB60A4531B3553
 		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:100>
 		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:101>
 		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:102>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:103>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:104>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:105>
 		IndexRiskRuleU5BU5D_tF88910214EA5222A7C40DCD96848703C6164054B* L_10 = (IndexRiskRuleU5BU5D_tF88910214EA5222A7C40DCD96848703C6164054B*)(IndexRiskRuleU5BU5D_tF88910214EA5222A7C40DCD96848703C6164054B*)SZArrayNew(IndexRiskRuleU5BU5D_tF88910214EA5222A7C40DCD96848703C6164054B_il2cpp_TypeInfo_var, (uint32_t)((int32_t)12));
 		IndexRiskRuleU5BU5D_tF88910214EA5222A7C40DCD96848703C6164054B* L_11 = L_10;
 		IndexRiskRule_tBDD9758E2B53CD643A5DD2B8BBFCAF2FAFBD7F8E* L_12 = (IndexRiskRule_tBDD9758E2B53CD643A5DD2B8BBFCAF2FAFBD7F8E*)il2cpp_codegen_object_new(IndexRiskRule_tBDD9758E2B53CD643A5DD2B8BBFCAF2FAFBD7F8E_il2cpp_TypeInfo_var);
@@ -28698,7 +28599,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel__cctor_m7D7A41BAE021
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:107>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:104>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)3);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = L_0;
 		NullCheck(L_1);
@@ -28715,7 +28616,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel__cctor_m7D7A41BAE021
 	}
 }
 // Method Definition Index: 126361
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_U3CTryBuildU3Eb__31_2_mBE47162CE0EBB1E3843B6083C7818705C66430DE (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_U3CTryBuildU3Eb__30_2_m6FB20D02B1BEA8B4838E74D39C11C50DBFDBEBB5 (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:173>
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = __this->___tourismProfileIds;
+		NullCheck(L_0);
+		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
+		ClimateContext_CycleProfile_mB74EC07F60BE24BD76D041D65E5CC719F4B95305(((int32_t)(((RuntimeArray*)L_0)->max_length)), NULL);
+		return;
+	}
+}
+// Method Definition Index: 126362
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_U3CTryBuildU3Eb__30_3_m5137F9122E7B8DD27B2964A59756F2C7E12EC0AA (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -28725,24 +28644,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_U3CTryBuildU3Eb__31_
 	}
 	{
 		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:177>
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = __this->___tourismProfileIds;
-		NullCheck(L_0);
-		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
-		ClimateContext_CycleProfile_mB74EC07F60BE24BD76D041D65E5CC719F4B95305(((int32_t)(((RuntimeArray*)L_0)->max_length)), NULL);
-		return;
-	}
-}
-// Method Definition Index: 126362
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_U3CTryBuildU3Eb__31_3_m0A6404973DD78073663A78A25A7EFC4EA7D29019 (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:181>
 		int32_t L_0 = __this->___windowDaysStep;
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
 		ClimateContext_ShiftWindow_m3C454BB5312F98066D7CA89E8F96C310B043DAD3(((-L_0)), NULL);
@@ -28750,7 +28651,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_U3CTryBuildU3Eb__31_
 	}
 }
 // Method Definition Index: 126363
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_U3CTryBuildU3Eb__31_4_m0F1835C7E4D5B78EA534ADAD4A6E0F180E51FE69 (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_U3CTryBuildU3Eb__30_4_m7C3406B324D83132CBBAD792495C65E7C7E1F3DE (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -28759,7 +28660,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_U3CTryBuildU3Eb__31_
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:182>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:178>
 		int32_t L_0 = __this->___windowDaysStep;
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
 		ClimateContext_ShiftWindow_m3C454BB5312F98066D7CA89E8F96C310B043DAD3(L_0, NULL);
@@ -28767,19 +28668,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_U3CTryBuildU3Eb__31_
 	}
 }
 // Method Definition Index: 126364
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_U3CTryBuildU3Eb__31_5_mF4C28C1FB16C3A99CB413BBDC15913AF8D21734D (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_U3CTryBuildU3Eb__30_5_m7ECFFC536818F7FB037FFF50A6B5CE719A5878F9 (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:200>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:196>
 		ClimateIndicesPanel_TurnPage_m4087A40E7B229B9C70B41EBD668742DB3DA19885(__this, (-1), NULL);
 		return;
 	}
 }
 // Method Definition Index: 126365
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_U3CTryBuildU3Eb__31_6_m0551CBFEB755AA8F6C81C530DABE09AC83E009A3 (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateIndicesPanel_U3CTryBuildU3Eb__30_6_m02CC513A349E1C05BF94EF974924649F56C3907F (ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:202>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:198>
 		ClimateIndicesPanel_TurnPage_m4087A40E7B229B9C70B41EBD668742DB3DA19885(__this, 1, NULL);
 		return;
 	}
@@ -29974,22 +29875,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool NetworkBehaviour_get_IsServe
 		return L_0;
 	}
 }
-// Method Definition Index: 126314
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 ClimateContext_get_IndicesRequest_m9CD016B13F7DA95120896A70A839F9B0B20ABAEE_inline (const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:105>
-		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
-		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_0 = ((ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_StaticFields*)il2cpp_codegen_static_fields_for(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var))->___U3CIndicesRequestU3Ek__BackingField;
-		return L_0;
-	}
-}
 // Method Definition Index: 97489
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool NetworkBehaviour_get_IsOwner_m2C408A356ACBD9AF0C991BF01B5F20C75891FAB3_inline (NetworkBehaviour_t1F9CC6E5B76D29ECECBB61F02D8E8EDE24CDDDCE* __this, const RuntimeMethod* method) 
 {
@@ -30657,6 +30542,22 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ClimateContext_set_Profile_m
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
 		((ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_StaticFields*)il2cpp_codegen_static_fields_for(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var))->___U3CProfileU3Ek__BackingField = L_0;
 		return;
+	}
+}
+// Method Definition Index: 126314
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 ClimateContext_get_IndicesRequest_m9CD016B13F7DA95120896A70A839F9B0B20ABAEE_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateContext.cs:105>
+		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
+		ClimateRequest_tCB8B9EA051818E212EDC6B00FDAEEFB31ACB3003 L_0 = ((ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_StaticFields*)il2cpp_codegen_static_fields_for(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var))->___U3CIndicesRequestU3Ek__BackingField;
+		return L_0;
 	}
 }
 // Method Definition Index: 126315

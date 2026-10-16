@@ -142,9 +142,9 @@ static const int32_t s_InvokerIndices[46] =
 	7887,
 	5804,
 	24260,
-	33139,
+	33138,
 	37219,
-	30398,
+	30397,
 	39543,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Meta_XR_EnvironmentDepth_CodeGenModule;

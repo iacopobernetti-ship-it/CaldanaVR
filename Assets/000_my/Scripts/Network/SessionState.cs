@@ -20,8 +20,8 @@ namespace Artemis.Session
     /// buona volonta' del codice.
     ///
     /// CLIMA CONDIVISO. Viaggiano le SCELTE della guida, non i risultati: data, scenario e ore
-    /// (scheda Scenario) e i due "Apply" (indici e temperature) con un numero progressivo. I
-    /// parametri degli indici (tipo, profilo, finestra) restano di ciascun visore. Ogni visore
+    /// (scheda Scenario) e l'Apply delle temperature, con un numero progressivo. Gli indici
+    /// climatici (parametri e Apply) restano di ciascun visore. Ogni visore
     /// interroga i servizi da se' con gli stessi parametri e ottiene gli stessi numeri — come in
     /// CaldanaMR. I risultati non potrebbero viaggiare comunque: le temperature sono decine di
     /// migliaia di valori per faccia, e ogni luogo ha la sua mesh e il suo modello sul server.
@@ -59,8 +59,6 @@ namespace Artemis.Session
 
         /// <summary>Scelte correnti della guida: i visitatori le vedono mentre le fa.</summary>
         public readonly NetworkVariable<ClimateChoice> Choice = new NetworkVariable<ClimateChoice>();
-        /// <summary>Ultimo Apply della scheda Climate.</summary>
-        public readonly NetworkVariable<ClimateRequest> Indices = new NetworkVariable<ClimateRequest>();
         /// <summary>Ultimo Apply della scheda Thermal.</summary>
         public readonly NetworkVariable<ClimateRequest> Thermal = new NetworkVariable<ClimateRequest>();
 
@@ -86,16 +84,13 @@ namespace Artemis.Session
                 var choice = ClimateContext.Snapshot();
                 if (!Choice.Value.Equals(choice)) Choice.Value = choice;
 
-                var ind = ClimateContext.IndicesRequest;
-                if (!Indices.Value.Equals(ind)) Indices.Value = ind;
-
                 var th = ClimateContext.ThermalRequest;
                 if (!Thermal.Value.Equals(th)) Thermal.Value = th;
             }
             else
             {
                 // Visitatore: adotta lo stato della guida.
-                ClimateContext.ApplyRemote(Choice.Value, Indices.Value, Thermal.Value);
+                ClimateContext.ApplyRemote(Choice.Value, Thermal.Value);
             }
         }
     }

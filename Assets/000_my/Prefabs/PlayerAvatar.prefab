@@ -447,7 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 1346647748
+  GlobalObjectIdHash: 1946349995
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -482,17 +482,21 @@ MonoBehaviour:
   bodyTurnSpeed: 6
   fallbackEyeHeight: 1.65
   palette:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  tinted: []
+  - {fileID: 2100000, guid: 7787082a7cb338c48b508a3776be2a03, type: 2}
+  - {fileID: 2100000, guid: 290fdffd9b16da641adbf5309e5d5ec0, type: 2}
+  - {fileID: 2100000, guid: 9664e6d3aca2e1940a83beed2423a021, type: 2}
+  - {fileID: 2100000, guid: 93a099770c53f7e478ec5a0252966dbf, type: 2}
+  - {fileID: 2100000, guid: b3a160c6db87e324a995807bf8f087f2, type: 2}
+  - {fileID: 2100000, guid: 9779e437bf00abc42ac1382d0895baf2, type: 2}
+  - {fileID: 2100000, guid: fa7beb4f9deffd1428b2f4f680e15664, type: 2}
+  - {fileID: 2100000, guid: df48c9c8702bf7544984c478145eee16, type: 2}
+  tinted:
+  - {fileID: 457960373569037129}
+  - {fileID: 6336672740444308947}
+  - {fileID: 6027440345566127748}
+  - {fileID: 7622134373477659695}
+  - {fileID: 3272172717602767067}
+  - {fileID: 3574849254938043064}
   hiddenForOwner:
   - {fileID: 457960373569037129}
   - {fileID: 7622134373477659695}

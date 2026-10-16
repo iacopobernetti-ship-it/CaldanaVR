@@ -142,7 +142,6 @@ GameObject:
   - component: {fileID: 7225050667113533248}
   - component: {fileID: 6920043532355324649}
   - component: {fileID: 7731930922118203476}
-  - component: {fileID: 6734145416300632409}
   - component: {fileID: 5636933125544457123}
   - component: {fileID: 3349374514019923824}
   m_Layer: 0
@@ -465,32 +464,6 @@ MonoBehaviour:
   rangeStep: 1
   minSpan: 2
   legendSteps: 32
---- !u!114 &6734145416300632409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6516641996135779020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e843d64222f5ab248b30e0a11fc47d1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Artemis.EditorTools.RenderTuningProbe
-  tabTitle: Tuning
-  showTab: 1
-  scaleStep: 0.1
-  scaleMin: 0.5
-  scaleMax: 1
-  nearSteps:
-  - 0.01
-  - 0.05
-  - 0.1
-  - 0.2
-  - 0.3
-  lodMin: 0
-  lodMax: 5
-  budgetSteps: 0a000000140000001e000000280000003c0000005000000064000000
 --- !u!114 &5636933125544457123
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -51,12 +51,9 @@ namespace Artemis.Climate
     /// in ClimateContext:
     /// sopravvivono al cambio di luogo e, in sessione, sono quelle della GUIDA.
     ///
-    /// MULTIPLAYER. Solo la guida preme Apply (per i visitatori il pulsante e' spento). Tipo,
-    /// profilo e finestra sono di CIASCUNO: ognuno li imposta sul proprio visore. All'Apply della
-    /// guida ogni visore interroga gli indici con la data e lo scenario della guida (scheda
-    /// Scenario) e con i PROPRI tipo, profilo e finestra, e passa ai risultati. Sfogliare le
-    /// pagine e Back restano di ciascuno. Un visitatore che entra in ritardo esegue subito
-    /// l'ultima richiesta della guida, con i suoi parametri.
+    /// MULTIPLAYER. Questa scheda e' tutta di CIASCUNO: tipo, profilo, finestra, Apply, pagine.
+    /// Della guida sono solo data e scenario (scheda Scenario), che ognuno usa quando preme il
+    /// proprio Apply. Nessuna richiesta viaggia in rete.
     ///
     /// Tutta la messaggistica e' in inglese, come in CaldanaMR e come i messaggi dell'API.
     ///
@@ -117,7 +114,6 @@ namespace Artemis.Climate
 
         private bool built, busy;
         private float nextRefresh;
-        private Button applyButton;   // l'unico pulsante della guida in questa scheda
         private RectTransform paramsView, resultsView;
         private TMP_Text summary, title, status, body;
         private Image heritageImage, tourismImage;
@@ -129,7 +125,7 @@ namespace Artemis.Climate
         {
             if (!built) { TryBuild(); return; }
 
-            // Un Apply nuovo (della guida, o proprio se si e' la guida o da soli): lo si esegue.
+            // Un Apply nuovo di questo visore: lo si esegue.
             var req = ClimateContext.IndicesRequest;
             if (req.Serial != 0 && !req.Equals(lastFetched) && !busy)
             {
@@ -184,7 +180,7 @@ namespace Artemis.Climate
             modeText = bm.button.GetComponentInChildren<TMP_Text>();
             // Apply non esegue: registra la richiesta. La esegue Update, su questo visore come
             // su quelli dei visitatori: un solo percorso per tutti.
-            applyButton = hud.MakeButton(rowWindow, "Apply", ClimateContext.RequestIndices).button;
+            hud.MakeButton(rowWindow, "Apply", ClimateContext.RequestIndices);
 
             // ---- risultati ----
             title = hud.MakeLabel(resultsView, "", 19);
@@ -252,8 +248,6 @@ namespace Artemis.Climate
                            (canEdit ? "  (Scenario tab)" : "  ·  by guide") + "\n" +
                            $"window {ClimateContext.WindowDays} days, {ClimateContext.WindowModes[ClimateContext.WindowMode]}";
 
-            // Visitatori: solo Apply e' spento. Tipo, profilo e finestra sono di ciascuno.
-            applyButton.interactable = canEdit;
             int indexType = ClimateContext.IndexType;
 
             heritageImage.color = indexType == 0 ? hud.ActiveColor : hud.ButtonColor;

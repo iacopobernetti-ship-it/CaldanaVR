@@ -259,8 +259,8 @@ struct ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C;
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
 struct WillRenderCanvases_tA4A6E66DBA797DCB45B995DBA449A9D1D80D0FBC;
 struct U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452;
-struct U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B;
-struct U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04;
+struct U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC;
+struct U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083;
 struct WindowResult_t33C7650393803919211113A36F838A934B3DA1B6;
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 struct MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09;
@@ -313,7 +313,7 @@ IL2CPP_EXTERN_C RuntimeClass* TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522F
 IL2CPP_EXTERN_C RuntimeClass* U3CInstallRoutineU3Ed__19_t8B81180FCCDDEAEE29B70AA18C460CB15679462A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass14_0_t9F1E74AAED18F8C9BA7C48E23BCCFBC3A3694A59_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass14_1_t45B36B3274441364C274FB758ED91E861E0CD58D_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass77_0_t4BDEE77733B427CCF3B50934C651F702F78FDED3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t8235AE92D3B1257B8729AD2CA066123EF8D6C514_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_il2cpp_TypeInfo_var;
@@ -503,7 +503,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Resources_Load_TisTMP_Settings_t5875BC616C9
 IL2CPP_EXTERN_C const RuntimeMethod* ScenarioPanel_Refresh_mB4B5106B8014183D8B5A2CF9A1A3C7E083C9BCFC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ScenarioPanel_U3CTryBuildU3Eb__14_0_mE7B62D3D126CB22EC02BFC50A404B2640477EC35_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ScenarioPanel_U3CTryBuildU3Eb__14_1_mE5DFA607BEE5B2BAA7396671DB710143BC7D4633_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CFetchRoutineU3Ed__40_System_Collections_IEnumerator_Reset_mCD16EDBDA6AC0E5447D32A450F3205BA412C23B6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CFetchRoutineU3Ed__39_System_Collections_IEnumerator_Reset_mDA087FD2FA6D0E32104A8509C7AA34CFE6221DE5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CInstallRoutineU3Ed__19_System_Collections_IEnumerator_Reset_m2F1D2BF813C0CEF7FB426D7328E9415AA2E45940_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CTryBuildU3Eb__14_2_mC5A9BAF66F73CF4645EAFE16EF2C1D49985F9C89_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CTryBuildU3Eb__14_3_m54BFA5FC44BBED0AC798A62AB92A631F7584EC9C_RuntimeMethod_var;
@@ -513,8 +513,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CTryBuildU3Eb__14_6_mCDBD4FCF6AEE
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CTryBuildU3Eb__14_7_m3DDC55A22A4F52118C80E20C142C939F3B0C328C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass14_0_U3CTryBuildU3Eb__8_m9C05ED448F3E2F6B864A071E05D6D7282790F62A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass14_1_U3CTryBuildU3Eb__9_mF2AA6AEB5B6E42F97136C090AC7DF8C65E93FE0B_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass40_0_U3CFetchRoutineU3Eb__0_m573398740FD6E758EB439ECA8FBB7741976B604E_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass40_0_U3CFetchRoutineU3Eb__1_m1119F21D7AD3EFCFA56DFE773A78A9E40A703ED1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass39_0_U3CFetchRoutineU3Eb__0_mEBD477475DA6377E2EE9F8224C27E6EE70FF3701_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass39_0_U3CFetchRoutineU3Eb__1_m968DED0C039D41B2DE15EB9ECF4140279575557A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass77_0_U3CCreateTabU3Eb__0_mBA01DACF2262E136CEA70F775498E9A9D44E2ED6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_2__ctor_m7C172CEFE485CB2C42B9F713A6FE7BA7625A6BCD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_2__ctor_mE4EB913E131916BE031F03ADD5EE22D2812A1A95_RuntimeMethod_var;
@@ -664,7 +664,7 @@ struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
 struct U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452  : public RuntimeObject
 {
 };
-struct U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B  : public RuntimeObject
+struct U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC  : public RuntimeObject
 {
 	WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* ___res;
 };
@@ -1821,14 +1821,14 @@ struct VerticalAlignmentOptions_tCEF70AF60282B71AEEE14D51253CE6A61E72D855
 struct ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C  : public UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977
 {
 };
-struct U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04  : public RuntimeObject
+struct U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
 	ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* ___U3CU3E4__this;
 	ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417 ___ch;
 	bool ___tourism;
-	U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* ___U3CU3E8__1;
+	U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* ___U3CU3E8__1;
 };
 struct Risk_tEBA17615667503BB26A6BEF0066249522E1F345C 
 {
@@ -2655,7 +2655,6 @@ struct ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB  : public M
 	bool ___built;
 	bool ___busy;
 	float ___nextRefresh;
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___applyButton;
 	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___paramsView;
 	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___resultsView;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___summary;
@@ -3394,8 +3393,8 @@ struct String_t_StaticFields
 struct U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452_StaticFields
 {
 	U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452* ___U3CU3E9;
-	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___U3CU3E9__31_0;
-	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___U3CU3E9__31_1;
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___U3CU3E9__30_0;
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___U3CU3E9__30_1;
 };
 struct U3CU3Ec_t8235AE92D3B1257B8729AD2CA066123EF8D6C514_StaticFields
 {
@@ -4055,7 +4054,7 @@ IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m0255AEEA5FA8C5C2FAC94794DBA77B5FD8C14B1A (U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClimateContext_SetIndexType_mB91D544EDDD708EE4A3502F756534CCD4FFC0193 (int32_t ___0_type, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass40_0__ctor_m8BEC3FD59BDF8CE5200C378674BF3735F8D7AA23 (U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass39_0__ctor_mD3E7076D151A6056A7CBDD81EC2F37B1F5676203 (U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ClimateContext_ScenarioId_m18435C81620A4408647C5CF824FACBBD6A6FE2EE (int32_t ___0_index, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ClimateContext_get_WindowMode_m22738B43E69E9687E00476BD866728E8DB184763_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline (int32_t ___0_value, int32_t ___1_min, int32_t ___2_max, const RuntimeMethod* method) ;
@@ -4656,7 +4655,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m0255AEEA5FA8C5C2FAC94794D
 	}
 }
 // Method Definition Index: 126368
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CTryBuildU3Eb__31_0_m854C6948AB3D0792CF82930F1AB1E471DC0CEC82 (U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CTryBuildU3Eb__30_0_m0A891F4DD011065D3128A922C276D8E2B56FA719 (U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -4665,14 +4664,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CTryBuildU3Eb__31_0_m854C6948A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:171>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:167>
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
 		ClimateContext_SetIndexType_mB91D544EDDD708EE4A3502F756534CCD4FFC0193(0, NULL);
 		return;
 	}
 }
 // Method Definition Index: 126369
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CTryBuildU3Eb__31_1_m5A3B77AB7CF162D5562ACBB6A7C20B6567C333B2 (U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CTryBuildU3Eb__30_1_mB13C1E66AA92D72289B5404F9E0C905E8A7DC67A (U3CU3Ec_tA30CCA4E56AB4DDAFF82A6DDB05C9ED457106452* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -4681,7 +4680,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CTryBuildU3Eb__31_1_m5A3B77AB7
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:172>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:168>
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
 		ClimateContext_SetIndexType_mB91D544EDDD708EE4A3502F756534CCD4FFC0193(1, NULL);
 		return;
@@ -4696,7 +4695,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CTryBuildU3Eb__31_1_m5A3B77AB7
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // Method Definition Index: 126370
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass40_0__ctor_m8BEC3FD59BDF8CE5200C378674BF3735F8D7AA23 (U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass39_0__ctor_mD3E7076D151A6056A7CBDD81EC2F37B1F5676203 (U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* __this, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -4704,10 +4703,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass40_0__ctor_m8BEC3FD
 	}
 }
 // Method Definition Index: 126371
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass40_0_U3CFetchRoutineU3Eb__0_m573398740FD6E758EB439ECA8FBB7741976B604E (U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* __this, WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* ___0_r, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass39_0_U3CFetchRoutineU3Eb__0_mEBD477475DA6377E2EE9F8224C27E6EE70FF3701 (U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* __this, WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* ___0_r, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:323>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:317>
 		WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* L_0 = ___0_r;
 		__this->___res = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___res), (void*)L_0);
@@ -4715,10 +4714,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass40_0_U3CFetchRoutin
 	}
 }
 // Method Definition Index: 126372
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass40_0_U3CFetchRoutineU3Eb__1_m1119F21D7AD3EFCFA56DFE773A78A9E40A703ED1 (U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* __this, WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* ___0_r, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass39_0_U3CFetchRoutineU3Eb__1_m968DED0C039D41B2DE15EB9ECF4140279575557A (U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* __this, WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* ___0_r, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:327>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:321>
 		WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* L_0 = ___0_r;
 		__this->___res = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___res), (void*)L_0);
@@ -4734,7 +4733,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass40_0_U3CFetchRoutin
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // Method Definition Index: 126373
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFetchRoutineU3Ed__40__ctor_mA85E90204C2C3A6735CC61290115426574E5C16D (U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFetchRoutineU3Ed__39__ctor_m9684ED4943E28D7B6D0B9976F0999BDFC22A7198 (U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -4744,23 +4743,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFetchRoutineU3Ed__40__ctor_mA85E90204
 	}
 }
 // Method Definition Index: 126374
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFetchRoutineU3Ed__40_System_IDisposable_Dispose_m75C67A6A4E2C1DB1D7CD521DFC39BF25BA6D0545 (U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFetchRoutineU3Ed__39_System_IDisposable_Dispose_mAFF9B0905DB45BD5CA4C77ACCC2FF4D889CB2A09 (U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
 // Method Definition Index: 126375
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CFetchRoutineU3Ed__40_MoveNext_mC4299D032BE3E424A52929F50EAC43BB1EB56DBD (U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CFetchRoutineU3Ed__39_MoveNext_mEAE4050DD73FB3BFF3D2B6AB8DFA5F664FB2DAD8 (U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t3B52AECD524858B06D9CA829473BBBC59E3EC85A_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass40_0_U3CFetchRoutineU3Eb__0_m573398740FD6E758EB439ECA8FBB7741976B604E_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass40_0_U3CFetchRoutineU3Eb__1_m1119F21D7AD3EFCFA56DFE773A78A9E40A703ED1_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass39_0_U3CFetchRoutineU3Eb__0_mEBD477475DA6377E2EE9F8224C27E6EE70FF3701_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass39_0_U3CFetchRoutineU3Eb__1_m968DED0C039D41B2DE15EB9ECF4140279575557A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEB063D1CD3AD19AB3281ACC5406BDB0349BF24DE);
 		s_Il2CppMethodInitialized = true;
@@ -4807,27 +4806,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CFetchRoutineU3Ed__40_MoveNext_mC4299D
 IL_0026:
 	{
 		__this->___U3CU3E1__state = (-1);
-		U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* L_3 = (U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B_il2cpp_TypeInfo_var);
-		U3CU3Ec__DisplayClass40_0__ctor_m8BEC3FD59BDF8CE5200C378674BF3735F8D7AA23(L_3, NULL);
+		U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* L_3 = (U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC_il2cpp_TypeInfo_var);
+		U3CU3Ec__DisplayClass39_0__ctor_mD3E7076D151A6056A7CBDD81EC2F37B1F5676203(L_3, NULL);
 		__this->___U3CU3E8__1 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E8__1), (void*)L_3);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:313>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:307>
 		ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* L_4 = V_1;
 		NullCheck(L_4);
 		L_4->___busy = (bool)1;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:314>
-		U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* L_5 = __this->___U3CU3E8__1;
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:308>
+		U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* L_5 = __this->___U3CU3E8__1;
 		NullCheck(L_5);
 		L_5->___res = (WindowResult_t33C7650393803919211113A36F838A934B3DA1B6*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_5->___res), (void*)(WindowResult_t33C7650393803919211113A36F838A934B3DA1B6*)NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:316>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:310>
 		ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417* L_6 = (ClimateChoice_tEAAACDED78ED34C98B276E6F69DC6C41E94A7417*)(&__this->___ch);
 		int32_t L_7 = L_6->___Scenario;
 		il2cpp_codegen_runtime_class_init_inline(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var);
 		String_t* L_8;
 		L_8 = ClimateContext_ScenarioId_m18435C81620A4408647C5CF824FACBBD6A6FE2EE(L_7, NULL);
 		V_2 = L_8;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:317>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:311>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = ((ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_StaticFields*)il2cpp_codegen_static_fields_for(ClimateContext_tBBE07FD9C79BD8DEF9797DDA522AE74C67C53E1D_il2cpp_TypeInfo_var))->___WindowModes;
 		int32_t L_10;
 		L_10 = ClimateContext_get_WindowMode_m22738B43E69E9687E00476BD866728E8DB184763_inline(NULL);
@@ -4839,11 +4838,11 @@ IL_0026:
 		int32_t L_13 = L_12;
 		String_t* L_14 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 		V_3 = L_14;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:318>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:312>
 		int32_t L_15;
 		L_15 = ClimateContext_get_WindowDays_m5B21C6D69FF35E12F95740204DB6537F98F07FF5_inline(NULL);
 		V_4 = L_15;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:320>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:314>
 		bool L_16 = __this->___tourism;
 		if (!L_16)
 		{
@@ -4851,9 +4850,9 @@ IL_0026:
 		}
 	}
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:321>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:322>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:323>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:315>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:316>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:317>
 		ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* L_17 = V_1;
 		NullCheck(L_17);
 		FutureClimateClient_t7EF4CC7B4C461B48DB528053B23BF807463FC5D2* L_18 = L_17->___client;
@@ -4873,9 +4872,9 @@ IL_0026:
 		NullCheck(L_28);
 		String_t* L_30;
 		L_30 = ClimateIndicesPanel_ProfileId_m80E396050B7A99FA764F63F36A3D0603BF32BFBF(L_28, L_29, NULL);
-		U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* L_31 = __this->___U3CU3E8__1;
+		U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* L_31 = __this->___U3CU3E8__1;
 		Action_1_t3B52AECD524858B06D9CA829473BBBC59E3EC85A* L_32 = (Action_1_t3B52AECD524858B06D9CA829473BBBC59E3EC85A*)il2cpp_codegen_object_new(Action_1_t3B52AECD524858B06D9CA829473BBBC59E3EC85A_il2cpp_TypeInfo_var);
-		Action_1__ctor_mFC07715655E32E4BA7CE5481734B3380C04E22A4(L_32, L_31, (intptr_t)((void*)U3CU3Ec__DisplayClass40_0_U3CFetchRoutineU3Eb__0_m573398740FD6E758EB439ECA8FBB7741976B604E_RuntimeMethod_var), NULL);
+		Action_1__ctor_mFC07715655E32E4BA7CE5481734B3380C04E22A4(L_32, L_31, (intptr_t)((void*)U3CU3Ec__DisplayClass39_0_U3CFetchRoutineU3Eb__0_mEBD477475DA6377E2EE9F8224C27E6EE70FF3701_RuntimeMethod_var), NULL);
 		NullCheck(L_18);
 		RuntimeObject* L_33;
 		L_33 = FutureClimateClient_FetchTourismWindow_mBEE90F979400B6FB612738ABE488329154FC4255(L_18, L_19, L_21, L_23, L_25, L_26, L_27, L_30, L_32, NULL);
@@ -4893,9 +4892,9 @@ IL_00e1:
 
 IL_00ea:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:325>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:326>
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:327>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:319>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:320>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:321>
 		ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* L_34 = V_1;
 		NullCheck(L_34);
 		FutureClimateClient_t7EF4CC7B4C461B48DB528053B23BF807463FC5D2* L_35 = L_34->___client;
@@ -4908,9 +4907,9 @@ IL_00ea:
 		int32_t L_42 = L_41->___Day;
 		int32_t L_43 = V_4;
 		String_t* L_44 = V_3;
-		U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* L_45 = __this->___U3CU3E8__1;
+		U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* L_45 = __this->___U3CU3E8__1;
 		Action_1_t3B52AECD524858B06D9CA829473BBBC59E3EC85A* L_46 = (Action_1_t3B52AECD524858B06D9CA829473BBBC59E3EC85A*)il2cpp_codegen_object_new(Action_1_t3B52AECD524858B06D9CA829473BBBC59E3EC85A_il2cpp_TypeInfo_var);
-		Action_1__ctor_mFC07715655E32E4BA7CE5481734B3380C04E22A4(L_46, L_45, (intptr_t)((void*)U3CU3Ec__DisplayClass40_0_U3CFetchRoutineU3Eb__1_m1119F21D7AD3EFCFA56DFE773A78A9E40A703ED1_RuntimeMethod_var), NULL);
+		Action_1__ctor_mFC07715655E32E4BA7CE5481734B3380C04E22A4(L_46, L_45, (intptr_t)((void*)U3CU3Ec__DisplayClass39_0_U3CFetchRoutineU3Eb__1_m968DED0C039D41B2DE15EB9ECF4140279575557A_RuntimeMethod_var), NULL);
 		NullCheck(L_35);
 		RuntimeObject* L_47;
 		L_47 = FutureClimateClient_FetchHeritageWindow_m2210E0B9BD59D4DDA8332B3C3713D36879ADBF23(L_35, L_36, L_38, L_40, L_42, L_43, L_44, L_46, NULL);
@@ -4927,12 +4926,12 @@ IL_013a:
 
 IL_0141:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:329>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:323>
 		ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* L_48 = V_1;
 		NullCheck(L_48);
 		L_48->___busy = (bool)0;
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:331>
-		U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* L_49 = __this->___U3CU3E8__1;
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:325>
+		U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* L_49 = __this->___U3CU3E8__1;
 		NullCheck(L_49);
 		WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* L_50 = L_49->___res;
 		if (!L_50)
@@ -4941,7 +4940,7 @@ IL_0141:
 		}
 	}
 	{
-		U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* L_51 = __this->___U3CU3E8__1;
+		U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* L_51 = __this->___U3CU3E8__1;
 		NullCheck(L_51);
 		WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* L_52 = L_51->___res;
 		NullCheck(L_52);
@@ -4954,11 +4953,11 @@ IL_0141:
 
 IL_0167:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:335>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:329>
 		ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* L_54 = V_1;
 		NullCheck(L_54);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_55 = L_54->___status;
-		U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* L_56 = __this->___U3CU3E8__1;
+		U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* L_56 = __this->___U3CU3E8__1;
 		NullCheck(L_56);
 		WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* L_57 = L_56->___res;
 		if (L_57)
@@ -4976,7 +4975,7 @@ IL_0167:
 
 IL_0181:
 	{
-		U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* L_58 = __this->___U3CU3E8__1;
+		U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* L_58 = __this->___U3CU3E8__1;
 		NullCheck(L_58);
 		WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* L_59 = L_58->___res;
 		NullCheck(L_59);
@@ -4989,35 +4988,35 @@ IL_0191:
 	{
 		NullCheck(G_B12_1);
 		VirtualActionInvoker1< String_t* >::Invoke(66, G_B12_1, G_B12_0);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:336>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:330>
 		ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* L_61 = V_1;
 		NullCheck(L_61);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_62 = L_61->___body;
 		NullCheck(L_62);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_62, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:337>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:331>
 		return (bool)0;
 	}
 
 IL_01a8:
 	{
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:340>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:334>
 		ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* L_63 = V_1;
 		NullCheck(L_63);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_64 = L_63->___title;
-		U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* L_65 = __this->___U3CU3E8__1;
+		U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* L_65 = __this->___U3CU3E8__1;
 		NullCheck(L_65);
 		WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* L_66 = L_65->___res;
 		NullCheck(L_66);
 		String_t* L_67 = L_66->___headerLine;
 		NullCheck(L_64);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_64, L_67);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:341>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:335>
 		ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* L_68 = V_1;
 		NullCheck(L_68);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_69 = L_68->___body;
 		ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* L_70 = V_1;
-		U3CU3Ec__DisplayClass40_0_tCD05F85CCCD411052BD0AF4B1953C5025C36FD1B* L_71 = __this->___U3CU3E8__1;
+		U3CU3Ec__DisplayClass39_0_tFCD89E68E7CDE1ECF1D5F81C93617091EBA280FC* L_71 = __this->___U3CU3E8__1;
 		NullCheck(L_71);
 		WindowResult_t33C7650393803919211113A36F838A934B3DA1B6* L_72 = L_71->___res;
 		NullCheck(L_70);
@@ -5025,13 +5024,13 @@ IL_01a8:
 		L_73 = ClimateIndicesPanel_BuildColoredBody_mA8FD44E46675C8822DC445409FB47D3F7BE216D2(L_70, L_72, NULL);
 		NullCheck(L_69);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_69, L_73);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:342>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:336>
 		ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* L_74 = V_1;
 		NullCheck(L_74);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_75 = L_74->___body;
 		NullCheck(L_75);
 		TMP_Text_set_pageToDisplay_mBD985B613FCEC04266FDA43E916B19DD505D7469(L_75, 1, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:346>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:340>
 		__this->___U3CU3E2__current = NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)NULL);
 		__this->___U3CU3E1__state = 3;
@@ -5041,16 +5040,16 @@ IL_01a8:
 IL_01fb:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:347>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:341>
 		ClimateIndicesPanel_tCAE34324F411E1981962AA7574C42272881C5ADB* L_76 = V_1;
 		NullCheck(L_76);
 		ClimateIndicesPanel_UpdatePageStatus_m817D95E9DC88B41BD195AFDB4ACBB849FCE2C258(L_76, NULL);
-		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:348>
+		//<source_info:C:/Users/iacop/Desktop/UnityFork/CaldanaVR/Assets/000_my/Scripts/Clima/ClimateIndicesPanel.cs:342>
 		return (bool)0;
 	}
 }
 // Method Definition Index: 126376
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFetchRoutineU3Ed__40_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mAA49EBD812C86D8BD0E5FFA224CAD4204BE666FB (U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFetchRoutineU3Ed__39_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mBA404FA33F0398F8F88D89BF16A7021D911388DD (U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
@@ -5058,16 +5057,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFetchRoutineU3Ed__40_System
 	}
 }
 // Method Definition Index: 126377
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFetchRoutineU3Ed__40_System_Collections_IEnumerator_Reset_mCD16EDBDA6AC0E5447D32A450F3205BA412C23B6 (U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CFetchRoutineU3Ed__39_System_Collections_IEnumerator_Reset_mDA087FD2FA6D0E32104A8509C7AA34CFE6221DE5 (U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CFetchRoutineU3Ed__40_System_Collections_IEnumerator_Reset_mCD16EDBDA6AC0E5447D32A450F3205BA412C23B6_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CFetchRoutineU3Ed__39_System_Collections_IEnumerator_Reset_mDA087FD2FA6D0E32104A8509C7AA34CFE6221DE5_RuntimeMethod_var)));
 	}
 }
 // Method Definition Index: 126378
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFetchRoutineU3Ed__40_System_Collections_IEnumerator_get_Current_m1BFCB09754CACDC7DDE9DCAE71A2069FAE92397A (U3CFetchRoutineU3Ed__40_t9445F0C0138ECD9F29CC88FC43815D07EA090A04* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CFetchRoutineU3Ed__39_System_Collections_IEnumerator_get_Current_mD5F8F637F085F8BCDEDD7FA143DD244EBBF617A0 (U3CFetchRoutineU3Ed__39_tA13AFAD82C7F3597C5D75FB6DD4DAB92B0F9D083* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
