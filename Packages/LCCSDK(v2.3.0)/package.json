@@ -1,0 +1,25 @@
+{
+  "name": "com.xgrids.lccsdk",
+  "version": "2.3.0",
+  "displayName": "LCC SDK",
+  "description": "Unity plugin for rendering and editing Gaussian splatting asset",
+  "unity": "6000.0",
+  "documentationUrl": "https://docs.xgrids.com/en-us/07-plugin-sdk/02-unity/latest/01-introduction.html",
+  "changelogUrl": "https://docs.xgrids.com/en-us/07-plugin-sdk/02-unity/latest/500-changelog/95-v2-3-0.html",
+  "dependencies": {
+    "com.unity.mathematics": "1.2.6",
+    "com.unity.render-pipelines.universal": "17.0.4"
+  },
+  "author": {
+    "name": "Davidwang",
+    "email": "xiangchun.wang@xgrids.com",
+    "url": "https://docs.xgrids.com/en-us/07-plugin-sdk/02-unity/latest/99-contactus.html"
+  },
+  "samples": [
+    {
+      "displayName": "LCC SDK",
+      "description": "Simple render sample",
+      "path": "Samples~/LCCViewer"
+    }
+  ]
+}

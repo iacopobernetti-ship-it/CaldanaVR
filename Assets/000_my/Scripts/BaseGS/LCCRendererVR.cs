@@ -1,9 +1,11 @@
 using System.IO;
 using LCCCore;
 using UnityEngine;
+using UnityEngine.XR;
+using UnityEngine.XR.Management;
 
 /// <summary>
-/// LCCRendererVR originale XGRIDS + tre aggiunte:
+/// LCCRendererVR originale XGRIDS + quattro aggiunte:
 ///
 /// 1) SetZDepth sul MANAGER (non sul Renderer — l'errore che avevamo fatto prima, per cui
 ///    la chiamata non ha mai avuto effetto). Documentazione API: "开关Z深度写入，同时调整渲染队列"
@@ -44,6 +46,23 @@ using UnityEngine;
 ///    un'allocazione globale e valori diversi fra scene sono solo un modo per confondersi.
 ///    Il log dichiara cosa e' stato applicato, cosi' una scena rimasta indietro si vede dal
 ///    logcat (filtro: adb logcat -s Unity | grep LCCRendererVR).
+///
+/// 4) PIATTAFORMA SDK SCELTA A RUNTIME, non piu' a compilazione (SDK 2.3.0). Prima era
+///    #if UNITY_EDITOR || UNITY_STANDALONE -> PC, altrimenti Quest: due soli casi, e lo
+///    streaming via Link finiva nel caso PC, cioe' nella pipeline da scrivania applicata a un
+///    visore — origine della diplopia (D3D12) e del LOD grossolano senza ambiente (D3D11)
+///    segnalati a XGRIDS nella issue #8. La 2.3.0 aggiunge PlatformType.PCVR, un percorso
+///    dedicato allo streaming, e le guide Quest 3 lo prescrivono per Link. Ora i casi sono tre:
+///     - Android                    -> Quest  (visore standalone)
+///     - Windows con visore attivo  -> PCVR   (Editor o build via Link)
+///     - Windows senza visore       -> PC     (versione da scrivania)
+///    Non si puo' decidere con le direttive di compilazione: Editor e build per PC sono lo
+///    stesso eseguibile con o senza visore collegato, e solo a runtime si sa quale dei due.
+///    Il log dichiara la piattaforma scelta, cosi' una scelta sbagliata si legge subito.
+///    "Visore attivo" = un loader XR e' attivo, NON XRSettings.isDeviceActive: MISURATO in
+///    Editor via Link, la sessione OpenXR era gia' creata prima della scena Base, ma
+///    isDeviceActive in Start valeva ancora False (diventa vero solo a sessione "running",
+///    qualche fotogramma dopo) — e lo splat finiva su PC con il visore indosso.
 ///
 /// NIENTE try/catch attorno alle chiamate SDK, di proposito: la volta scorsa la prudenza aveva
 /// ingoiato in silenzio proprio l'errore che avrebbe rivelato il metodo sbagliato. Se fallisce,
@@ -122,18 +141,20 @@ public class LCCRendererVR : MonoBehaviour
     /// <summary>Il manager di questa scena, per le regolazioni a caldo.</summary>
     public LCCManager Manager => m_manager;
 
+    /// <summary>Piattaforma SDK in uso in questa scena, decisa in Start. Esposta per la
+    /// diagnostica (HUD, sonde): la scelta e' l'unica cosa che distingue i tre percorsi.</summary>
+    public PlatformType Platform { get; private set; }
+
     void Start()
     {
-#if UNITY_EDITOR || UNITY_STANDALONE
-        // In Editor E NELLA BUILD PER PC l'SDK vuole PlatformType.PC: prima era solo
-        // UNITY_EDITOR, e qualunque build diceva "Quest" — giusto per il visore, sbagliato per la
-        // versione da scrivania, dove l'SDK prenderebbe la strada mobile su una scheda video da PC.
-        // In Editor l'SDK vuole PlatformType.PC. Il vecchio interruttore 'skipInEditor', che
-        // impediva del tutto il caricamento per evitare la diplopia da Play Mode via Link, e'
-        // stato RIMOSSO: la diplopia non si presenta piu' con la preview attuale, e quel flag era
-        // un valore serializzato in quattro scene — quattro posti in cui poteva restare indietro
-        // senza che nulla lo segnalasse, se non uno splat che non compare.
-        m_manager.SetPlatformType(PlatformType.PC);
+        Platform = ChoosePlatform();
+        m_manager.SetPlatformType(Platform);
+        // Si stampano ENTRAMBI i segnali: il loader (quello che decide) e isDeviceActive (quello
+        // che si usava prima). Se un giorno divergessero in modo diverso da oggi, si legge qui.
+        var loader = XRGeneralSettings.Instance?.Manager?.activeLoader;
+        Debug.Log($"[LCCRendererVR] '{gameObject.scene.name}': piattaforma SDK = {Platform} " +
+                  $"(runtime {Application.platform}, loader XR = {(loader != null ? loader.name : "nessuno")}, " +
+                  $"isDeviceActive = {XRSettings.isDeviceActive}).");
 
         // Su PC, con dati LOCALI, l'SDK sceglie da solo fra due percorsi: "Full Load" (tutto il
         // dato in un buffer suo) se il livello piu' fine ha meno splat della soglia, altrimenti
@@ -141,22 +162,44 @@ public class LCCRendererVR : MonoBehaviour
         // SwitchRenderPass). E' l'unica differenza fra le due sorgenti: stessi file (env.sog
         // compreso), stessi log, stessa camera — eppure l'ambiente compariva solo via HTTP.
         // Abbassando la soglia al minimo ammesso (100 = 1 milione) il dato locale prende la
-        // stessa strada di quello remoto. Solo PC/Mac: altrove l'SDK rifiuta la chiamata.
-        if (forceChunkOnPc)
+        // stessa strada di quello remoto.
+        // Vale per PC e PCVR, che girano entrambi su scheda video da PC: la guida XGRIDS per lo
+        // streaming 2.3.0 usa SetFullRenderSplat proprio con PCVR. Sul Quest l'SDK rifiuta la
+        // chiamata, quindi li' non si fa.
+        if (Platform != PlatformType.Quest && forceChunkOnPc)
         {
             m_manager.SetFullRenderSplat(100);
             Debug.Log($"[LCCRendererVR] '{gameObject.scene.name}': soglia Full Load al minimo " +
                       "(percorso Chunk, come per HTTP).");
         }
-#else
-        m_manager.SetPlatformType(PlatformType.Quest);
-#endif
+
         string path = ResolvePath();
         if (string.IsNullOrEmpty(path)) return;      // ResolvePath ha gia' spiegato perche'
 
         ApplySplatBudget();
         m_renderer = m_manager.GetRender(this.gameObject.transform);
         m_renderer.Load(path, onProgress, onLoaded);
+    }
+
+    /// <summary>
+    /// Sceglie la piattaforma SDK in base a dove gira davvero l'app (vedi punto 4 in testa).
+    ///
+    /// L'ordine conta: anche sul Quest standalone XRSettings.isDeviceActive e' vero, quindi
+    /// Android va riconosciuto PRIMA del controllo sul visore. In Editor Application.platform e'
+    /// WindowsEditor anche con target di build Android, ed e' giusto cosi': l'Editor via Link
+    /// renderizza sul PC, quindi deve prendere PCVR, non Quest.
+    ///
+    /// Il visore si riconosce dal LOADER XR attivo: con "Initialize XR on Startup" il loader
+    /// viene inizializzato prima del caricamento della prima scena, e resta null se l'avvio XR
+    /// fallisce (nessun visore, Link spento) o se l'XR all'avvio e' disattivato. Non si usa
+    /// XRSettings.isDeviceActive: in Start puo' essere ancora False con la sessione gia' creata
+    /// (vedi punto 4 in testa).
+    /// </summary>
+    private static PlatformType ChoosePlatform()
+    {
+        if (Application.platform == RuntimePlatform.Android) return PlatformType.Quest;
+        var loader = XRGeneralSettings.Instance?.Manager?.activeLoader;
+        return loader != null ? PlatformType.PCVR : PlatformType.PC;
     }
 
     /// <summary>
@@ -232,6 +275,8 @@ public class LCCRendererVR : MonoBehaviour
     /// GetFullPath riporta tutto al separatore della piattaforma, e su Windows sono '\' ovunque.
     /// Sul visore il percorso e' gia' tutto '/', e li' l'SDK usa la piattaforma Quest.
     /// Gli URL HTTP non passano di qui: l'SDK li tratta a parte, e li' '/' va benissimo.
+    /// Con PCVR il comportamento atteso e' lo stesso di PC (stesso Windows, stesso caricatore):
+    /// se con dati locali lo splat non comparisse solo in PCVR, e' il primo punto da misurare.
     /// </summary>
     private string LocalPath(string root) =>
         Path.GetFullPath(Path.Combine(root, localRelativePath));
@@ -277,10 +322,11 @@ public class LCCRendererVR : MonoBehaviour
     [Min(0)] public float maxViewDistance = 0f;
 
     [Header("Percorso di rendering su PC")]
-    [Tooltip("Solo Editor e build per PC: forza il percorso a blocchi (Chunk) anche con dati " +
-             "locali, come avviene sempre con HTTP. Con il percorso Full Load, scelto dall'SDK per " +
-             "i dati locali piu' piccoli, l'ambiente (env.sog) non compariva. Sul visore non ha " +
-             "effetto: li' l'SDK usa sempre il suo percorso mobile.")]
+    [Tooltip("PC e PCVR (Editor e build per Windows, con o senza visore): forza il percorso a " +
+             "blocchi (Chunk) anche con dati locali, come avviene sempre con HTTP. Con il percorso " +
+             "Full Load, scelto dall'SDK per i dati locali piu' piccoli, l'ambiente (env.sog) non " +
+             "compariva. Sul visore standalone non ha effetto: li' l'SDK usa sempre il suo " +
+             "percorso mobile.")]
     public bool forceChunkOnPc = true;
 
     [Header("Ambiente")]

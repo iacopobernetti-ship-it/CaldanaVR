@@ -1,0 +1,174 @@
+XGRIDS SDK 软件开发工具包许可协议
+
+许可方：深圳市其域创新科技股份有限公司（XGRIDS，以下简称"许可方"）
+生效日期：[2026-10-30]
+
+Copyright (c) 2026 深圳市其域创新科技股份有限公司 (XGRIDS). All rights reserved.
+
+本协议适用于许可方提供的以下软件开发工具包及插件（统称"XGRIDS SDK"或"本SDK"）：
+    (1) LCC Web SDK；
+    (2) LCC Unity SDK；
+    (3) LCC4Unreal（Unreal Engine 插件）。
+以及上述产品所含的二进制文件、库文件、头文件、示例代码、文档及其任何更新。
+
+在下载、安装、复制或以其他方式使用本SDK之前，请仔细阅读本协议。
+使用本SDK即表示您（"被许可方"）同意受本协议约束。如不同意，请勿使用本SDK。本协议自被许可方使用本SDK之日起对被许可方具有法律约束力。
+
+一、授权范围
+1.1 在被许可方遵守本协议全部条款的前提下，许可方授予被许可方一项非独占、不可转让、不可再许可、可撤销的有限许可，允许被许可方：
+    (a) 在内部使用本SDK开发、测试其自有应用程序（以下简称"被许可应用"）；
+    (b) 将本SDK中的运行时组件集成（包括编译、打包）为被许可应用不可分割的一部分，并以被许可应用的形式部署、运行或分发给其最终用户（包括通过网页、应用商店或安装包等方式提供），可用于商业用途。
+1.2 本许可仅适用于随附本协议文件一并提供的SDK版本。后续版本是否授权及授权条件，以该版本随附的许可文件为准；未随附许可文件的版本不视为已获授权。
+
+二、限制
+除本协议明确允许或适用法律强制性规定另有规定外，被许可方不得：
+2.1 单独分发、出售、出租、出借、转授权本 SDK，或以 SDK、开发工具、类库、插件等可供第三方开发者再次集成的形式对外提供本SDK或其任何部分；
+2.2 对本SDK进行反编译、反汇编、反向工程，或以其他方式尝试获取其源代码；
+2.3 修改、翻译、改编本SDK或基于本SDK制作衍生作品；
+2.4 删除、遮盖或修改本SDK中的任何版权声明、商标或许可信息；
+2.5 将本SDK用于开发、支持或改进与许可方或其关联方产品或服务构成竞争或潜在竞争、利益冲突的产品或服务；
+2.6 规避本SDK中的任何许可校验、鉴权或安全机制。
+被许可方违反本条的，本许可立即自动终止，许可方有权在不另行通知的情况下远程撤销被许可方的许可证密钥及鉴权凭证；被许可方应赔偿许可方因此遭受的全部损失。
+
+三、第三方组件
+3.1 本SDK包含第三方开源组件，其清单及许可证全文见随附的THIRD-PARTY-NOTICES.txt文件。
+3.2 第三方组件适用其各自的许可证条款。本协议中的限制不适用于第三方组件本身，亦不限制被许可方依据该等许可证享有的权利。
+3.3 被许可方分发被许可应用时，应按照第三方许可证的要求保留相应的版权及许可声明（例如在应用的"关于/开源许可"页面或随附文档中展示 THIRD-PARTY-NOTICES.txt 的内容或在随被许可应用分发的文档、安装包或最终用户可查阅的位置提供）。因被许可方违反前述第三方许可证的要求而产生的一切不利后果，由被许可方自行承担；因此导致许可方遭受损失的，被许可方应予赔偿。
+
+四、知识产权
+本SDK及其所有副本的知识产权等权利归许可方或其关联方所有。本协议仅授予使用许可，不转让任何所有权。本协议未明确授予的所有权利均由许可方保留。
+
+五、终止
+5.1 被许可方违反本协议任一条款的或者违反和许可方签署的其他协议、约定、承诺、文件的，或者被许可方使用本SDK从事违法违规、违背国际条约、违反公序良俗或其他法规、政府机构禁止或限制的活动的，本许可自动终止。
+5.2 许可终止后，被许可方应立即停止使用并销毁本 SDK的所有副本。因拒绝或迟延销毁导致许可方或第三方遭受损失的，被许可方须赔偿许可方因此遭受的全部损失，包括但不限于维权合理费用及律师费。终止前已依据第 1.1(b)条合法分发给最终用户的被许可应用不受影响，但被许可方不得再分发包含本SDK的任何版本，且不得对现有集成版本进行更新、升级或技术支持。
+
+六、免责声明
+本SDK按"现状"提供，许可方不提供任何明示或默示的保证，包括但不限于适销性、特定用途适用性及不侵权的保证。
+
+七、责任及限制
+因被许可方使用本SDK违反本协议、违反适用法律法规或侵犯第三方权利，导致许可方遭受任何索赔、诉讼、损失、费用（包括合理律师费）的，被许可方应赔偿并使许可方免受损害。
+在适用法律允许的最大范围内，许可方不对因使用或无法使用本SDK而产生的任何间接、附带、特殊、惩罚性或后果性损害承担责任。许可方的累计责任不超过被许可方就本SDK实际支付的费用。若上述限额被认定无效或不可执行，许可方的累计责任不超过人民币一万元。
+
+八、法律适用与争议解决
+本协议适用中华人民共和国大陆法律（不含冲突法规则）。因本协议产生的争议，双方应友好协商；
+协商不成的，提交深圳国际仲裁院，按照申请仲裁时该院现行有效的仲裁规则进行仲裁。仲裁地为深圳市，仲裁语言为中文，仲裁裁决为终局裁决，对双方均有约束力。
+
+九. 个人信息保护
+被许可方在将本SDK集成至被许可应用并向最终用户提供服务的过程中，本SDK可能采集以下信息并上传至许可方服务器：设备标识符（包括设备型号、操作系统版本、MAC 地址、IMEI、OAID 等）、网络信息、用于本SDK鉴权/激活的用户标识符、使用日志、崩溃日志，用于本SDK授权校验及服务质量维护/崩溃分析等，上述信息在许可方服务器的存储期限不超过实现处理目的所必要的最短时间，并符合相关法律法规的规定。
+被许可方应在其面向最终用户的隐私政策中，以显著方式披露上述数据处理行为，包括所采集的信息类型、处理目的、存储期限及用户可行使的权利，并依据适用的个人信息保护法律法规取得必要的用户授权，遵守适用的数据合规、个人信息保护等相关法律法规。
+因被许可方未履行本条项下义务导致监管处罚、用户投诉或第三方索赔的，由被许可方自行承担全部责任，许可方不承担连带责任；因此导致许可方产生损失的，许可方有权向被许可方追偿。
+
+十、品牌标注义务
+被许可方在分发被许可应用时，应在应用的启动界面、关于页面、产品说明文档或等同位置以合理醒目的方式标注 “Powered by XGRIDS” 或许可方指定的等效标识以表明被许可应用使用了本SDK。被许可方不得以任何方式暗示或声称本SDK由其独立开发或归其所有，或者以其他方式对本SDK的来源和权利归属作虚假陈述，亦不得删除、遮盖或修改许可方在本SDK中放置的任何版权声明、商标或其他品牌或权利标识。被许可方的前述品牌标注义务不表示许可方参与被许可应用的开发、运营或审核，不构成许可方对被许可应用的认证、保证、推荐、背书或双方之间存在的合伙、代理、经销或其他合作关系。
+ 
+十一、违约责任
+被许可方应就以下情形对许可方进行赔偿、保护并使其免受损害：(a) 被许可方违反本协议任何条款；(b) 被许可方的被许可应用侵犯任何第三方知识产权或其他合法权益；(c) 被许可方的被许可应用存在缺陷或违法违规内容导致第三方对许可方提出索赔。上述赔偿范围包括因此产生的合理律师费、诉讼费、和解款及其他相关费用。
+ 
+十二、合规使用义务
+被许可方不得将本 SDK 用于以下用途：(a) 违反任何适用法律法规的活动；(b) 恐怖主义、极端主义、人口贩卖、网络攻击或其他危害公共安全的活动；(c) 开发、传播恶意软件、间谍软件或任何具有破坏性的程序；(d) 任何违反适用法律法规、政府政策的用途。
+被许可方须遵守所有适用的出口管制法律法规，不得将本SDK或包含本SDK的被许可应用出口、再出口或转让至任何受制裁国家、地区或受制裁实体，包括但不限于受中国、美国、欧盟出口管制或经济制裁限制的目的地。
+被许可方违反本条的，许可方有权立即终止本许可，并就由此给许可方造成的全部损失（包括政府罚款、调查费用、律师费等）向被许可方追偿。
+ 
+十三、许可更新与修订
+许可方有权在任何时候对本协议进行修订，修订后的协议以许可方官网公布或随新版本SDK附带的版本为准。
+本协议修订后，被许可方继续使用本SDK或下载、安装任何新版本，即视为接受修订后的协议。如不接受修订内容，被许可方应立即停止使用本SDK并销毁所有副本。本协议修订不影响修订前已依据第1.1(b)条合法分发给最终用户的被许可应用，该等应用继续受修订前适用的协议版本约束，但被许可方不得将修订后的SDK版本用于上述应用的后续更新版本，除非遵守修订后协议的全部要求。
+
+十四、其他
+若被许可方与许可方另行签署了书面协议，就相同事项该书面协议优先适用。
+许可方对本协议条款具有最终解释权。
+本协议任一条款被认定为无效或不可执行，不影响其余条款的效力，无效条款应以最接近原意的有效条款替代。
+许可方未行使或延迟行使本协议项下任何权利，不构成对该权利的放弃。
+本协议以中文订立，如本协议的其他语言译本与中文版本存在不一致或歧义，均以中文版本为准。
+许可方向被许可方发出的通知，以许可方官网、网页及产品应用等平台公告或向被许可方注册时等情况提供的联系邮箱发送邮件方式送达，发送之日起视为送达。
+
+
+XGRIDS SDK SOFTWARE DEVELOPMENT KIT LICENSE AGREEMENT
+Licensor: Shenzhen XGRIDS-INNOVATION Co., Ltd. (XGRIDS, hereinafter referred to as "Licensor")
+Effective Date: [2026-10-23]
+Copyright (c) 2026 Shenzhen XGRIDS-INNOVATION Co., Ltd. (XGRIDS). All rights reserved.
+ 
+This Agreement applies to the following software development kits and plug-ins provided by the Licensor (collectively referred to as "XGRIDS SDK" or "this SDK"):
+(1) LCC Web SDK;
+(2) LCC Unity SDK;
+(3) LCC4Unreal (Unreal Engine Plug-in).
+as well as the binary files, library files, header files, sample code, documentation, and any updates contained in the foregoing products.
+ 
+PLEASE READ THIS AGREEMENT CAREFULLY BEFORE DOWNLOADING, INSTALLING, COPYING, OR OTHERWISE USING THIS SDK.
+BY USING THIS SDK, YOU (THE "LICENSEE") AGREE TO BE BOUND BY THIS AGREEMENT. IF YOU DO NOT AGREE, PLEASE DO NOT USE THIS SDK. THIS AGREEMENT IS LEGALLY BINDING ON THE LICENSEE FROM THE DATE THE LICENSEE FIRST USES THIS SDK.
+ 
+Article 1  Scope of License
+1.1  Subject to the Licensee’s compliance with all terms of this Agreement, the Licensor grants the Licensee a non-exclusive, non-transferable, non-sublicensable, revocable, limited license to:
+(a)  Use this SDK internally to develop and test the Licensee’s own applications (hereinafter "Licensed Applications");
+(b)  Integrate (including compile and package) the runtime components of this SDK as an inseparable part of a Licensed Application, and deploy, run, or distribute the Licensed Application to end users (including by means of webpages, app stores, installation packages, or otherwise) for commercial purposes.
+1.2  This license applies only to the version of the SDK provided together with this Agreement. Whether and on what terms subsequent versions are licensed shall be governed by the license document accompanying such versions; versions not accompanied by a license document shall not be deemed to have been licensed.
+ 
+ARTICLE 2  RESTRICTIONS
+EXCEPT AS EXPRESSLY PERMITTED BY THIS AGREEMENT OR AS REQUIRED BY MANDATORY PROVISIONS OF APPLICABLE LAW, THE LICENSEE SHALL NOT:
+2.1  SEPARATELY DISTRIBUTE, SELL, RENT, LEND, OR SUBLICENSE THIS SDK, OR MAKE THIS SDK OR ANY PART THEREOF AVAILABLE TO THIRD-PARTY DEVELOPERS IN THE FORM OF AN SDK, DEVELOPMENT TOOL, CLASS LIBRARY, PLUG-IN, OR OTHERWISE FOR RE-INTEGRATION;
+2.2  DECOMPILE, DISASSEMBLE, REVERSE ENGINEER, OR OTHERWISE ATTEMPT TO OBTAIN THE SOURCE CODE OF THIS SDK;
+2.3  MODIFY, TRANSLATE, ADAPT, OR CREATE DERIVATIVE WORKS BASED ON THIS SDK;
+2.4  REMOVE, OBSCURE, OR MODIFY ANY COPYRIGHT NOTICE, TRADEMARK, OR LICENSE INFORMATION CONTAINED IN THIS SDK;
+2.5  USE THIS SDK TO DEVELOP, SUPPORT, OR IMPROVE ANY PRODUCT OR SERVICE THAT COMPETES WITH, POTENTIALLY COMPETES WITH, OR HAS A CONFLICT OF INTEREST WITH THE PRODUCTS OR SERVICES OF THE LICENSOR OR ITS AFFILIATES;
+2.6  CIRCUMVENT ANY LICENSE VERIFICATION, AUTHENTICATION, OR SECURITY MECHANISM IN THIS SDK.
+IF THE LICENSEE VIOLATES THIS ARTICLE, THIS LICENSE SHALL AUTOMATICALLY AND IMMEDIATELY TERMINATE. THE LICENSOR IS ENTITLED TO REMOTELY REVOKE THE LICENSEE’S LICENSE KEY AND AUTHENTICATION CREDENTIALS WITHOUT FURTHER NOTICE. THE LICENSEE SHALL INDEMNIFY THE LICENSOR FOR ALL LOSSES SUFFERED AS A RESULT.
+ 
+Article 3  Third-Party Components
+3.1  This SDK contains third-party open-source components. A list of such components and the full text of their respective licenses are set out in the accompanying THIRD-PARTY-NOTICES.txt file.
+3.2  Third-party components are governed by their respective license terms. The restrictions in this Agreement do not apply to the third-party components themselves, nor do they limit any rights the Licensee enjoys under such licenses.
+3.3  WHEN DISTRIBUTING A LICENSED APPLICATION, THE LICENSEE SHALL RETAIN THE RELEVANT COPYRIGHT AND LICENSE NOTICES AS REQUIRED BY THE APPLICABLE THIRD-PARTY LICENSES (FOR EXAMPLE, BY DISPLAYING THE CONTENTS OF THIRD-PARTY-NOTICES.TXT ON THE "ABOUT / OPEN SOURCE LICENSES" PAGE OF THE APPLICATION OR IN DOCUMENTATION, INSTALLATION PACKAGES, OR LOCATIONS ACCESSIBLE TO END USERS DISTRIBUTED WITH THE LICENSED APPLICATION). ALL ADVERSE CONSEQUENCES ARISING FROM THE LICENSEE’S FAILURE TO COMPLY WITH SUCH THIRD-PARTY LICENSE REQUIREMENTS SHALL BE BORNE SOLELY BY THE LICENSEE; IF THE LICENSOR SUFFERS ANY LOSS AS A RESULT, THE LICENSEE SHALL PROVIDE INDEMNIFICATION.
+ 
+Article 4  Intellectual Property
+All intellectual property rights and other rights in and to this SDK and all copies thereof are owned by the Licensor or its affiliates. This Agreement grants a license to use only and does not transfer any ownership. All rights not expressly granted herein are reserved by the Licensor.
+ 
+ARTICLE 5  TERMINATION
+5.1  THIS LICENSE SHALL AUTOMATICALLY TERMINATE IF: (I) THE LICENSEE BREACHES ANY TERM OF THIS AGREEMENT; (II) THE LICENSEE BREACHES ANY OTHER AGREEMENT, ARRANGEMENT, COMMITMENT, OR DOCUMENT ENTERED INTO WITH THE LICENSOR; OR (III) THE LICENSEE USES THIS SDK TO ENGAGE IN ILLEGAL OR NON-COMPLIANT ACTIVITIES, ACTIVITIES PROHIBITED OR RESTRICTED BY INTERNATIONAL TREATIES, ACTIVITIES CONTRARY TO PUBLIC ORDER AND GOOD MORALS, OR ACTIVITIES OTHERWISE PROHIBITED OR RESTRICTED BY APPLICABLE LAWS OR GOVERNMENT AUTHORITIES.
+5.2  UPON TERMINATION OF THE LICENSE, THE LICENSEE SHALL IMMEDIATELY CEASE USING AND SHALL DESTROY ALL COPIES OF THIS SDK. IF THE LICENSEE’S REFUSAL OR DELAY IN DESTRUCTION CAUSES LOSS TO THE LICENSOR OR ANY THIRD PARTY, THE LICENSEE SHALL INDEMNIFY THE LICENSOR FOR ALL LOSSES SUFFERED, INCLUDING BUT NOT LIMITED TO REASONABLE ENFORCEMENT COSTS AND ATTORNEYS’ FEES. LICENSED APPLICATIONS LAWFULLY DISTRIBUTED TO END USERS PRIOR TO TERMINATION PURSUANT TO ARTICLE 1.1(B) SHALL NOT BE AFFECTED; HOWEVER, THE LICENSEE MAY NOT DISTRIBUTE ANY VERSION CONTAINING THIS SDK THEREAFTER, AND MAY NOT UPDATE, UPGRADE, OR PROVIDE TECHNICAL SUPPORT FOR ANY EXISTING INTEGRATED VERSION.
+ 
+ARTICLE 6  DISCLAIMER
+THIS SDK IS PROVIDED "AS IS." THE LICENSOR MAKES NO EXPRESS OR IMPLIED WARRANTIES, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+ 
+ARTICLE 7  LIABILITY AND LIMITATION OF LIABILITY
+IF THE LICENSEE’S USE OF THIS SDK IN BREACH OF THIS AGREEMENT, IN VIOLATION OF APPLICABLE LAWS OR REGULATIONS, OR IN INFRINGEMENT OF THIRD-PARTY RIGHTS CAUSES THE LICENSOR TO SUFFER ANY CLAIMS, LAWSUITS, LOSSES, OR COSTS (INCLUDING REASONABLE ATTORNEYS’ FEES), THE LICENSEE SHALL INDEMNIFY AND HOLD THE LICENSOR HARMLESS.
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES ARISING FROM THE USE OF OR INABILITY TO USE THIS SDK. THE LICENSOR’S AGGREGATE LIABILITY SHALL NOT EXCEED THE FEES ACTUALLY PAID BY THE LICENSEE FOR THIS SDK. IF THE FOREGOING CAP IS HELD TO BE INVALID OR UNENFORCEABLE, THE LICENSOR’S AGGREGATE LIABILITY SHALL NOT EXCEED RMB 10,000.
+ 
+Article 8  Governing Law and Dispute Resolution
+This Agreement is governed by the laws of mainland China (excluding conflict of laws rules). Disputes arising from this Agreement shall first be resolved through friendly negotiation. If negotiation fails, the dispute shall be submitted to the Shenzhen Court of International Arbitration (SCIA) for arbitration in accordance with its arbitration rules in effect at the time the application for arbitration is filed. The seat of arbitration shall be Shenzhen, the language of arbitration shall be Chinese, and the arbitral award shall be final and binding on both parties.
+ 
+Article 9  Personal Information Protection
+In the course of the Licensee integrating this SDK into a Licensed Application and providing services to end users, this SDK may collect the following information and upload it to the Licensor’s servers: device identifiers (including device model, operating system version, MAC address, IMEI, OAID, etc.), network information, user identifiers for SDK authentication/activation, usage logs, and crash logs, for the purposes of SDK authorization verification and service quality maintenance/crash analysis. Such information shall be stored on the Licensor’s servers for no longer than the minimum period necessary to fulfil the processing purpose and in compliance with applicable laws and regulations.
+THE LICENSEE SHALL PROMINENTLY DISCLOSE THE FOREGOING DATA PROCESSING PRACTICES IN ITS END-USER-FACING PRIVACY POLICY, INCLUDING THE TYPES OF INFORMATION COLLECTED, THE PURPOSES OF PROCESSING, THE RETENTION PERIOD, AND THE RIGHTS AVAILABLE TO USERS, AND SHALL OBTAIN NECESSARY USER CONSENT AND COMPLY WITH APPLICABLE DATA COMPLIANCE AND PERSONAL INFORMATION PROTECTION LAWS AND REGULATIONS.
+IF THE LICENSEE’S FAILURE TO FULFIL ITS OBLIGATIONS UNDER THIS ARTICLE RESULTS IN REGULATORY PENALTIES, USER COMPLAINTS, OR THIRD-PARTY CLAIMS, THE LICENSEE SHALL BEAR SOLE AND FULL RESPONSIBILITY THEREFOR; THE LICENSOR SHALL NOT BEAR JOINT AND SEVERAL LIABILITY. IF THE LICENSOR SUFFERS ANY LOSS AS A RESULT, THE LICENSOR IS ENTITLED TO SEEK INDEMNIFICATION FROM THE LICENSEE.
+ 
+ARTICLE 10  BRANDING OBLIGATIONS
+WHEN DISTRIBUTING A LICENSED APPLICATION, THE LICENSEE SHALL DISPLAY "POWERED BY XGRIDS" OR AN EQUIVALENT DESIGNATION SPECIFIED BY THE LICENSOR IN A REASONABLY PROMINENT MANNER ON THE APPLICATION’S SPLASH SCREEN, ABOUT PAGE, PRODUCT DOCUMENTATION, OR EQUIVALENT LOCATION TO INDICATE THAT THE LICENSED APPLICATION USES THIS SDK.
+THE LICENSEE SHALL NOT IN ANY WAY SUGGEST OR CLAIM THAT THIS SDK WAS INDEPENDENTLY DEVELOPED BY THE LICENSEE OR IS OWNED BY THE LICENSEE, OR OTHERWISE MAKE FALSE REPRESENTATIONS REGARDING THE ORIGIN AND OWNERSHIP OF THIS SDK. THE LICENSEE SHALL NOT REMOVE, OBSCURE, OR MODIFY ANY COPYRIGHT NOTICE, TRADEMARK, OR OTHER BRAND OR RIGHTS IDENTIFIER PLACED BY THE LICENSOR IN THIS SDK.
+THE LICENSEE’S FOREGOING BRANDING OBLIGATIONS DO NOT IMPLY THAT THE LICENSOR PARTICIPATES IN THE DEVELOPMENT, OPERATION, OR REVIEW OF THE LICENSED APPLICATION, AND DO NOT CONSTITUTE THE LICENSOR’S CERTIFICATION, WARRANTY, RECOMMENDATION, OR ENDORSEMENT OF THE LICENSED APPLICATION, NOR DO THEY IMPLY THE EXISTENCE OF A PARTNERSHIP, AGENCY, DISTRIBUTION, OR OTHER COOPERATIVE RELATIONSHIP BETWEEN THE PARTIES.
+ 
+ARTICLE 11  INDEMNIFICATION
+THE LICENSEE SHALL INDEMNIFY, DEFEND, AND HOLD THE LICENSOR HARMLESS IN RESPECT OF THE FOLLOWING:
+(A)  THE LICENSEE’S BREACH OF ANY TERM OF THIS AGREEMENT;
+(B)  THE LICENSEE’S LICENSED APPLICATION INFRINGING ANY THIRD-PARTY INTELLECTUAL PROPERTY RIGHTS OR OTHER LEGITIMATE RIGHTS AND INTERESTS;
+(C)  DEFECTS OR ILLEGAL OR NON-COMPLIANT CONTENT IN THE LICENSEE’S LICENSED APPLICATION GIVING RISE TO THIRD-PARTY CLAIMS AGAINST THE LICENSOR.
+THE FOREGOING INDEMNIFICATION SHALL COVER REASONABLE ATTORNEYS’ FEES, LITIGATION COSTS, SETTLEMENT PAYMENTS, AND OTHER RELATED COSTS AND EXPENSES INCURRED AS A RESULT.
+ 
+ARTICLE 12  COMPLIANCE OBLIGATIONS
+THE LICENSEE SHALL NOT USE THIS SDK FOR:
+(A)  ANY ACTIVITY THAT VIOLATES ANY APPLICABLE LAWS OR REGULATIONS;
+(B)  TERRORISM, EXTREMISM, HUMAN TRAFFICKING, CYBER ATTACKS, OR OTHER ACTIVITIES THAT ENDANGER PUBLIC SAFETY;
+(C)  DEVELOPING OR DISTRIBUTING MALWARE, SPYWARE, OR ANY DESTRUCTIVE PROGRAMS;
+(D)  ANY PURPOSE THAT VIOLATES APPLICABLE LAWS, REGULATIONS, OR GOVERNMENT POLICIES.
+THE LICENSEE SHALL COMPLY WITH ALL APPLICABLE EXPORT CONTROL LAWS AND REGULATIONS AND SHALL NOT EXPORT, RE-EXPORT, OR TRANSFER THIS SDK OR ANY LICENSED APPLICATION CONTAINING THIS SDK TO ANY SANCTIONED COUNTRY, REGION, OR SANCTIONED ENTITY, INCLUDING BUT NOT LIMITED TO DESTINATIONS RESTRICTED BY EXPORT CONTROLS OR ECONOMIC SANCTIONS IMPOSED BY CHINA, THE UNITED STATES, OR THE EUROPEAN UNION.
+IF THE LICENSEE VIOLATES THIS ARTICLE, THE LICENSOR IS ENTITLED TO IMMEDIATELY TERMINATE THIS LICENSE AND TO SEEK INDEMNIFICATION FROM THE LICENSEE FOR ALL LOSSES SUFFERED BY THE LICENSOR AS A RESULT (INCLUDING GOVERNMENT FINES, INVESTIGATION COSTS, ATTORNEYS’ FEES, ETC.).
+ 
+Article 13  License Updates and Revisions
+The Licensor reserves the right to revise this Agreement at any time. The revised Agreement shall be the version published on the Licensor’s official website or accompanying the new version of the SDK.
+After this Agreement is revised, the Licensee’s continued use of this SDK or downloading or installation of any new version shall be deemed acceptance of the revised Agreement. If the Licensee does not accept the revisions, the Licensee shall immediately cease using this SDK and destroy all copies.
+Revisions to this Agreement shall not affect Licensed Applications lawfully distributed to end users pursuant to Article 1.1(b) prior to the revision; such applications shall continue to be governed by the version of the Agreement applicable before the revision. However, the Licensee may not use a revised version of the SDK for subsequent updates to such applications unless the Licensee complies with all requirements of the revised Agreement.
+ 
+Article 14  Miscellaneous
+If the Licensee and the Licensor have separately entered into a written agreement, the written agreement shall prevail with respect to the same subject matter. 
+The Licensor shall have the final right to interpret the terms of this Agreement.
+If any provision of this Agreement is held to be invalid or unenforceable, the validity and enforceability of the remaining provisions shall not be affected, and the invalid or unenforceable provision shall be replaced by a valid or enforceable provision that most closely reflects the original intent.
+The Licensor’s failure to exercise or delay in exercising any right under this Agreement shall not constitute a waiver of such right.
+This Agreement is made in Chinese. In the event of any inconsistency or ambiguity between any translation of this Agreement and the Chinese version, the Chinese version shall prevail.
+Notices from the Licensor to the Licensee shall be delivered by means of announcements on the Licensor’s official website, web pages, product applications, or other platforms, or by email sent to the email address provided by the Licensee at the time of registration or otherwise. Such notices shall be deemed delivered on the date of dispatch.

@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.XR.Management;
 using Artemis.Vr;   // VrHud
 
 namespace Artemis.EditorTools
@@ -36,6 +37,11 @@ namespace Artemis.EditorTools
     /// la build Android per il Quest non lo contiene. Nella build per PC Esc chiude l'app, perche'
     /// a schermo intero non c'e' altro modo evidente di uscire. Se un visore e' collegato (Link),
     /// si spegne da solo e l'app si usa in VR.
+    ///
+    /// Il visore si riconosce dal LOADER XR attivo, come in LCCRendererVR, e non da
+    /// XRSettings.isDeviceActive: MISURATO in Editor via Link, in Start isDeviceActive valeva
+    /// ancora False con la sessione OpenXR gia' creata. Il puntatore restava acceso e contendeva
+    /// le azioni ai controller.
     /// Da mettere su un oggetto sempre presente (lo stesso del flusso delle scene).
     /// </summary>
     public class EditorMousePointer : MonoBehaviour
@@ -44,7 +50,7 @@ namespace Artemis.EditorTools
         [Tooltip("Spegnilo quando provi col visore collegato via Link, altrimenti mouse e " +
                  "controller si contendono le stesse azioni.")]
         [SerializeField] private bool active = true;
-        [Tooltip("Disattiva da solo se rileva un visore collegato.")]
+        [Tooltip("Disattiva da solo se un loader XR e' attivo (visore collegato e XR avviato).")]
         [SerializeField] private bool disableWhenHmdPresent = true;
 
         [Header("Movimento")]
@@ -80,11 +86,19 @@ namespace Artemis.EditorTools
 
         private void Start()
         {
-            if (disableWhenHmdPresent && UnityEngine.XR.XRSettings.isDeviceActive)
+            if (disableWhenHmdPresent && XrLoaderActive())
             {
-                Debug.Log("[EditorMousePointer] visore attivo: puntatore a mouse disattivato.");
+                Debug.Log("[EditorMousePointer] loader XR attivo: puntatore a mouse disattivato.");
                 active = false;
             }
+        }
+
+        /// Vero se XR Management ha un loader attivo. Con "Initialize XR on Startup" il loader
+        /// e' pronto prima della prima scena; e' null se l'avvio XR e' fallito o disattivato.
+        private static bool XrLoaderActive()
+        {
+            var loader = XRGeneralSettings.Instance?.Manager?.activeLoader;
+            return loader != null;
         }
 
         private void Update()

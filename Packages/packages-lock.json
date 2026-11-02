@@ -354,7 +354,7 @@
       "url": "https://packages.unity.com"
     },
     "com.xgrids.lccsdk": {
-      "version": "file:LCCSDK(v2.2.1)",
+      "version": "file:LCCSDK(v2.3.0)",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
