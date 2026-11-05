@@ -16,6 +16,13 @@ namespace Artemis.Vr
     /// preparare ogni visore e senza trasferimenti USB che si piantano a meta'. Qui la copia la
     /// fa l'applicazione, dall'interno, un file per volta.
     ///
+    /// SOLO SU ANDROID (Quest). Su Windows — Editor e build per PC, con o senza visore —
+    /// StreamingAssets e' gia' una cartella vera con tutti i dati, e LCCRendererVR li legge da
+    /// li' (la sua EffectiveSource trasforma PersistentData in StreamingAssets fuori da Android).
+    /// Prima la copia si saltava solo in Editor, e la build per PC duplicava qualche GB in
+    /// LocalLow al primo avvio. MISURATO: quel primo avvio, fatto col visore in PCVR, restava
+    /// fermo al caricamento 0%; senza visore finiva, e da li' in poi anche il PCVR andava.
+    ///
     /// RIPRENDIBILE, ed e' il punto che conta: a ogni avvio si controlla file per file se la
     /// copia c'e' gia' ed e' della dimensione giusta. Se un'installazione si interrompe — batteria,
     /// visore tolto, app chiusa — al riavvio riparte da dove era rimasta invece di ricominciare
@@ -42,11 +49,6 @@ namespace Artemis.Vr
         [Tooltip("Nome del manifesto generato dal menu Artemis → Genera manifesto splat.")]
         [SerializeField] private string manifestName = "_files.txt";
 
-        [Tooltip("Salta l'installazione in Editor: li' gli splat si leggono direttamente da " +
-                 "StreamingAssets (editorSource di SplatSourceConfig), e copiarli a ogni Play " +
-                 "sarebbe solo tempo perso.")]
-        [SerializeField] private bool skipInEditor = true;
-
         /// <summary>Vero mentre la copia e' in corso: chi vuole impedire il cambio scena puo'
         /// interrogarlo.</summary>
         public static bool Installing { get; private set; }
@@ -58,14 +60,19 @@ namespace Artemis.Vr
 
         private void Start()
         {
-#if UNITY_EDITOR
-            if (skipInEditor)
+            // Solo sul Quest. Il vecchio interruttore 'skipInEditor' copriva l'Editor ma non la
+            // build per PC, che e' lo stesso caso: StreamingAssets leggibile da disco, niente da
+            // copiare. Ora la regola e' una sola e non dipende da un valore serializzato in scena.
+            // In Editor Application.platform e' WindowsEditor anche con target Android: giusto,
+            // perche' anche li' i dati si leggono da Assets/StreamingAssets.
+            if (Application.platform != RuntimePlatform.Android)
             {
-                Debug.Log("[SplatInstaller] Editor: installazione saltata.");
+                Debug.Log($"[SplatInstaller] {Application.platform}: nessuna installazione, i dati " +
+                          "si leggono direttamente da StreamingAssets.");
                 enabled = false;
                 return;
             }
-#endif
+
             // Si installa SOLO se il progetto legge davvero dal disco. Con sorgente HttpUrl gli
             // splat arrivano dalla rete e copiare 270 MB sul visore sarebbe lavoro inutile —
             // per giunta invisibile, e quindi difficile da collegare alla propria causa quando ci

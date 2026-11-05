@@ -73,7 +73,7 @@ public class LCCRendererVR : MonoBehaviour
     public enum SplatSource
     {
         HttpUrl,          // come sempre: l'URL in m_FilePath
-        PersistentData,   // cartella scrivibile sul visore, riempita con adb push
+        PersistentData,   // cartella scrivibile sul visore, riempita da SplatInstaller (solo Quest; altrove vale StreamingAssets)
         StreamingAssets   // solo Editor/PC: su Android sta DENTRO l'apk e non e' un percorso
     }
 
@@ -93,9 +93,32 @@ public class LCCRendererVR : MonoBehaviour
              "l'asset di configurazione non esiste.")]
     [SerializeField] private SplatSource source = SplatSource.HttpUrl;
 
-    /// <summary>Sorgente effettivamente in vigore qui.</summary>
-    public SplatSource EffectiveSource =>
+    /// <summary>Sorgente come configurata (progetto o scena), prima dell'adattamento alla
+    /// piattaforma.</summary>
+    private SplatSource ConfiguredSource =>
         useProjectSource ? Artemis.Vr.SplatSourceConfig.Resolve(source) : source;
+
+    /// <summary>
+    /// Sorgente effettivamente in vigore qui.
+    ///
+    /// FUORI DA ANDROID PersistentData diventa StreamingAssets. PersistentData esiste solo
+    /// perche' sul Quest StreamingAssets sta dentro l'apk e l'SDK non lo legge: SplatInstaller
+    /// ci copia i dati al primo avvio. Su Windows (Editor e build) StreamingAssets e' gia' una
+    /// cartella vera con tutti i dati dentro, e la copia era un doppione di qualche GB fatto al
+    /// primo avvio. MISURATO: proprio quel primo avvio, se fatto con il visore in PCVR, restava
+    /// fermo al caricamento 0%, mentre i successivi andavano. Ora la copia si fa solo sul Quest
+    /// (SplatInstaller) e qui si legge dove i dati gia' sono.
+    /// </summary>
+    public SplatSource EffectiveSource
+    {
+        get
+        {
+            var s = ConfiguredSource;
+            if (s == SplatSource.PersistentData && Application.platform != RuntimePlatform.Android)
+                return SplatSource.StreamingAssets;
+            return s;
+        }
+    }
 
     [Tooltip("Percorso RELATIVO del file .lcc/.lcc2 dentro la cartella scelta, separatori '/'. " +
              "Esempio: LCC/Silvo01/Silvo01.lcc — accanto al file deve stare la sua cartella 'data'.")]
@@ -173,6 +196,19 @@ public class LCCRendererVR : MonoBehaviour
                       "(percorso Chunk, come per HTTP).");
         }
 
+        // Tetto di frame rate dell'SDK. Risposta XGRIDS alla issue #8: di default l'SDK limita
+        // il rendering a 24 fps quando giudica la scena "statica", e si toglie con
+        // SetLockFPS(false). Questo componente non l'aveva mai chiamato; l'esempio della guida
+        // PCVR 2.3.0 si'. Un tetto cosi' colpisce Quest e PCVR allo stesso modo, a prescindere
+        // dalla potenza del PC — ed e' proprio il lag "uguale nelle due modalita'" che si era
+        // misurato. Interruttore per l'A/B: spegnendolo si torna al comportamento precedente.
+        if (unlockFps)
+        {
+            m_manager.SetLockFPS(false);
+            Debug.Log($"[LCCRendererVR] '{gameObject.scene.name}': SetLockFPS(false), nessun tetto " +
+                      "di frame rate dell'SDK.");
+        }
+
         string path = ResolvePath();
         if (string.IsNullOrEmpty(path)) return;      // ResolvePath ha gia' spiegato perche'
 
@@ -209,6 +245,12 @@ public class LCCRendererVR : MonoBehaviour
     /// </summary>
     private string ResolvePath()
     {
+        // Se la piattaforma ha cambiato la sorgente configurata, lo si dice: chi legge il log e
+        // vede "StreamingAssets" con una configurazione che dice PersistentData deve sapere perche'.
+        if (ConfiguredSource != EffectiveSource)
+            Debug.Log($"[LCCRendererVR] '{gameObject.scene.name}': sorgente configurata " +
+                      $"{ConfiguredSource}, su {Application.platform} si legge da {EffectiveSource}.");
+
         switch (EffectiveSource)
         {
             case SplatSource.HttpUrl:
@@ -320,6 +362,12 @@ public class LCCRendererVR : MonoBehaviour
              "Far altissimo, quando ci si gira verso un corridoio, costerebbe secondi di scatti " +
              "prima che la regolazione lo riporti giu'. In piazza alto, per vedere l'ambiente.")]
     [Min(0)] public float maxViewDistance = 0f;
+
+    [Header("Frame rate")]
+    [Tooltip("Chiama SetLockFPS(false): toglie il tetto di 24 fps che l'SDK applica di default " +
+             "quando giudica la scena statica (risposta XGRIDS, issue #8). Acceso e' il valore " +
+             "giusto in VR; spento solo per l'A/B.")]
+    public bool unlockFps = true;
 
     [Header("Percorso di rendering su PC")]
     [Tooltip("PC e PCVR (Editor e build per Windows, con o senza visore): forza il percorso a " +

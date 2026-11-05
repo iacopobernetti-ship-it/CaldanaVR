@@ -288,9 +288,24 @@ MonoBehaviour:
   scaleMax: 1
   nearSteps:
   - 0.01
+  - 0.02
+  - 0.3
+  - 0.4
   lodMin: 0
   lodMax: 5
   budgetSteps: 0a000000140000001e000000280000003c0000005000000064000000
+  farSteps:
+  - 20
+  - 30
+  - 50
+  - 75
+  - 100
+  - 150
+  - 200
+  - 300
+  - 500
+  - 1000
+  - 15000
 --- !u!114 &3029491284115879788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,6 +329,7 @@ MonoBehaviour:
   upRelativePerSecond: 0.6
   settleSeconds: 1.5
   pauseMs: 1000
+  forceRefreshOnChange: 0
   showInHud: 1
 --- !u!114 &3522571547040765267
 MonoBehaviour:

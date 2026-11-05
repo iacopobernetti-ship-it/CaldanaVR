@@ -24,9 +24,16 @@ namespace Artemis.Vr
     /// scatti invece si nota, e deve muoversi lento. Fra le due soglie c'e' una fascia morta,
     /// senza la quale la distanza oscillerebbe di continuo attorno all'obiettivo.
     ///
-    /// SetForceRefresh dopo ogni cambio: il manuale dice che l'SDK tiene in cache i parametri
-    /// della camera, e che una modifica fatta da fuori vale solo dopo il refresh. Senza, il Far
-    /// cambierebbe per Unity ma non per la scelta degli splat, cioe' proprio dove conta.
+    /// SetForceRefresh: SPENTO di default (SDK 2.3.0). Prima si chiamava dopo ogni cambio del
+    /// Far, perche' il manuale dice che l'SDK tiene in cache i parametri della camera. Risposta
+    /// XGRIDS alla issue #8: la chiamata non serve, e' pensata per casi particolari, e chiamarla
+    /// spesso puo' far crashare l'applicazione. Qui la si chiamava fino a quattro volte al
+    /// secondo (una per finestra di misura) durante ogni salita della distanza — e il crash in
+    /// PCVR avveniva proprio muovendosi veloci con il Far alto, cioe' con il Far che cambia di
+    /// continuo. Resta un interruttore per l'A/B: se a refresh spento accorciare il Far non
+    /// abbassasse piu' il frametime (prova con la distanza a mano della scheda Tuning, 20 m
+    /// contro 15000 m nella strozzatura di Street01), vorrebbe dire che l'SDK il Far nuovo non
+    /// lo prende da solo.
     ///
     /// DISTANZE MOLTO DIVERSE FRA I LUOGHI. L'AMBIENTE del rilievo (lo sfondo a bassa
     /// precisione: colline, valle) sta oltre i 1000 m: misurato, in piazza compare solo con il
@@ -87,6 +94,12 @@ namespace Artemis.Vr
                  "regolazione non partiva mai.")]
         [SerializeField] private float pauseMs = 1000f;
 
+        [Header("SDK")]
+        [Tooltip("Chiama LCCManager.SetForceRefresh() dopo ogni cambio del Far. SPENTO di " +
+                 "default: XGRIDS (issue #8) dice che non serve e che chiamarla spesso puo' far " +
+                 "crashare l'app. Riaccenderlo solo per l'A/B.")]
+        [SerializeField] private bool forceRefreshOnChange = false;
+
         [Header("Diagnostica")]
         [SerializeField] private bool showInHud = true;
 
@@ -129,6 +142,9 @@ namespace Artemis.Vr
                 place = null;
                 sceneMax = maxFar;
                 CurrentFar = Mathf.Clamp(startFar, minFar, maxFar);
+                // Una riga per scena: dal log si legge quale variante era attiva durante la prova.
+                Debug.Log($"[AdaptiveFar] scena '{gameObject.scene.name}': SetForceRefresh " +
+                          $"{(forceRefreshOnChange ? "ACCESO (A/B)" : "spento")}.");
                 Apply();
                 settleUntil = Time.unscaledTime + settleSeconds;
                 ResetWindow();
@@ -201,7 +217,7 @@ namespace Artemis.Vr
             if (cam != null) cam.farClipPlane = CurrentFar;
             UpdateLabel();   // la riga c'e' subito, non solo alla fine della prima finestra
 
-            // Manager e renderer sono oggetti della scena-luogo: li si ritrova a ogni scena.
+            // Il renderer e' un oggetto della scena-luogo: lo si ritrova a ogni scena.
             // Dal renderer arriva il tetto di questo luogo; in Base (niente splat) vale quello
             // generale.
             if (place == null)
@@ -210,6 +226,9 @@ namespace Artemis.Vr
                 if (place != null && place.maxViewDistance > 0f)
                     sceneMax = Mathf.Clamp(place.maxViewDistance, minFar, maxFar);
             }
+
+            // Solo per l'A/B: vedi l'intestazione. Spento, il manager non serve nemmeno cercarlo.
+            if (!forceRefreshOnChange) return;
             if (lcc == null) lcc = FindFirstObjectByType<LCCManager>();
             if (lcc != null) lcc.SetForceRefresh();
         }
