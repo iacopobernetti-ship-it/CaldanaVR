@@ -1071,11 +1071,12 @@ MonoBehaviour:
   source: 0
   localRelativePath: LCC/Caldana01/Caldana01.lcc2
   splatDepthWrite: 1
-  maxBufferSplat10k: 0
-  maxRenderSplats10k: 0
+  maxBufferSplat10k: 200
+  maxRenderSplats10k: 150
   startLod: 0
-  detailLevel: 100
+  detailLevel: 0
   maxViewDistance: 0
+  unlockFps: 1
   forceChunkOnPc: 1
   renderEnvironment: 1
   disposeOnDestroy: 1

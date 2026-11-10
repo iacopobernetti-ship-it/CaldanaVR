@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdb841ad1988a9b4ca2a558e30b4883a, type: 3}
   m_Name: SplatSourceConfig
   m_EditorClassIdentifier: Assembly-CSharp::Artemis.Vr.SplatSourceConfig
-  source: 1
-  editorSource: 1
+  source: 0
+  editorSource: 0

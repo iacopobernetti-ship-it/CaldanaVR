@@ -154,11 +154,12 @@ MonoBehaviour:
   source: 0
   localRelativePath: LCC/Caldana05/Caldana05.lcc2
   splatDepthWrite: 1
-  maxBufferSplat10k: 0
-  maxRenderSplats10k: 0
-  startLod: 2
+  maxBufferSplat10k: 200
+  maxRenderSplats10k: 150
+  startLod: 0
   detailLevel: 0
   maxViewDistance: 0
+  unlockFps: 1
   forceChunkOnPc: 1
   renderEnvironment: 1
   disposeOnDestroy: 1
@@ -603,7 +604,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Artemis.Vr.SplatInstaller
   rootFolder: LCC
   manifestName: _files.txt
-  skipInEditor: 1
 --- !u!4 &1479632598
 Transform:
   m_ObjectHideFlags: 0
